@@ -1,0 +1,141 @@
+usuarios As screen:
+    BackgroundImage: ='MicrosoftTeams-image'
+    ImagePosition: =ImagePosition.Center
+    LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+    OnHidden: =
+    OnVisible: |-
+        =Set(
+            varLogUsuario,
+            Filter(
+                user,
+                usuario.Email = Office365Users.MyProfileV2().mail
+            )
+        )
+
+    Label1_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(160, 66, 227, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(102, 215, 247, 1)
+        DisabledFill: =RGBA(0, 169, 218, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =40
+        Text: ="ESTIMATOR"
+        Width: =328
+        X: =156
+        Y: =534
+        ZIndex: =2
+
+    Icon2_1 As icon.AddDocument:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(160, 66, 227, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =45
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Settings
+        OnSelect: |-
+            =If(
+                "Si" in First(varLogUsuario).Administrator,
+                Navigate(
+                    HomeAdmin,
+                    Cover
+                )
+            );
+            Notify(
+                "Bienvenido "& User().Email &"",
+                Success,
+                2000
+            )
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =45
+        X: =156
+        Y: =695
+        ZIndex: =4
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Verdana
+        Height: =33
+        Size: =15
+        Text: |
+            =LookUp(user,usuario.Email = User().Email).Name
+        Visible: =!IsBlank(LookUp(user,usuario.Email = User().Email).Title)
+        Width: =273
+        X: =210
+        Y: =701
+        ZIndex: =10
+
+    Icon5 As icon.AddUser:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(160, 66, 227, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =45
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.AddUser
+        OnSelect: =Navigate(HomeUser,Cover)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =45
+        X: =156
+        Y: =625
+        ZIndex: =12
+
+    Label8 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Verdana
+        Text: |
+            =User().Email
+        Width: =350
+        X: =210
+        Y: =630
+        ZIndex: =13
+
+    Label5 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =59
+        Size: =13
+        Text: =""
+        Width: =1130
+        X: =130
+        Y: =40
+        ZIndex: =14
+

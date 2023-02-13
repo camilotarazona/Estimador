@@ -1,0 +1,49 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-12-19T18:05:56.7150000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Configuracion_Desarrollo": "Configuracion_Desarrollo",
+      "Created": "Created",
+      "Documentacion": "Documentacion",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "Gestion": "Gestion",
+      "Gestion_del_Cambio": "Gestion_del_Cambio",
+      "ID": "ID",
+      "Modified": "Modified",
+      "Pruebas": "Pruebas",
+      "Title": "Title",
+      "Total": "Total"
+    },
+    "DatasetName": "https://ts.accenture.com/sites/SUMA133",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Oferta_Interna",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
