@@ -392,7 +392,8 @@ LoadFunctions As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
         OnSelect: |-
-            =CargarFuncionesPws.Run({contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name});
+            =//CargarFuncionesPws.Run({contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name});
+            ImportExcel.Run({file: {contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name}});
             Notify(
                 "Funciones cargadas con exito",
                 Success,
@@ -452,7 +453,8 @@ LoadFunctions As screen:
                 Clasificacion: ThisRecord.Clasificacion,
                 Complejidad: ThisRecord.Complejidad
             }));    
-            Set(_Url,ExportarExcelMg.Run(JSON(ColExcelMg )).url);
+            //Set(_Url,ExportarExcelMg.Run(JSON(ColExcelMg )).url);
+            Set(_Url,ExportToExcel.Run(JSON(ColExcelMg )).filelink);
             Launch(_Url)
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
