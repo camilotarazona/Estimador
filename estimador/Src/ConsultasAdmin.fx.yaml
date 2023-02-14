@@ -357,7 +357,9 @@ ConsultasAdmin As screen:
                 Estimacion,
                 IsBlank(CbxNINI_2.Selected.Result) Or IsEmpty(CbxNINI_2.Selected.Result) Or NumeroINI = CbxNINI_2.Selected.Result,
                 IsBlank(DropTipo_4.Selected.Result) Or IsEmpty(DropTipo_4.Selected.Result) Or TipoEstimacion = DropTipo_4.Selected.Result,
-                 IsBlank(DropAplicacion.Selected.Result) Or IsEmpty(DropAplicacion.Selected.Result) Or Aplicacion = DropAplicacion.Selected.Result)
+                 IsBlank(DropAplicacion.Selected.Result) Or IsEmpty(DropAplicacion.Selected.Result) Or Aplicacion = DropAplicacion.Selected.Result,
+                IsBlank(DropClas_3.SelectedText) Or IsEmpty(DropClas_3.Selected.Result) Or Clasificacion = DropClas_3.Selected.Result,
+                IsBlank(DropCompl_3.Selected.Result) Or IsEmpty(DropCompl_3.Selected.Result) Or Complejidad = DropCompl_3.Selected.Result)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =246
@@ -1084,7 +1086,7 @@ ConsultasAdmin As screen:
             Size: =20
             Text: =""
             Width: =153
-            X: =838
+            X: =786
             Y: =83
             ZIndex: =16
 
@@ -1103,7 +1105,7 @@ ConsultasAdmin As screen:
                 =//RoundUp(Sum(GalEstimaciones.AllItems,Esfuerzo)/8,0)
                 Sum(LbTSinR_4+LbRiesg_4)
             Width: =104
-            X: =863
+            X: =811
             Y: =101
             ZIndex: =17
 
@@ -1124,7 +1126,7 @@ ConsultasAdmin As screen:
             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             Size: =20
             Text: ="Jornadas"
-            X: =834
+            X: =782
             Y: =160
             ZIndex: =18
 
@@ -1157,8 +1159,8 @@ ConsultasAdmin As screen:
             RadiusTopRight: =60
             Size: =20
             Text: =""
-            Width: =153
-            X: =1016
+            Width: =182
+            X: =987
             Y: =83
             ZIndex: =19
 
@@ -1176,8 +1178,7 @@ ConsultasAdmin As screen:
             Text: |-
                 =Sum(GalEstimaciones_2.AllItems,Esfuerzo)/80%
                 //Sum(GalEstimaciones.AllItems,Esfuerzo)
-            Width: =104
-            X: =1041
+            X: =1003
             Y: =101
             ZIndex: =20
 
@@ -1198,7 +1199,8 @@ ConsultasAdmin As screen:
             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             Size: =20
             Text: ="Horas"
-            X: =1012
+            Width: =190
+            X: =982
             Y: =160
             ZIndex: =21
 

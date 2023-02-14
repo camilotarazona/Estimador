@@ -160,8 +160,8 @@ Details As screen:
             Visible: =false
             Width: =56
             Wrap: =false
-            X: =429
-            Y: =22
+            X: =355
+            Y: =16
             ZIndex: =5
 
         Title4_2 As label:

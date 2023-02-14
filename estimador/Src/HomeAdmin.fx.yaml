@@ -408,13 +408,14 @@ HomeAdmin As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Share
+        Icon: =Icon.History
+        OnSelect: =Navigate(ConsultasAdmin,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =410
-        Y: =272
+        Y: =196
         ZIndex: =24
 
     Label2_8 As label:
@@ -427,9 +428,9 @@ HomeAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Size: =30
-        Text: ="Ofert"
+        Text: ="Filter"
         X: =476
-        Y: =292
+        Y: =205
         ZIndex: =25
 
     Group5 As group:
