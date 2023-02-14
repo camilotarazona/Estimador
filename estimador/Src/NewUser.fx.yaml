@@ -183,6 +183,298 @@ NewUser As screen:
         Y: =9
         ZIndex: =10
 
+    LbUser_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =37
+        Size: =13
+        Text: =User().Email
+        Width: =293
+        X: =990
+        Y: =19
+        ZIndex: =15
+
+    "GalPruebaConex_4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =579
+        Items: |+
+            =
+              Filter(
+                CargaFuncionesPws,
+                IsBlank(DropTipo_2.Selected.Result) Or IsEmpty(DropTipo_2.Selected.Result) Or Tipo = DropTipo_2.Selected.Result,
+                IsBlank(DropClas_2.Selected.Result) Or IsEmpty(DropClas_2.Selected.Result) Or Clasificacion = DropClas_2.Selected.Result,
+                IsBlank(DropCompl_2.Selected.Result) Or IsEmpty(DropCompl_2.Selected.Result) Or Complejidad =           DropCompl_2.Selected.Result
+                
+                )
+            
+                
+            
+            
+            //If((IsBlank(DropTipo.Selected.Result) Or IsEmpty(DropTipo.Selected.Result)),
+              //  'Prueba conexion',
+                //Filter(
+                  //  'Prueba conexion',
+                    //Tipo = DropTipo.Selected.Result
+                //)
+            //)
+            
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =289
+        Width: =563
+        X: =75
+        Y: =148
+        ZIndex: =16
+
+        Title7_4 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Tipo
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =141
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle7_24 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =51
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =353
+            X: =35
+            Y: =62
+            ZIndex: =2
+
+        Separator8_4 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Subtitle7_22 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Tipo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =138
+            X: =35
+            Y: =27
+            ZIndex: =5
+
+        Subtitle7_23 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Clasificacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =88
+            X: =385
+            Y: =58
+            ZIndex: =6
+
+        Subtitle7_21 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Complejidad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =138
+            X: =385
+            Y: =21
+            ZIndex: =7
+
+        Subtitle7_20 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(102, 215, 247, 1)
+            Font: =Font.'Segoe UI'
+            Height: =52
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =30
+            Text: =ThisItem.Esfuerzo
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =64
+            X: =301
+            Y: =16
+            ZIndex: =8
+
+        CbxSelec_4 As checkbox:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            CheckboxBackgroundFill: =RGBA(183, 162, 212, 1)
+            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+            CheckmarkFill: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Reset: =varReseteo
+            Size: =13
+            Text: =
+            Visible: =false
+            Width: =60
+            X: =493
+            Y: =34
+            ZIndex: =9
+
+        TextInput3_1 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =90
+            HintText: ="Comentario Estimacion"
+            HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Mode: =TextMode.MultiLine
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(135, 100, 184, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =13
+            Width: =461
+            X: =32
+            Y: =182
+            ZIndex: =10
+
+        Dropdown3_1 As dropdown:
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(166, 166, 166, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+            ChevronFill: =RGBA(33, 33, 33, 1)
+            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(212, 212, 212, 1)
+            Items: =Distinct(Aplicaciones,Title)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =5
+            PaddingLeft: =12
+            PaddingRight: =5
+            PaddingTop: =5
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(135, 100, 184, 1)
+            SelectionFill: =RGBA(135, 100, 184, 1)
+            Size: =13
+            Width: =240
+            X: =32
+            Y: =130
+            ZIndex: =11
+
+        Button2_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(160, 66, 227, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnSelect: |
+                =Patch(
+                    colEstimacion,
+                    Defaults(colEstimacion),
+                    {
+                     NumeroINI: TxINI.Text,
+                     TipoEstimacion: Subtitle7_23.Text,
+                     Clasificacion: Subtitle7_22.Text,
+                     Descripcion: Subtitle7_24.Text,
+                     Complejidad: Subtitle7_21.Text,
+                     Esfuerzo: Value(Subtitle7_20.Text),
+                     'Comentario Estimacion': TextInput3_1.Text,
+                     Aplicacion: Dropdown3_1.Selected.Result         
+                    }
+                );
+            Size: =15
+            Text: ="Añadir"
+            X: =374
+            Y: =105
+            ZIndex: =12
+
     "'L#INI_1' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -197,9 +489,9 @@ NewUser As screen:
         Size: =20
         Text: =" Number INI"
         Width: =166
-        X: =800
-        Y: =230
-        ZIndex: =11
+        X: =760
+        Y: =87
+        ZIndex: =17
 
     TxINI_1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -227,16 +519,18 @@ NewUser As screen:
         RadiusTopRight: =0
         Size: =20
         Width: =196
-        X: =977
-        Y: =232
-        ZIndex: =12
+        X: =943
+        Y: =89
+        ZIndex: =18
 
     BtPatch_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =If(IsBlank(TxINI_1.Text),DisplayMode.Disabled, DisplayMode.Edit) 
+        DisplayMode: |-
+            =If(IsBlank(TxINI_1.Text),DisplayMode.Disabled, DisplayMode.Edit) 
+            // IsEmpty(If(IsBlank(CbxSelec_3.Value),DisplayMode.Disabled, DisplayMode.Edit)) 
         Fill: =RGBA(160, 66, 227, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
@@ -245,29 +539,34 @@ NewUser As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
         OnSelect: |-
-            =ClearCollect(
-                colseleccionesU,
-                Filter(
-                    GalPruebaConex_2.AllItems,
-                    CbxSelec.Value
-                )
-            );
+            =//ClearCollect(
+            //    colselecciones,
+            //    Filter(
+            //        GalPruebaConex_3.AllItems,
+            //        CbxSelec_3.Value
+            //    )
+            //);
+            
             ForAll(
-                colseleccionesU,
+                colEstimacion,
                 Patch(
                     Estimacion,
                     Defaults(Estimacion),
                     {
-                        NumeroINI: TxINI_1.Text,
+                        NumeroINI:NumeroINI,
                         Clasificacion: Clasificacion,
-                        TipoEstimacion: Tipo,
+                        TipoEstimacion: TipoEstimacion,
                         Descripcion: Descripcion,
                         Complejidad: Complejidad,
-                        Esfuerzo: Esfuerzo
+                        Esfuerzo:Esfuerzo,
+                        'Comentario Estimacion': 'Comentario Estimacion',
+                        Aplicacion: Aplicacion
+                        
                     }
                 )
             );
-            ClearCollect(ColDatosOfertaU,
+            
+            ClearCollect(ColDatosOferta,
                 {   
                         Title: TxINI_1.Text,
                         Configuraion_Desarrollo:LbConfDes.Text,
@@ -279,7 +578,7 @@ NewUser As screen:
                     }
             );
             ForAll(
-                ColDatosOfertaU,
+                ColDatosOferta,
                 Patch(
                     Oferta,
                     Defaults(Oferta),
@@ -326,7 +625,8 @@ NewUser As screen:
                 Success,
                 2000
             );
-            Navigate(DetailsUser,ScreenTransition.Cover)
+            
+            Navigate(Details,ScreenTransition.Cover)
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(39, 113, 194, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -337,9 +637,9 @@ NewUser As screen:
         Size: =15
         Text: ="Save"
         Width: =123
-        X: =1020
-        Y: =554
-        ZIndex: =13
+        X: =1180
+        Y: =680
+        ZIndex: =19
 
     BtReset_2 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -354,11 +654,12 @@ NewUser As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-        OnSelect: |-
+        OnSelect: |+
             =Reset(DropTipo_2);
             Reset(DropClas_2);
             Reset(DropCompl_2);
-            Reset(TxINI_1)
+            Reset(TxINI_1);
+            
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -369,26 +670,9 @@ NewUser As screen:
         Size: =15
         Text: ="Reset"
         Width: =123
-        X: =820
-        Y: =554
-        ZIndex: =14
-
-    LbUser_1 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =37
-        Size: =13
-        Text: =User().Email
-        Width: =293
-        X: =990
-        Y: =19
-        ZIndex: =15
+        X: =1043
+        Y: =680
+        ZIndex: =20
 
     LbTipo_2 As label:
         Align: =Align.Center
@@ -405,9 +689,9 @@ NewUser As screen:
         Size: =20
         Text: ="Tipo"
         Width: =166
-        X: =800
-        Y: =308
-        ZIndex: =16
+        X: =760
+        Y: =154
+        ZIndex: =21
 
     LbClas_2 As label:
         Align: =Align.Center
@@ -424,9 +708,9 @@ NewUser As screen:
         Size: =20
         Text: ="Clasificacion"
         Width: =166
-        X: =800
-        Y: =383
-        ZIndex: =17
+        X: =760
+        Y: =224
+        ZIndex: =22
 
     LbCompl_2 As label:
         Align: =Align.Center
@@ -443,9 +727,9 @@ NewUser As screen:
         Size: =20
         Text: ="Complejidad"
         Width: =166
-        X: =800
-        Y: =452
-        ZIndex: =18
+        X: =760
+        Y: =303
+        ZIndex: =23
 
     DropTipo_2 As dropdown:
         AllowEmptySelection: =true
@@ -476,9 +760,9 @@ NewUser As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =308
-        ZIndex: =19
+        X: =943
+        Y: =154
+        ZIndex: =24
 
     DropClas_2 As dropdown:
         AllowEmptySelection: =true
@@ -509,9 +793,9 @@ NewUser As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =385
-        ZIndex: =20
+        X: =943
+        Y: =224
+        ZIndex: =25
 
     DropCompl_2 As dropdown:
         AllowEmptySelection: =true
@@ -542,341 +826,7 @@ NewUser As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =452
-        ZIndex: =21
-
-    "GalPruebaConex_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =579
-        Items: |+
-            =
-                Filter(
-                'Prueba conexion',
-                IsBlank(DropTipo_2.Selected.Result) Or IsEmpty(DropTipo_2.Selected.Result) Or Tipo = DropTipo_2.Selected.Result,
-                IsBlank(DropClas_2.Selected.Result) Or IsEmpty(DropClas_2.Selected.Result) Or Clasificacion = DropClas_2.Selected.Result,
-                IsBlank(DropCompl_2.Selected.Result) Or IsEmpty(DropCompl_2.Selected.Result) Or Complejidad =           DropCompl_2.Selected.Result
-                
-                )
-            
-                
-            
-            
-            //If((IsBlank(DropTipo.Selected.Result) Or IsEmpty(DropTipo.Selected.Result)),
-              //  'Prueba conexion',
-                //Filter(
-                  //  'Prueba conexion',
-                    //Tipo = DropTipo.Selected.Result
-                //)
-            //)
-            
-        Layout: =Layout.Vertical
-        TemplatePadding: =0
-        TemplateSize: =116
-        Visible: =false
-        Width: =563
-        X: =80
-        Y: =154
-        ZIndex: =23
-
-        Title7_1 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Tipo
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =false
-            Width: =141
-            X: =32
-            Y: =16
-            ZIndex: =1
-
-        Subtitle7_11 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            Height: =51
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: =ThisItem.Descripcion
-            VerticalAlign: =VerticalAlign.Top
-            Width: =353
-            X: =35
-            Y: =50
-            ZIndex: =2
-
-        Separator8_1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
-
-        Subtitle7_8 As label:
-            Color: =RGBA(109, 49, 162, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =26
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.Tipo
-            VerticalAlign: =VerticalAlign.Top
-            Width: =138
-            X: =35
-            Y: =15
-            ZIndex: =5
-
-        Subtitle7_12 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =26
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.Clasificacion
-            VerticalAlign: =VerticalAlign.Top
-            Width: =88
-            X: =385
-            Y: =58
-            ZIndex: =6
-
-        Subtitle7_10 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.Complejidad
-            VerticalAlign: =VerticalAlign.Top
-            Width: =138
-            X: =385
-            Y: =21
-            ZIndex: =7
-
-        Subtitle7_9 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(102, 215, 247, 1)
-            Font: =Font.'Segoe UI'
-            Height: =52
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =30
-            Text: =ThisItem.Esfuerzo
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =false
-            Width: =64
-            X: =301
-            Y: =16
-            ZIndex: =8
-
-        CbxSelec_2 As checkbox:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            CheckboxBackgroundFill: =RGBA(183, 162, 212, 1)
-            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
-            CheckmarkFill: =RGBA(255, 255, 255, 1)
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Reset: =varReseteo
-            Size: =13
-            Text: =
-            Width: =60
-            X: =493
-            Y: =34
-            ZIndex: =9
-
-    "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =551
-        Items: |-
-            =
-            
-                Filter(
-                CargaFuncionesPws,
-                IsEmpty(DropTipo_2.Selected.Result) Or IsBlank(DropTipo_2.Selected.Result) Or Tipo = DropTipo_2.Selected.Result,
-                IsEmpty(DropClas_2.Selected.Result) Or IsBlank(DropClas_2.Selected.Result) Or Clasificacion = DropClas_2.Selected.Result,
-                IsEmpty(DropCompl_2.Selected.Result) Or IsBlank(DropCompl_2.Selected.Result) Or Complejidad =           DropCompl_2.Selected.Result
-                
-                )
-        Layout: =Layout.Vertical
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =141
-        Width: =561
-        X: =151
-        Y: =199
-        ZIndex: =24
-
-        Title3_8 As label:
-            Color: =RGBA(201, 148, 247, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Clasificacion
-            VerticalAlign: =VerticalAlign.Top
-            Width: =112
-            X: =32
-            Y: =16
-            ZIndex: =1
-
-        Subtitle3_2 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =67
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =15
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =445
-            X: =32
-            Y: =Title3_8.Y + Title3_8.Height + 4
-            ZIndex: =2
-
-        Separator4_2 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
-
-        Title3_9 As label:
-            Color: =RGBA(141, 198, 63, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Tipo
-            VerticalAlign: =VerticalAlign.Top
-            Width: =112
-            X: =215
-            Y: =16
-            ZIndex: =5
-
-        Title3_11 As label:
-            Color: =RGBA(0, 188, 242, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Esfuerzo
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =false
-            Width: =57
-            X: =496
-            Y: =16
-            ZIndex: =6
-
-        Title3_10 As label:
-            Color: =RGBA(255, 88, 78, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Complejidad
-            VerticalAlign: =VerticalAlign.Top
-            Width: =112
-            X: =398
-            Y: =16
-            ZIndex: =7
-
-        Checkbox1_1 As checkbox:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
-            CheckmarkFill: =RGBA(135, 100, 184, 1)
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Size: =13
-            Text: ="Option"
-            Width: =40
-            X: =503
-            Y: =16
-            ZIndex: =8
+        X: =943
+        Y: =303
+        ZIndex: =26
 
