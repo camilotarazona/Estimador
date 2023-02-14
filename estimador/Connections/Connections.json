@@ -206,6 +206,31 @@
     "dependents": [],
     "id": "9a48a7eb-9919-4d1f-a381-54cb34df0720"
   },
+  "a53c1317-1ee4-4bc9-ad4c-12280ddc9dfa": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://ts.accenture.com/sites/SUMA133": {
+        "dataSources": {
+          "EstimacionAux": {
+            "tableName": "cab5ca03-f493-4ca6-878f-91e9743398a9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "EstimacionAux"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a53c1317-1ee4-4bc9-ad4c-12280ddc9dfa"
+  },
   "d8f6b3fd-b6e1-460c-a3fe-847042b589b1": {
     "connectionParameters": {
       "sku": "Enterprise"

@@ -201,8 +201,8 @@ New As screen:
         Size: =20
         Text: =" Number INI"
         Width: =166
-        X: =800
-        Y: =230
+        X: =760
+        Y: =87
         ZIndex: =11
 
     TxINI As text:
@@ -231,8 +231,8 @@ New As screen:
         RadiusTopRight: =0
         Size: =20
         Width: =196
-        X: =977
-        Y: =232
+        X: =943
+        Y: =89
         ZIndex: =12
 
     BtPatch As button:
@@ -251,29 +251,33 @@ New As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
         OnSelect: |-
-            =ClearCollect(
-                colselecciones,
-                Filter(
-                    GalPruebaConex_3.AllItems,
-                    CbxSelec_3.Value
-                )
-            );
+            =//ClearCollect(
+            //    colselecciones,
+            //    Filter(
+            //        GalPruebaConex_3.AllItems,
+            //        CbxSelec_3.Value
+            //    )
+            //);
+            
             ForAll(
-                colselecciones,
+                colEstimacion,
                 Patch(
                     Estimacion,
                     Defaults(Estimacion),
                     {
-                        NumeroINI: TxINI.Text,
+                        NumeroINI:NumeroINI,
                         Clasificacion: Clasificacion,
-                        TipoEstimacion:Tipo,
-                        Descripcion:Title,
+                        TipoEstimacion: TipoEstimacion,
+                        Descripcion: Descripcion,
                         Complejidad: Complejidad,
-                        Esfuerzo: Esfuerzo
+                        Esfuerzo:Esfuerzo,
+                        'Comentario Estimacion': 'Comentario Estimacion',
+                        Aplicacion: Aplicacion
                         
                     }
                 )
             );
+            
             ClearCollect(ColDatosOferta,
                 {   
                         Title: TxINI.Text,
@@ -333,6 +337,7 @@ New As screen:
                 Success,
                 2000
             );
+            
             Navigate(Details,ScreenTransition.Cover)
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(39, 113, 194, 1)
@@ -344,8 +349,8 @@ New As screen:
         Size: =15
         Text: ="Save"
         Width: =123
-        X: =1020
-        Y: =554
+        X: =1180
+        Y: =680
         ZIndex: =13
 
     BtReset As button:
@@ -361,11 +366,12 @@ New As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-        OnSelect: |
+        OnSelect: |+
             =Reset(DropTipo);
             Reset(DropClas);
             Reset(DropCompl);
             Reset(TxINI);
+            
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -376,8 +382,8 @@ New As screen:
         Size: =15
         Text: ="Reset"
         Width: =123
-        X: =820
-        Y: =554
+        X: =1043
+        Y: =680
         ZIndex: =14
 
     LbUser As label:
@@ -412,8 +418,8 @@ New As screen:
         Size: =20
         Text: ="Tipo"
         Width: =166
-        X: =800
-        Y: =308
+        X: =760
+        Y: =154
         ZIndex: =16
 
     LbClas As label:
@@ -431,8 +437,8 @@ New As screen:
         Size: =20
         Text: ="Clasificacion"
         Width: =166
-        X: =800
-        Y: =383
+        X: =760
+        Y: =224
         ZIndex: =17
 
     LbCompl As label:
@@ -450,8 +456,8 @@ New As screen:
         Size: =20
         Text: ="Complejidad"
         Width: =166
-        X: =800
-        Y: =452
+        X: =760
+        Y: =303
         ZIndex: =18
 
     DropTipo As dropdown:
@@ -483,8 +489,8 @@ New As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =308
+        X: =943
+        Y: =154
         ZIndex: =19
 
     DropClas As dropdown:
@@ -516,8 +522,8 @@ New As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =385
+        X: =943
+        Y: =224
         ZIndex: =20
 
     DropCompl As dropdown:
@@ -549,8 +555,8 @@ New As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         Size: =13
         Width: =196
-        X: =977
-        Y: =452
+        X: =943
+        Y: =303
         ZIndex: =21
 
     "GalPruebaConex As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -584,7 +590,7 @@ New As screen:
         Width: =563
         X: =80
         Y: =154
-        ZIndex: =23
+        ZIndex: =22
 
         Title7 As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -765,7 +771,7 @@ New As screen:
         Width: =563
         X: =94
         Y: =154
-        ZIndex: =25
+        ZIndex: =23
 
         Title7_3 As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -911,6 +917,7 @@ New As screen:
             Reset: =varReseteo
             Size: =13
             Text: =
+            Visible: =false
             Width: =60
             X: =493
             Y: =34
@@ -979,6 +986,36 @@ New As screen:
             Y: =130
             ZIndex: =11
 
+        Button2 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(160, 66, 227, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnSelect: |
+                =Patch(
+                    colEstimacion,
+                    Defaults(colEstimacion),
+                    {
+                     NumeroINI: TxINI.Text,
+                     TipoEstimacion: Subtitle7_19.Text,
+                     Clasificacion: Subtitle7_15.Text,
+                     Descripcion: Subtitle7_18.Text,
+                     Complejidad: Subtitle7_17.Text,
+                     Esfuerzo: Value(Subtitle7_16.Text),
+                     'Comentario Estimacion': TextInput3.Text,
+                     Aplicacion: Dropdown3.Selected.Result         
+                    }
+                );
+            Size: =15
+            Text: ="Añadir"
+            X: =374
+            Y: =105
+            ZIndex: =12
+
     BtPatch_3 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1031,8 +1068,113 @@ New As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Save"
+        Visible: =false
         Width: =123
-        X: =1020
-        Y: =627
-        ZIndex: =26
+        X: =1243
+        Y: =70
+        ZIndex: =24
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =267
+        Items: =colEstimacion
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Width: =696
+        X: =670
+        Y: =397
+        ZIndex: =25
+
+        Title2 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Aplicacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle2 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.'TipoEstimacion (Clasificacion)'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title2.Y + Title2.Height + 2
+            ZIndex: =2
+
+        Body1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Comentario Estimacion'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Subtitle2.Y + Subtitle2.Height + 4
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(135, 100, 184, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Trash
+            OnSelect: =Remove(colEstimacion,ThisItem);
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 

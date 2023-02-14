@@ -186,7 +186,13 @@ HomeAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.AddDocument
-        OnSelect: =Navigate(New,Cover)
+        OnSelect: |-
+            =ClearCollect(
+                colEstimacion,
+                EstimacionAux
+            );
+            
+            Navigate(New,Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
