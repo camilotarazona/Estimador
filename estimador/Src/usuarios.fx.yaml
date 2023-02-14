@@ -139,28 +139,3 @@ usuarios As screen:
         Y: =40
         ZIndex: =14
 
-    Button2 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(135, 100, 184, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15
-        Text: ="prueba git"
-        X: =60
-        Y: =60
-        ZIndex: =15
-
