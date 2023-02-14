@@ -90,7 +90,7 @@ HomeAdmin As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =52
         X: =103
-        Y: =273
+        Y: =351
         ZIndex: =5
 
     Label2_2 As label:
@@ -120,7 +120,7 @@ HomeAdmin As screen:
         Size: =30
         Text: ="Search"
         X: =179
-        Y: =292
+        Y: =370
         ZIndex: =7
 
     Rectangle2_2 As rectangle:
@@ -253,7 +253,7 @@ HomeAdmin As screen:
         Text: ="Edit Ofert %"
         Width: =250
         X: =179
-        Y: =379
+        Y: =457
         ZIndex: =16
 
     Icon8 As icon.ToolsWrench:
@@ -273,24 +273,8 @@ HomeAdmin As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
         X: =104
-        Y: =362
+        Y: =440
         ZIndex: =17
-
-    Label3_10 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(160, 66, 227, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Size: =30
-        Text: ="Download Functions"
-        Width: =408
-        X: =179
-        Y: =641
-        ZIndex: =18
 
     Label3_8 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -305,7 +289,7 @@ HomeAdmin As screen:
         Text: ="Load Functions"
         Width: =309
         X: =179
-        Y: =554
+        Y: =632
         ZIndex: =19
 
     Label3_9 As label:
@@ -321,7 +305,7 @@ HomeAdmin As screen:
         Text: ="Edit Functions"
         Width: =309
         X: =179
-        Y: =466
+        Y: =544
         ZIndex: =20
 
     Icon13 As icon.TrendingUpwards:
@@ -342,40 +326,8 @@ HomeAdmin As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =60
         X: =99
-        Y: =540
+        Y: =618
         ZIndex: =21
-
-    Icon16 As icon.Download:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(160, 66, 227, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =52
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Download
-        OnSelect: |-
-            =Clear(ColExcelMg);
-            ForAll(Gallery1.AllItems,
-            Collect(ColExcelMg,
-            {
-                Descripcion: ThisRecord.Title,
-                Tipo: ThisRecord.Tipo,
-                Clasificacion: ThisRecord.Clasificacion,
-                Complejidad: ThisRecord.Complejidad
-            }));  
-            ClearCollect(ColDatosDePowerAtomate,ExportarExcelMg.Run(JSON(ColExcelMg)));  
-            //Set(_Url,ExportarExcelMg.Run(JSON(ColExcelMg )).url);
-            Launch(_Url)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        X: =97
-        Y: =627
-        ZIndex: =22
 
     Icon10 As icon.Edit:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -394,7 +346,7 @@ HomeAdmin As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =45
         X: =107
-        Y: =452
+        Y: =530
         ZIndex: =23
 
     Icon15 As icon.Share:
@@ -404,7 +356,7 @@ HomeAdmin As screen:
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =60
+        Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -413,9 +365,9 @@ HomeAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =52
-        X: =410
-        Y: =196
+        Width: =45
+        X: =103
+        Y: =276
         ZIndex: =24
 
     Label2_8 As label:
@@ -429,8 +381,8 @@ HomeAdmin As screen:
         Font: =Font.'Segoe UI'
         Size: =30
         Text: ="Filter"
-        X: =476
-        Y: =205
+        X: =179
+        Y: =285
         ZIndex: =25
 
     Group5 As group:

@@ -355,6 +355,7 @@ SearchUser As screen:
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =139
+        Visible: =false
         Width: =563
         X: =90
         Y: =243
@@ -992,6 +993,180 @@ SearchUser As screen:
             X: =486
             Y: =336
             ZIndex: =78
+
+    "GalEstimaciones_3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =507
+        Items: |-
+            =Filter(Estimacion, NumeroINI = CbxNINI_1.Selected.Result)
+            //Search(Estimacion,TextInput2.Text,"NumeroINI")
+              
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =246
+        Width: =602
+        X: =80
+        Y: =202
+        ZIndex: =81
+
+        Title4_24 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.TipoEstimacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =368
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle4_9 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =67
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Descripcion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =429
+            X: =23
+            Y: =49
+            ZIndex: =2
+
+        Separator3_5 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Title4_26 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =30
+            Text: =ThisItem.Esfuerzo
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =56
+            X: =396
+            Y: =27
+            ZIndex: =5
+
+        Title4_27 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Complejidad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =133
+            X: =469
+            Y: =56
+            ZIndex: =6
+
+        Title4_25 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Clasificacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =133
+            X: =469
+            Y: =16
+            ZIndex: =7
+
+        Subtitle4_10 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(231, 224, 241, 0.49)
+            Font: =Font.'Segoe UI'
+            Height: =75
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Comentario Estimacion'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =403
+            X: =40
+            Y: =161
+            ZIndex: =8
+
+        Title4_28 As label:
+            Color: =RGBA(160, 66, 227, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Aplicacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =250
+            X: =150
+            Y: =115
+            ZIndex: =9
+
+        Label1_23 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(149, 0, 255, 0.38)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Aplicacion:"
+            Width: =100
+            X: =40
+            Y: =115
+            ZIndex: =10
 
     Group1_1 As group:
         Height: =5

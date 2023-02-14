@@ -370,8 +370,6 @@ Details As screen:
             Reset(DropClas);
             Reset(DropCompl);
             Reset(TxINI);
-            Reset(Dropdown3);
-            Reset(TextIn
             Navigate(New,CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
