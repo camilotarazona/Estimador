@@ -260,6 +260,27 @@ OfertAdmin As screen:
         Y: =240
         ZIndex: =21
 
+    Icon4_13 As icon.DocumentPDF:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DocumentPDF
+        OnSelect: =
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =1137
+        Y: =9
+        ZIndex: =45
+
     Group6 As group:
         Height: =5
         Width: =5
@@ -391,6 +412,99 @@ OfertAdmin As screen:
             X: =821
             Y: =662
             ZIndex: =17
+
+    HtmlText1 As htmlViewer:
+        Height: =214
+        HtmlText: |-
+            ="<html
+            </head>
+            <body>
+                <h1> Detalle estimacion</h1>
+                <h2> Numero de Iniciativa: " & TxINI.Text & " </h2>
+                <table>
+                    <thead>
+                        <th> Tipo </th>
+                        <th> Descripcion </th>
+                        <th> Clasificacion </th>
+                        <th> Complejidad </th>
+                        <th> Aplicacion </th>
+                        <th> Comentario </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </body>
+            </html>" 
+        Width: =551
+        X: =746
+        Y: =132
+        ZIndex: =46
+
+    HtmlText2 As htmlViewer:
+        Height: =303
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Detalles estimacion numero: " & TxINI.Text & "</h2>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+              </tr>
+              "
+              &
+              Concat(Gallery3_1.AllItems,"
+              <tr>
+                <td>"& 'TipoEstimacion (Clasificacion)' &" </td>
+                <td>"& Descripcion &" </td>
+                <td>"& 'Clasificacion (TipoEstimacion)' &" </td>
+                <td>"& Complejidad &" </td>
+                <td>"& Aplicacion &" </td>
+                <td>"& 'Comentario Estimacion' &" </td>
+              </tr>")
+              &
+              "
+            </table>
+            
+            </body>
+            </html>"
+        Width: =632
+        X: =700
+        Y: =315
+        ZIndex: =47
 
     Group8 As group:
         Height: =5

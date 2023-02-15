@@ -130,6 +130,7 @@
     "ConsultasAdmin",
     "SearchUser",
     "PDF",
+    "PDF_1",
     "PDFUser"
   ]
 }
