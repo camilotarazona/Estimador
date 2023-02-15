@@ -272,7 +272,7 @@ OfertAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
-        OnSelect: =
+        OnSelect: =crear_Pdf.Run("Ofertapdf2.html",HtmlText2.HtmlText)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -413,41 +413,6 @@ OfertAdmin As screen:
             Y: =662
             ZIndex: =17
 
-    HtmlText1 As htmlViewer:
-        Height: =214
-        HtmlText: |-
-            ="<html
-            </head>
-            <body>
-                <h1> Detalle estimacion</h1>
-                <h2> Numero de Iniciativa: " & TxINI.Text & " </h2>
-                <table>
-                    <thead>
-                        <th> Tipo </th>
-                        <th> Descripcion </th>
-                        <th> Clasificacion </th>
-                        <th> Complejidad </th>
-                        <th> Aplicacion </th>
-                        <th> Comentario </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td> 
-                        </tr>
-                    </tbody>
-                </table>
-            </body>
-            </html>" 
-        Width: =551
-        X: =746
-        Y: =132
-        ZIndex: =46
-
     HtmlText2 As htmlViewer:
         Height: =303
         HtmlText: |-
@@ -484,26 +449,50 @@ OfertAdmin As screen:
                 <th> Aplicacion </th>
                 <th> Comentario </th>
               </tr>
-              "
-              &
-              Concat(Gallery3_1.AllItems,"
+              " & Concat(
+                Gallery3_1.AllItems,
+                "
               <tr>
-                <td>"& 'TipoEstimacion (Clasificacion)' &" </td>
-                <td>"& Descripcion &" </td>
-                <td>"& 'Clasificacion (TipoEstimacion)' &" </td>
-                <td>"& Complejidad &" </td>
-                <td>"& Aplicacion &" </td>
-                <td>"& 'Comentario Estimacion' &" </td>
-              </tr>")
-              &
-              "
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+              </tr>"
+            ) & "
+            </table>
+            <h2>Detalles Actividades y jornadas: " & TxINI.Text & "</h2>
+            
+            <table>
+              <tr>
+                <th> Configuracion-Desarrollo </th>
+                <th> Apoyo a pruebas </th>
+                <th> Entrega linea base </th>
+                <th> % de Riesgo </th>
+                <th> Total sin riesgo </th>
+                <th> Total Dias </th>
+              </tr>
+             
+              <tr>
+                <td>" & LbConfDes.Text & " </td>
+                <td>" & LbApo.Text & " </td>
+                <td>" & LbEnLiBas.Text & " </td>
+                <td>" & LbRiesg & " </td>
+                <td>" & LbTSinR & " </td>
+                <td>" & LbTtal & " </td>
+              </tr>
+              
             </table>
             
+            <h2>Total jornadas: " & Label9_15.Text & "</h2>
+            <h2>Total horas: " & Label9_14.Text & "</h2>
+            <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
         Width: =632
-        X: =700
-        Y: =315
+        X: =697
+        Y: =167
         ZIndex: =47
 
     Group8 As group:

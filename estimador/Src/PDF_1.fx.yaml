@@ -220,7 +220,7 @@ PDF_1 As screen:
         ZIndex: =13
 
     HtmlText2_1 As htmlViewer:
-        Height: =425
+        Height: =521
         HtmlText: |-
             ="<html>
             <head>
@@ -232,13 +232,13 @@ PDF_1 As screen:
             }
             
             td, th {
-              border: 3px solid #dfc9ef;
-              text-align: center;
-              padding: 12px;
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
             }
             
-            th {
-              background-color: #A042E3;
+            tr:nth-child(even) {
+              background-color: #dddddd;
             }
             </style>
             </head>
@@ -255,25 +255,131 @@ PDF_1 As screen:
                 <th> Aplicacion </th>
                 <th> Comentario </th>
               </tr>
-              "
-              &
-              Concat(Gallery3_1.AllItems,"
+              " & Concat(
+                Gallery3_1.AllItems,
+                "
               <tr>
-                <td>"& 'TipoEstimacion (Clasificacion)' &" </td>
-                <td>"& Descripcion &" </td>
-                <td>"& 'Clasificacion (TipoEstimacion)' &" </td>
-                <td>"& Complejidad &" </td>
-                <td>"& Aplicacion &" </td>
-                <td>"& 'Comentario Estimacion' &" </td>
-              </tr>")
-              &
-              "
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+              </tr>"
+            ) & "
+            </table>
+            <h2>Detalles Actividades y jornadas: " & TxINI.Text & "</h2>
+            
+            <table>
+              <tr>
+                <th> Configuracion-Desarrollo </th>
+                <th> Apoyo a pruebas </th>
+                <th> Entrega linea base </th>
+                <th> % de Riesgo </th>
+                <th> Total sin riesgo </th>
+                <th> Total Dias </th>
+              </tr>
+             
+              <tr>
+                <td>" & LbConfDes.Text & " </td>
+                <td>" & LbApo.Text & " </td>
+                <td>" & LbEnLiBas.Text & " </td>
+                <td>" & LbRiesg & " </td>
+                <td>" & LbTSinR & " </td>
+                <td>" & LbTtal & " </td>
+              </tr>
+              
             </table>
             
+            <h2>Total jornadas: " & Label9_15.Text & "</h2>
+            <h2>Total horas: " & Label9_14.Text & "</h2>
+            <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
-        Width: =719
-        X: =240
-        Y: =192
+        Width: =432
+        X: =172
+        Y: =200
         ZIndex: =14
+
+    HtmlText2_2 As htmlViewer:
+        Height: =503
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Detalles estimacion numero: " & CbxNINI.Selected.Result & "</h2>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+              </tr>
+              " & Concat(
+                GalEstimaciones.AllItems,
+                "
+              <tr>
+                <td>" & TipoEstimacion & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & Clasificacion & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+              </tr>"
+            ) & "
+            </table>
+            <h2>Detalles Actividades y jornadas: " & CbxNINI.Selected.Result & "</h2>
+            
+            <table>
+              <tr>
+                <th> Configuracion-Desarrollo </th>
+                <th> Apoyo a pruebas </th>
+                <th> Entrega linea base </th>
+                <th> % de Riesgo </th>
+                <th> Total sin riesgo </th>
+                <th> Total Dias </th>
+              </tr>
+             
+              <tr>
+                <td>" & LbConfDes_1.Text & " </td>
+                <td>" & LbApo_1.Text & " </td>
+                <td>" & LbEnLiBas_1.Text & " </td>
+                <td>" & LbRiesg_1 & " </td>
+                <td>" & LbTSinR_1 & " </td>
+                <td>" & LbTtal_1 & " </td>
+              </tr>
+              
+            </table>
+            
+            <h2>Total jornadas: " & Label9_7.Text & "</h2>
+            <h2>Total horas: " & Label9_8.Text & "</h2>
+            <h2>Total tareas: " & Label9_9.Text & "</h2>
+            </body>
+            </html>"
+        Width: =677
+        X: =652
+        Y: =167
+        ZIndex: =15
 
