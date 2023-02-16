@@ -298,7 +298,8 @@ PDF_1 As screen:
             <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
-        Width: =1201
+        Visible: =false
+        Width: =808
         X: =78
         Y: =149
         ZIndex: =14
@@ -328,7 +329,7 @@ PDF_1 As screen:
             </head>
             <body>
             
-            <h2>Detalles estimacion numero: " & CbxNINI.Selected.Result & "</h2>
+            <h2>Detalles estimacion numero INI: " & CbxNINI.Selected.Result & "</h2>
             
             <table>
               <tr>
@@ -350,7 +351,7 @@ PDF_1 As screen:
                 <td>" & Complejidad & " </td>
                 <td>" & Aplicacion & " </td>
                 <td>" & 'Comentario Estimacion' & " </td>
-                <td>" & Esfuerzo & " </td>
+                <td>" & RoundUp(Esfuerzo/8,0) & " </td>
               </tr>"
             ) & "
             </table>
@@ -382,9 +383,8 @@ PDF_1 As screen:
             <h2>Total tareas: " & Label9_9.Text & "</h2>
             </body>
             </html>"
-        Visible: =false
-        Width: =757
-        X: =574
+        Width: =853
+        X: =478
         Y: =167
         ZIndex: =15
 
