@@ -353,39 +353,6 @@ New As screen:
         Y: =680
         ZIndex: =13
 
-    BtReset As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =If(IsBlank(DropTipo.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit) 
-        Fill: =RGBA(95, 70, 129, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-        OnSelect: |+
-            =Reset(DropTipo);
-            Reset(DropClas);
-            Reset(DropCompl);
-            Reset(TxINI);
-            
-        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15
-        Text: ="Reset"
-        Width: =123
-        X: =1043
-        Y: =680
-        ZIndex: =14
-
     LbUser As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None

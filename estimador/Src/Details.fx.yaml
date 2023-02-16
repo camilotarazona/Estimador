@@ -131,7 +131,7 @@ Details As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =379
             X: =32
-            Y: =Title4.Y + Title4.Height + 4
+            Y: =53
             ZIndex: =2
 
         Separator3 As rectangle:
@@ -177,8 +177,8 @@ Details As screen:
             Size: =20
             Text: =ThisItem.Complejidad
             VerticalAlign: =VerticalAlign.Top
-            Width: =133
-            X: =429
+            Width: =190
+            X: =390
             Y: =56
             ZIndex: =6
 
@@ -195,8 +195,8 @@ Details As screen:
             Size: =20
             Text: =ThisItem.Clasificacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =133
-            X: =429
+            Width: =190
+            X: =390
             Y: =16
             ZIndex: =7
 

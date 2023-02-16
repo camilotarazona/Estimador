@@ -240,6 +240,7 @@ OfertAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =1061
         Y: =9
@@ -262,7 +263,7 @@ OfertAdmin As screen:
 
     Icon4_13 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -389,7 +390,9 @@ OfertAdmin As screen:
             FontWeight: =FontWeight.Semibold
             Height: =65
             Size: =40
-            Text: =RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
+            Text: |-
+                =//RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
+                LbTtal.Text
             Width: =100
             X: =843
             Y: =596
@@ -414,7 +417,7 @@ OfertAdmin As screen:
             ZIndex: =17
 
     HtmlText2 As htmlViewer:
-        Height: =303
+        Height: =305
         HtmlText: |-
             ="<html>
             <head>
@@ -423,12 +426,15 @@ OfertAdmin As screen:
               font-family: arial, sans-serif;
               border-collapse: collapse;
               width: 100%;
+              margin-left: auto;
+              margin-: aurightto;
+            
             }
             
             td, th {
               border: 1px solid #dddddd;
               text-align: left;
-              padding: 8px;
+              padding: 5px;
             }
             
             tr:nth-child(even) {
@@ -448,6 +454,7 @@ OfertAdmin As screen:
                 <th> Complejidad </th>
                 <th> Aplicacion </th>
                 <th> Comentario </th>
+                <td> Jornadas</td>
               </tr>
               " & Concat(
                 Gallery3_1.AllItems,
@@ -459,6 +466,7 @@ OfertAdmin As screen:
                 <td>" & Complejidad & " </td>
                 <td>" & Aplicacion & " </td>
                 <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
               </tr>"
             ) & "
             </table>
@@ -490,8 +498,8 @@ OfertAdmin As screen:
             <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
-        Width: =632
-        X: =697
+        Width: =666
+        X: =700
         Y: =167
         ZIndex: =47
 

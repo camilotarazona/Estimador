@@ -254,6 +254,7 @@ PDF_1 As screen:
                 <th> Complejidad </th>
                 <th> Aplicacion </th>
                 <th> Comentario </th>
+                <th> Jornadas </th>
               </tr>
               " & Concat(
                 Gallery3_1.AllItems,
@@ -265,6 +266,7 @@ PDF_1 As screen:
                 <td>" & Complejidad & " </td>
                 <td>" & Aplicacion & " </td>
                 <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
               </tr>"
             ) & "
             </table>
@@ -296,9 +298,9 @@ PDF_1 As screen:
             <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
-        Width: =432
-        X: =172
-        Y: =200
+        Width: =1201
+        X: =78
+        Y: =149
         ZIndex: =14
 
     HtmlText2_2 As htmlViewer:
@@ -336,6 +338,7 @@ PDF_1 As screen:
                 <th> Complejidad </th>
                 <th> Aplicacion </th>
                 <th> Comentario </th>
+                <th> Jornadas </th>
               </tr>
               " & Concat(
                 GalEstimaciones.AllItems,
@@ -347,6 +350,7 @@ PDF_1 As screen:
                 <td>" & Complejidad & " </td>
                 <td>" & Aplicacion & " </td>
                 <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo & " </td>
               </tr>"
             ) & "
             </table>
@@ -378,8 +382,9 @@ PDF_1 As screen:
             <h2>Total tareas: " & Label9_9.Text & "</h2>
             </body>
             </html>"
-        Width: =677
-        X: =652
+        Visible: =false
+        Width: =757
+        X: =574
         Y: =167
         ZIndex: =15
 

@@ -178,11 +178,10 @@ PDF As screen:
     PdfViewer1 As pdfViewer:
         Document: |-
             ="appres://datasources/pdf_Ofertas/table/22dc809c-388f-4235-bc12-67a2450364be/rows/3/reference/https:%2F%2Fmsmanaged-na.azure-apim.net%2Fapim%2Fsharepointonline%2F27a7363adb0c4f08a90b3d14c79df75c%2Fdatasets%2Fhttps%25253a%25252f%25252fts.accenture.com%25252fsites%25252fSUMA133%2FGetFileContentByPath%3Fpath=%252f"&EncodeUrl(Gallery2.Selected.'Full Path')
-        Height: =305
-        ShowControls: =true
-        Width: =558
-        X: =760
-        Y: =177
+        Height: =607
+        Width: =553
+        X: =674
+        Y: =90
         ZIndex: =11
 
     Icon4_3 As icon.BackArrow:
@@ -236,7 +235,7 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
-        Width: =528
+        Width: =434
         X: =108
         Y: =162
         ZIndex: =14
@@ -290,7 +289,7 @@ PDF As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.ChevronRight
+            Icon: =Icon.Download
             OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
@@ -314,39 +313,4 @@ PDF As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
-
-    Label2 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =66
-        Size: =13
-        Text: =VartipoDocumento
-        Width: =444
-        X: =714
-        Y: =96
-        ZIndex: =15
-
-    Label3 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =198
-        Size: =13
-        Text: =Gallery2.Selected.vin
-        Width: =692
-        X: =486
-        Y: =510
-        ZIndex: =16
 
