@@ -885,7 +885,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/16/2023 19:33:53",
+  "HeaderLastSavedDateTimeUTC": "02/16/2023 20:27:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "03a0d20d-80c7-49b4-abde-f72f33800276": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/27a7363adb0c4f08a90b3d14c79df75c\"",
@@ -900,7 +900,8 @@
     "abc213be-d984-4cc6-acbc-d7cb28908667": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/6fe56898e4954f8f8a675378be10b474\"",
     "b4b48733-9479-4aec-b2cf-1430d6c48737": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-af2206e9-174d-4217-ae26-eb5a81c36932\"",
     "d8f6b3fd-b6e1-460c-a3fe-847042b589b1": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/aef2dbc8221840c4ac9920e59625755e\"",
-    "dc2792aa-d893-434e-8422-b442c2abf542": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/8a935bff12c54b7383b2750391be4280-a87af48694daad95\""
+    "dc2792aa-d893-434e-8422-b442c2abf542": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/8a935bff12c54b7383b2750391be4280-a87af48694daad95\"",
+    "f7e8ff51-f2d8-4c65-9e71-22b8b7a36883": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/bf3981e517d14d06bc2597d02f4efdd9-a87af48694daad95\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -935,33 +936,34 @@
     "c14162de7cd84361a1c3f0c2ea9b7dc5": 0
   },
   "OrderDataSource": {
-    "Aplicaciones": 8,
-    "CargaFuncionesPws": 9,
+    "Aplicaciones": 9,
+    "CargaFuncionesPws": 10,
     "CargarFuncionesPws": 0,
-    "ColDatosOferta": 22,
-    "ColDatosOfertaInt": 23,
-    "colEstimacion": 24,
-    "ColExcelMg": 25,
-    "colselecciones1": 26,
-    "ComboBoxSample": 10,
+    "ColDatosOferta": 23,
+    "ColDatosOfertaInt": 24,
+    "colEstimacion": 25,
+    "ColExcelMg": 26,
+    "colselecciones1": 27,
+    "ComboBoxSample": 11,
     "crear_Pdf": 7,
-    "CustomGallerySample": 11,
+    "CustomGallerySample": 12,
     "descargaFuncioneCsv": 1,
-    "Documents": 12,
-    "Documents_1": 13,
-    "DropDownSample": 14,
-    "Estimacion": 15,
-    "EstimacionAux": 16,
+    "Documents": 13,
+    "Documents_1": 14,
+    "DropDownSample": 15,
+    "Estimacion": 16,
+    "EstimacionAux": 17,
     "ExportarExcelMg": 2,
     "ExportToExcel": 5,
     "ImportExcel": 6,
-    "Oferta": 17,
-    "Oferta_Interna": 18,
+    "Oferta": 18,
+    "Oferta_Interna": 19,
     "Office365Users": 3,
-    "pdf_Ofertas": 21,
-    "Prueba conexion": 19,
+    "Pdf_Busqueda": 8,
+    "pdf_Ofertas": 22,
+    "Prueba conexion": 20,
     "Sendanemail": 4,
-    "user": 20
+    "user": 21
   },
   "OrderGroupControls": {
     "Group1": {
@@ -3190,7 +3192,7 @@
       "text": 45
     },
     "DeserializationLoadTime": 4.9223511,
-    "ErrorCount": 7
+    "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

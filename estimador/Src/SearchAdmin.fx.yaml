@@ -173,7 +173,7 @@ SearchAdmin As screen:
         OnSelect: |-
             =//Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
             //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
-            
+            Pdf_Busqueda.Run("Buquedapdf.html",HtmlText2_2.HtmlText)
             ;Navigate(PDF,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
