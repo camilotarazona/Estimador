@@ -393,6 +393,7 @@ LoadFunctions As screen:
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
         OnSelect: |-
             =//CargarFuncionesPws.Run({contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name});
+            //El metodo .Run permite correr el flujo para que se carguen las funciones en la Lista predeterminada 
             ImportExcel.Run({file: {contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name}});
             Notify(
                 "Funciones cargadas con exito",

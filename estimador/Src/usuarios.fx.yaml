@@ -45,7 +45,8 @@ usuarios As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Settings
         OnSelect: |-
-            =If(
+            =//El if valida si en la lista de User el usuario esta creado como administrador
+            If(
                 "Si" in First(varLogUsuario).Administrator,
                 Navigate(
                     HomeAdmin,

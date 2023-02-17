@@ -177,7 +177,7 @@ Edicion As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         Height: =565
         Items: |-
-            =
+            =//el metodo filter se utiliza para que los selectores queden anclados a la galeria
                 Filter(
                 CargaFuncionesPws,
                 IsBlank(DropTipo_1.Selected.Result) Or IsEmpty(DropTipo_1.Selected.Result) Or Tipo = DropTipo_1.Selected.Result,

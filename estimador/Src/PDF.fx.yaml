@@ -238,7 +238,6 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
-        Visible: =false
         Width: =434
         X: =108
         Y: =162
