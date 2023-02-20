@@ -196,6 +196,7 @@ DetailsUser As screen:
             Reset(DropTipo_2);
             Reset(DropClas_2);
             Reset(DropCompl_2);
+            Reset(TextInput2);
             Reset(TxINI_1);
             Navigate(NewUser,CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)

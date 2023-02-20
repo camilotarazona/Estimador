@@ -445,6 +445,7 @@ OfertAdmin As screen:
             <body>
             <h3>Fecha de Creacion: " & Label13.Text & "</h3>
             <h2>Detalles INI: " & TxINI.Text & "</h2>
+            <h3>Descripcion general: " & TextInput2_1.Text & "</h3>
             
             <table>
               <tr>

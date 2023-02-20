@@ -254,7 +254,9 @@ New As screen:
                         Complejidad: Complejidad,
                         Esfuerzo:Esfuerzo,
                         'Comentario Estimacion': 'Comentario Estimacion',
-                        Aplicacion: Aplicacion
+                        Aplicacion: Aplicacion,
+                        //'Fecha Estimacion': Date(Label3_88),
+                        'Comentario General': TextInput2_1.Text
                         
                     }
                 )
