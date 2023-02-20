@@ -194,7 +194,7 @@ OfertUser As screen:
         Height: =46
         Size: =28
         Text: |-
-            =TxINI.Text
+            =TxINI_1.Text
             //Last(Estimacion).NumeroINI
         Width: =97
         X: =407
@@ -345,7 +345,7 @@ OfertUser As screen:
             Font: =Font.'Segoe UI'
             Height: =60
             Size: =40
-            Text: =RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg_2,0)
+            Text: =RoundUp(Sum(Gallery3_1.AllItems,Esfuerzo)/80%/8+LbRiesg_2,0)
             Width: =112
             X: =752
             Y: =635

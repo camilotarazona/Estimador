@@ -443,8 +443,8 @@ OfertAdmin As screen:
             </style>
             </head>
             <body>
-            
-            <h2>Detalles estimacion numero: " & TxINI.Text & "</h2>
+            <h3>Fecha de Creacion: " & Label13.Text & "</h3>
+            <h2>Detalles INI: " & TxINI.Text & "</h2>
             
             <table>
               <tr>

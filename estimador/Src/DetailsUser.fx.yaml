@@ -239,7 +239,7 @@ DetailsUser As screen:
         Height: =46
         Size: =28
         Text: |-
-            =TxINI.Text
+            =TxINI_1.Text
             //Last(Estimacion).NumeroINI
         Width: =97
         X: =1101
@@ -544,7 +544,7 @@ DetailsUser As screen:
             Height: =65
             Size: =40
             Text: |-
-                = RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
+                = RoundUp(Sum(Gallery3_1.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
                  //RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8,0)
             Width: =100
             X: =912

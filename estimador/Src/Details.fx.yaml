@@ -366,9 +366,10 @@ Details As screen:
         OnSelect: |
             =//Clear(colselecciones);
             Clear(colEstimacion);
-            Reset(DropTipo);
-            Reset(DropClas);
-            Reset(DropCompl);
+            Reset(ComboBox1_3);
+            Reset(ComboBox1_4);
+            Reset(ComboBox1_5);
+            Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(New,CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -417,7 +418,23 @@ Details As screen:
         Width: =97
         X: =1101
         Y: =13
-        ZIndex: =14
+        ZIndex: =20
+
+    Label13 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: =Label3_88.Text
+        X: =1165
+        Y: =92
+        ZIndex: =21
 
     Group12 As group:
         Height: =5
@@ -443,7 +460,7 @@ Details As screen:
             Width: =100
             X: =1191
             Y: =622
-            ZIndex: =18
+            ZIndex: =17
 
         Label11_5 As label:
             Align: =Align.Justify
@@ -461,7 +478,7 @@ Details As screen:
             Width: =110
             X: =1186
             Y: =692
-            ZIndex: =19
+            ZIndex: =18
 
     Group13 As group:
         Height: =5
@@ -487,7 +504,7 @@ Details As screen:
             Width: =100
             X: =1065
             Y: =622
-            ZIndex: =15
+            ZIndex: =14
 
         Label11 As label:
             Align: =Align.Justify
@@ -505,7 +522,7 @@ Details As screen:
             Width: =100
             X: =1065
             Y: =692
-            ZIndex: =16
+            ZIndex: =15
 
     Group9 As group:
         Height: =5
@@ -530,7 +547,7 @@ Details As screen:
             Width: =145
             X: =890
             Y: =692
-            ZIndex: =17
+            ZIndex: =16
 
         Label9_6 As label:
             Align: =Align.Center
@@ -551,5 +568,24 @@ Details As screen:
             Width: =100
             X: =912
             Y: =622
-            ZIndex: =20
+            ZIndex: =19
+
+    Label13_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(231, 224, 241, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =94
+        Size: =13
+        Text: =TextInput2_1.Text
+        VerticalAlign: =VerticalAlign.Top
+        Width: =437
+        X: =793
+        Y: =202
+        ZIndex: =22
 
