@@ -98,7 +98,14 @@ OfertAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
-        OnSelect: =Navigate(HomeAdmin,CoverRight);
+        OnSelect: |-
+            =Clear(colEstimacion);
+            Reset(ComboBox1_3);
+            Reset(ComboBox1_4);
+            Reset(ComboBox1_5);
+            Reset (TextInput2_1);
+            Reset(TxINI);
+            Navigate(HomeAdmin,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -273,7 +280,7 @@ OfertAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
-        OnSelect: =crear_Pdf.Run("Ofertapdf2.html",HtmlText2.HtmlText)
+        OnSelect: =crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText2.HtmlText)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -448,7 +455,7 @@ OfertAdmin As screen:
             </style>
             </head>
             <body>
-            <h3>Fecha de Creacion: " & Label13.Text & "</h3>
+            <h3>Fecha de Creacion: " & DatePicker1 & "</h3>
             <h2>Detalles INI: " & TxINI.Text & "</h2>
             <h3>Descripcion general: " & TextInput2_1.Text & "</h3>
             
@@ -460,7 +467,7 @@ OfertAdmin As screen:
                 <th> Complejidad </th>
                 <th> Aplicacion </th>
                 <th> Comentario </th>
-                <td> Jornadas</td>
+                <th> Jornadas</th>
               </tr>
               " & Concat(
                 Gallery3_1.AllItems,
@@ -533,6 +540,10 @@ OfertAdmin As screen:
               color: rgb(255, 255, 255);
             }
             
+            td {
+              font-size: 10px;
+            }
+            
             .tabla-uno .fila .columna {
               display: flex;
               
@@ -575,7 +586,7 @@ OfertAdmin As screen:
             </head>
             <body>
             
-            <h4 class= fecha>Fecha de emisión: " & Label13.Text & "</h4>
+            <h4 class= fecha>Fecha de emisión: " & DatePicker1 & "</h4>
             <h2 class=titulo> Estimacion</h2>
             <h3 class=INI> Iniciativa: " & TxINI.Text & "</h3>
             <h3 class=descripcion> Descripcion general: " & TextInput2_1.Text & " </h3>
@@ -622,7 +633,7 @@ OfertAdmin As screen:
                 <th> Jornadas</th>
               </tr>
               " & Concat(
-                Gallery3_1.AllItems,
+                Gallery3.AllItems,
                 "
               <tr>
                 <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
@@ -632,9 +643,18 @@ OfertAdmin As screen:
                 <td>" & Aplicacion & " </td>
                 <td>" & 'Comentario Estimacion' & " </td>
                 <td>" & Esfuerzo/8 & " </td>
-              </tr>"
+              </tr>
+            
+              
+              "
             ) & "
             </table>
+                <table>
+                <tr>
+                <td colspan='6'>Total</td>
+                <td>" & LbRConf_1 &"</td>
+                </tr>
+                </table>
             
             </body>
             </html>"
@@ -655,7 +675,7 @@ OfertAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
-        OnSelect: =crear_Pdf.Run("Ofertapdf2.html",HtmlText1.HtmlText)
+        OnSelect: =crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText1.HtmlText)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
