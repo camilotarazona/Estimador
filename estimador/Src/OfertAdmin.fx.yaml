@@ -427,7 +427,7 @@ OfertAdmin As screen:
               border-collapse: collapse;
               width: 100%;
               margin-left: auto;
-              margin-: aurightto;
+              margin-right: auto;
             
             }
             
@@ -440,6 +440,11 @@ OfertAdmin As screen:
             tr:nth-child(even) {
               background-color: #dddddd;
             }
+            
+            h3 {
+                text-align: right;
+            }
+            
             </style>
             </head>
             <body>
@@ -494,15 +499,170 @@ OfertAdmin As screen:
               
             </table>
             
-            <h2>Total jornadas: " & Label9_15.Text & "</h2>
-            <h2>Total horas: " & Label9_14.Text & "</h2>
-            <h2>Total tareas: " & Label9_16.Text & "</h2>
             </body>
             </html>"
+        Visible: =false
         Width: =666
         X: =700
         Y: =167
         ZIndex: =47
+
+    HtmlText1 As htmlViewer:
+        Height: =409
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 60px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 2px;
+            }
+            
+            th {
+              background-color: black;
+              color: rgb(255, 255, 255);
+            }
+            
+            .tabla-uno .fila .columna {
+              display: flex;
+              
+            }
+            
+            .tabla-uno .fila .columna .header, 
+            .tabla-uno .fila .columna .contenido {
+              border: 3px solid #909090;
+              border-bottom: none;
+              padding: 12px;
+              
+            }
+             
+            .tabla-uno .fila .columna .header{
+              width: 40%;
+              background-color: #ffffff;
+              color: black;
+              font-weight: bold;
+              margin-left: 200px;
+            }
+             
+            
+            .tabla-uno .fila .columna .contenido{
+              width: 60%;
+              margin-right: 200px;
+              
+            }
+            
+            .fecha{
+              text-align: right;
+              margin-right: 15px;
+            }
+            
+            .titulo{
+              text-align: center;
+              font-weight: bold;
+            }
+            
+            </style>
+            </head>
+            <body>
+            
+            <h4 class= fecha>Fecha de emisión: " & Label13.Text & "</h4>
+            <h2 class=titulo> Estimacion</h2>
+            <h3 class=INI> Iniciativa: " & TxINI.Text & "</h3>
+            <h3 class=descripcion> Descripcion general: " & TextInput2_1.Text & " </h3>
+            
+            <table class='tabla-uno'>
+              <tr>
+                <th>Actividad</th>
+                <th>Jornadas</th>
+              </tr>
+              <tr>
+                <td>Configuracion-Desarrollo</td>
+                <td>" & LbConfDes.Text &"</td>
+              </tr>
+              <tr>
+                <td>Apoyo a pruebas</td>
+                <td> " & LbApo.Text & "</td>
+              </tr>
+              <tr>
+                <td>Entrega linea base</td>
+                <td>" & LbEnLiBas.Text & "</td>
+              </tr>
+              <tr>
+                <td>% de Riesgo</td>
+                <td>" & LbRiesg & "</td>
+              </tr>
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR & "</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>" & LbTtal & "</td>
+              </tr>
+            </table>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3_1.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>"
+            ) & "
+            </table>
+            
+            </body>
+            </html>"
+        Width: =706
+        X: =660
+        Y: =99
+        ZIndex: =48
+
+    Icon4_14 As icon.DocumentPDF:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(54, 176, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DocumentPDF
+        OnSelect: =crear_Pdf.Run("Ofertapdf2.html",HtmlText1.HtmlText)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =1040
+        Y: =6
+        ZIndex: =49
 
     Group8 As group:
         Height: =5
