@@ -284,6 +284,7 @@ OfertAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =1137
         Y: =9
@@ -665,7 +666,7 @@ OfertAdmin As screen:
 
     Icon4_14 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(54, 176, 75, 1)
+        Color: =RGBA(255, 255, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
