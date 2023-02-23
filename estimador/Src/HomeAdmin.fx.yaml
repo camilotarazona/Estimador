@@ -213,8 +213,8 @@ HomeAdmin As screen:
         Height: =37
         Size: =13
         Text: =User().Email
-        Width: =325
-        X: =1012
+        Width: =450
+        X: =850
         Y: =18
         ZIndex: =14
 

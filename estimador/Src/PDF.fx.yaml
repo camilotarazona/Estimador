@@ -231,59 +231,42 @@ PDF As screen:
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =417
         Items: |-
-            =//utilizo el metodo last para que me muestre el ultimo archivo pdf creado en la libreria Pdf ofertas con //la intencion de que en la siguiente vista el archivo se deje visualizar
-            pdf_Ofertas
+            =
+            //pdf_Ofertas
+            Filter(pdf_Ofertas, Name= ComboBox2.Selected.Result)
         Layout: =Layout.Vertical
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
         Width: =434
         X: =108
-        Y: =162
+        Y: =289
         ZIndex: =14
 
         Title5 As label:
-            Color: =If(ThisItem.IsSelected,Blue,Black)
+            Color: =If(ThisItem.IsSelected,MediumPurple,Black)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =Self.Size * 1.8
+            Height: =56
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
+            Size: =25
             Text: =ThisItem.Name
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =16
+            Width: =340
+            X: =22
+            Y: =22
             ZIndex: =1
-
-        Subtitle5 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =ThisItem.'File name with extension'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =Title5.Y + Title5.Height + 4
-            ZIndex: =2
 
         NextArrow4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(135, 100, 184, 1)
+            Color: =RGBA(160, 66, 227, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -292,7 +275,7 @@ PDF As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Download
+            Icon: =Icon.Search
             OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
@@ -316,4 +299,67 @@ PDF As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
+
+        NextArrow4_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(160, 66, 227, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Download
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =309
+            Y: =22
+            ZIndex: =5
+
+    ComboBox2 As combobox:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Result"]
+        Font: =Font.'Segoe UI'
+        Height: =50
+        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        InputTextPlaceholder: ="Numero INI"
+        IsSearchable: =false
+        Items: =Distinct(pdf_Ofertas,Name)
+        NoSelectionText: ="Numero INI"
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(135, 100, 184, 1)
+        SearchFields: =["Result"]
+        SearchItems: =[]
+        SelectionFill: =RGBA(135, 100, 184, 1)
+        SelectMultiple: =false
+        Size: =13
+        Width: =220
+        X: =142
+        Y: =181
+        ZIndex: =15
 

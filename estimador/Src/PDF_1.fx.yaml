@@ -219,91 +219,6 @@ PDF_1 As screen:
         Y: =9
         ZIndex: =13
 
-    HtmlText2_1 As htmlViewer:
-        Height: =521
-        HtmlText: |-
-            ="<html>
-            <head>
-            <style>
-            table {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width: 100%;
-            }
-            
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
-            }
-            
-            tr:nth-child(even) {
-              background-color: #dddddd;
-            }
-            </style>
-            </head>
-            <body>
-            
-            <h2>Detalles estimacion numero: " & TxINI.Text & "</h2>
-            
-            <table>
-              <tr>
-                <th> Tipo </th>
-                <th> Descripcion </th>
-                <th> Clasificacion </th>
-                <th> Complejidad </th>
-                <th> Aplicacion </th>
-                <th> Comentario </th>
-                <th> Jornadas </th>
-              </tr>
-              " & Concat(
-                Gallery3_1.AllItems,
-                "
-              <tr>
-                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
-                <td>" & Descripcion & " </td>
-                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
-                <td>" & Complejidad & " </td>
-                <td>" & Aplicacion & " </td>
-                <td>" & 'Comentario Estimacion' & " </td>
-                <td>" & Esfuerzo/8 & " </td>
-              </tr>"
-            ) & "
-            </table>
-            <h2>Detalles Actividades y jornadas: " & TxINI.Text & "</h2>
-            
-            <table>
-              <tr>
-                <th> Configuracion-Desarrollo </th>
-                <th> Apoyo a pruebas </th>
-                <th> Entrega linea base </th>
-                <th> % de Riesgo </th>
-                <th> Total sin riesgo </th>
-                <th> Total Dias </th>
-              </tr>
-             
-              <tr>
-                <td>" & LbConfDes.Text & " </td>
-                <td>" & LbApo.Text & " </td>
-                <td>" & LbEnLiBas.Text & " </td>
-                <td>" & LbRiesg & " </td>
-                <td>" & LbTSinR & " </td>
-                <td>" & LbTtal & " </td>
-              </tr>
-              
-            </table>
-            
-            <h2>Total jornadas: " & Label9_15.Text & "</h2>
-            <h2>Total horas: " & Label9_14.Text & "</h2>
-            <h2>Total tareas: " & Label9_16.Text & "</h2>
-            </body>
-            </html>"
-        Visible: =false
-        Width: =808
-        X: =78
-        Y: =149
-        ZIndex: =14
-
     HtmlText2_2 As htmlViewer:
         Height: =503
         HtmlText: |-
@@ -383,8 +298,162 @@ PDF_1 As screen:
             <h2>Total tareas: " & Label9_9.Text & "</h2>
             </body>
             </html>"
+        Visible: =false
         Width: =853
         X: =478
         Y: =167
         ZIndex: =15
+
+    HtmlText3 As htmlViewer:
+        Height: =610
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 60px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 2px;
+            }
+            
+            th {
+              background-color: black;
+              color: rgb(255, 255, 255);
+            }
+            
+            td {
+              font-size: 10px;
+            }
+            
+            .tabla-uno .fila .columna {
+              display: flex;
+              
+            }
+            
+            .tabla-uno .fila .columna .header, 
+            .tabla-uno .fila .columna .contenido {
+              border: 3px solid #909090;
+              border-bottom: none;
+              padding: 12px;
+              
+            }
+             
+            .tabla-uno .fila .columna .header{
+              width: 40%;
+              background-color: #ffffff;
+              color: black;
+              font-weight: bold;
+              margin-left: 200px;
+            }
+             
+            
+            .tabla-uno .fila .columna .contenido{
+              width: 60%;
+              margin-right: 200px;
+              
+            }
+            
+            .fecha{
+              text-align: right;
+              margin-right: 15px;
+            }
+            
+            .titulo{
+              text-align: center;
+              font-weight: bold;
+            }
+            
+            </style>
+            </head>
+            <body>
+            " & Concat(
+                GalEstimaciones.AllItems,
+                "
+            
+            <h4 class= fecha>Fecha de emisión: " & Title4_29.Text & "</h4>
+            <h2 class=titulo> Estimacion</h2>
+            <h3 class=INI> Iniciativa: " & CbxNINI.Selected.Result & "</h3>
+            <h3 class=descripcion> Descripcion general: " & Subtitle4_11.Text & " </h3>
+              "
+            ) & "
+            <table class='tabla-uno'>
+              <tr>
+                <th>Actividad</th>
+                <th>Jornadas</th>
+              </tr>
+              <tr>
+                <td>Configuracion-Desarrollo</td>
+                <td>" & LbConfDes.Text &"</td>
+              </tr>
+              <tr>
+                <td>Apoyo a pruebas</td>
+                <td> " & LbApo.Text & "</td>
+              </tr>
+              <tr>
+                <td>Entrega linea base</td>
+                <td>" & LbEnLiBas.Text & "</td>
+              </tr>
+              <tr>
+                <td>% de Riesgo</td>
+                <td>" & LbRiesg & "</td>
+              </tr>
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR & "</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>" & LbTtal & "</td>
+              </tr>
+            </table>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>
+            
+              
+              "
+            ) & "
+            </table>
+                <table>
+                <tr>
+                <td colspan='6'>Total</td>
+                <td>" & LbRConf_1 &"</td>
+                </tr>
+                </table>
+            
+            </body>
+            </html>"
+        Width: =947
+        X: =140
+        Y: =132
+        ZIndex: =16
 

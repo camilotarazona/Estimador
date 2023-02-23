@@ -518,7 +518,9 @@ OfertAdmin As screen:
     HtmlText1 As htmlViewer:
         Height: =409
         HtmlText: |-
-            ="<html>
+            =// texto en formato html para creacion de pdf
+            
+            "<html>
             <head>
             <style>
             table {
@@ -659,6 +661,7 @@ OfertAdmin As screen:
             
             </body>
             </html>"
+        Visible: =false
         Width: =706
         X: =660
         Y: =99
@@ -676,7 +679,9 @@ OfertAdmin As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
-        OnSelect: =crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText1.HtmlText)
+        OnSelect: |-
+            =crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText1.HtmlText);
+            Navigate(PDF,Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)

@@ -117,7 +117,7 @@ usuarios As screen:
         Font: =Font.Verdana
         Text: |
             =User().Email
-        Width: =350
+        Width: =450
         X: =210
         Y: =630
         ZIndex: =13

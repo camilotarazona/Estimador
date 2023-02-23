@@ -489,8 +489,8 @@ Details As screen:
             Height: =65
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
-            Width: =100
-            X: =1065
+            Width: =136
+            X: =1050
             Y: =622
             ZIndex: =14
 
@@ -507,8 +507,8 @@ Details As screen:
             FontWeight: =FontWeight.Semibold
             Size: =25
             Text: ="Horas"
-            Width: =100
-            X: =1065
+            Width: =136
+            X: =1050
             Y: =692
             ZIndex: =15
 

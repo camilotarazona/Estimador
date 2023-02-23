@@ -174,7 +174,7 @@ SearchAdmin As screen:
             =//Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
             //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
             // el metodo .Run lo que hace es correr el flujo creado en power Automate con los parametros entre parentesis (nombre archivo/ "Buquedapdf.html" + contenido archivo/ HtmlText2_2.HtmlText)
-            Pdf_Busqueda.Run("Buquedapdf.html",HtmlText2_2.HtmlText)
+            Pdf_Busqueda.Run("INI" & CbxNINI.Selected.Result & ".html",HtmlText2_2.HtmlText)
             ;Navigate(PDF,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -379,7 +379,7 @@ SearchAdmin As screen:
             Text: =ThisItem.TipoEstimacion
             VerticalAlign: =VerticalAlign.Top
             Width: =368
-            X: =32
+            X: =23
             Y: =16
             ZIndex: =1
 
@@ -396,7 +396,7 @@ SearchAdmin As screen:
             Size: =18
             Text: =ThisItem.Descripcion
             VerticalAlign: =VerticalAlign.Top
-            Width: =429
+            Width: =340
             X: =23
             Y: =49
             ZIndex: =2
@@ -444,8 +444,8 @@ SearchAdmin As screen:
             Text: =ThisItem.Complejidad
             VerticalAlign: =VerticalAlign.Top
             Width: =133
-            X: =470
-            Y: =56
+            X: =379
+            Y: =95
             ZIndex: =6
 
         Title4_6 As label:
@@ -461,9 +461,9 @@ SearchAdmin As screen:
             Size: =20
             Text: =ThisItem.Clasificacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =133
-            X: =470
-            Y: =16
+            Width: =220
+            X: =379
+            Y: =55
             ZIndex: =7
 
         Subtitle4_5 As label:
@@ -481,7 +481,7 @@ SearchAdmin As screen:
             Text: =ThisItem.'Comentario Estimacion'
             VerticalAlign: =VerticalAlign.Top
             Width: =403
-            X: =40
+            X: =23
             Y: =161
             ZIndex: =8
 
@@ -498,9 +498,9 @@ SearchAdmin As screen:
             Size: =20
             Text: =ThisItem.Aplicacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =250
-            X: =150
-            Y: =115
+            Width: =290
+            X: =137
+            Y: =119
             ZIndex: =9
 
         Label1_2 As label:
@@ -520,9 +520,47 @@ SearchAdmin As screen:
             Text: |-
                 ="Aplicacion:"
             Width: =100
-            X: =40
+            X: =23
             Y: =115
             ZIndex: =10
+
+        Title4_29 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.'Fecha Estimacion'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =133
+            X: =443
+            Y: =9
+            ZIndex: =11
+
+        Subtitle4_11 As label:
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(231, 224, 241, 0.49)
+            Font: =Font.'Segoe UI'
+            Height: =75
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Comentario General'
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =403
+            X: =199
+            Y: =164
+            ZIndex: =12
 
     Group7_1 As group:
         Height: =5
