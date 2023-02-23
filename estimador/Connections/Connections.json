@@ -190,7 +190,9 @@
       "parameterHintsV2": {}
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "Office365Outlook"
+    ],
     "dependencies": {},
     "dependents": [
       "8e1a9afa-224f-42cd-a525-a4d8cfff9ee5",

@@ -419,7 +419,7 @@ Details As screen:
         Text: |-
             =TxINI.Text
             //Last(Estimacion).NumeroINI
-        Width: =97
+        Width: =130
         X: =1101
         Y: =13
         ZIndex: =20

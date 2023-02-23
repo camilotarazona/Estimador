@@ -225,8 +225,8 @@ PDF As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =45
-        X: =942
-        Y: =9
+        X: =946
+        Y: =6
         ZIndex: =13
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -362,4 +362,25 @@ PDF As screen:
         X: =142
         Y: =181
         ZIndex: =15
+
+    Icon6_6 As icon.Send:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Mail
+        OnSelect: =//Office365Outlook.SendEmailV2(User().Email,"Estimacion INI "& ComboBox2.Selected.Result &"","Se adjunta informacion de la estimacion ",
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =45
+        X: =863
+        Y: =6
+        ZIndex: =16
 
