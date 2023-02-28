@@ -402,6 +402,7 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
+        Visible: =false
         Width: =434
         X: =108
         Y: =497
@@ -495,8 +496,9 @@ PDF As screen:
             =// para poder visualizar el archivo guardado en la libreria Pdf_Ofertas se incluye todo este codigo que se toma de la ruta creada por el link del archivo, seguido del metodo EncodeUrl
             "appres://datasources/pdf_Ofertas/table/22dc809c-388f-4235-bc12-67a2450364be/rows/3/reference/https:%2F%2Fmsmanaged-na.azure-apim.net%2Fapim%2Fsharepointonline%2F27a7363adb0c4f08a90b3d14c79df75c%2Fdatasets%2Fhttps%25253a%25252f%25252fts.accenture.com%25252fsites%25252fSUMA133%2FGetFileContentByPath%3Fpath=%252f"&EncodeUrl(Gallery2_1.Selected.'Full Path')
         Height: =646
+        ShowControls: =true
         Width: =621
-        X: =661
-        Y: =119
+        X: =687
+        Y: =93
         ZIndex: =18
 
