@@ -364,7 +364,7 @@ LoadFunctions As screen:
         Items: =Blank()
         ItemSpacing: =12
         MaxAttachments: =1
-        MaxAttachmentSize: =1
+        MaxAttachmentSize: =2
         NoAttachmentsColor: =RGBA(166, 166, 166, 1)
         PaddingBottom: =5
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -383,7 +383,7 @@ LoadFunctions As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =If(IsBlank(ControlCarga.Attachments),DisplayMode.Disabled, DisplayMode.Edit) 
+        DisplayMode: =If(IsEmpty(ControlCarga.Attachments),DisplayMode.Disabled, DisplayMode.Edit) 
         Fill: =RGBA(160, 66, 227, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'

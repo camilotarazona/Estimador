@@ -683,8 +683,8 @@ Details As screen:
                 Success,
                 2000
             );
-            
-            Navigate(Details,ScreenTransition.Cover)
+            Navigate(OfertAdmin,ScreenTransition.Cover)
+            //Navigate(Details,ScreenTransition.Cover)
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(39, 113, 194, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)

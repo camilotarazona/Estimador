@@ -4563,7 +4563,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PdfViewer1",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4693,7 +4693,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PdfViewer1_2",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

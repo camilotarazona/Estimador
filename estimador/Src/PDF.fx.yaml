@@ -216,7 +216,7 @@ PDF As screen:
 
     Icon6 As icon.Send:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(255, 255, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
