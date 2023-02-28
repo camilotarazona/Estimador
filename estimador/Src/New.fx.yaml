@@ -126,7 +126,8 @@ New As screen:
             Reset(ComboBox1_4);
             Reset(ComboBox1_3);
             Reset(TxINI);
-            Reset(TextInput2_1)
+            Reset(TextInput2_1);
+            Clear(colEstimacion);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -180,7 +181,8 @@ New As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.NextArrow
         OnSelect: |+
-            =Navigate(Details,Cover)
+            =Navigate(Details,Cover);
+            Reset(ComboBox1_3)
             
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -413,7 +415,7 @@ New As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =353
             X: =223
-            Y: =16
+            Y: =19
             ZIndex: =2
 
         Separator8_3 As rectangle:
@@ -587,15 +589,17 @@ New As screen:
             PressedFill: =RGBA(135, 100, 184, 1)
             SelectionFill: =RGBA(135, 100, 184, 1)
             Size: =13
+            Visible: =false
             Width: =240
-            X: =929
-            Y: =18
+            X: =760
+            Y: =46
             ZIndex: =11
 
         Button2 As button:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =If(IsBlank(ComboBox4.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit)
             Fill: =RGBA(160, 66, 227, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             FontWeight: =FontWeight.Semibold
@@ -613,7 +617,7 @@ New As screen:
                      Complejidad: Subtitle7_17.Text,
                      Esfuerzo: Value(Subtitle7_16.Text),
                      'Comentario Estimacion': TextInput3.Text,
-                     Aplicacion: Dropdown3.Selected.Result         
+                     Aplicacion: ComboBox4.Selected.Result         
                     }
                 );
             Size: =15
@@ -621,6 +625,40 @@ New As screen:
             X: =1000
             Y: =150
             ZIndex: =12
+
+        ComboBox4 As combobox:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+            ChevronFill: =RGBA(33, 33, 33, 1)
+            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Result"]
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            InputTextPlaceholder: ="*Seleccionar Aplicación"
+            Items: =Distinct(Aplicaciones,Title)
+            NoSelectionText: ="*Seleccionar Aplicación"
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(135, 100, 184, 1)
+            SearchFields: =["Result"]
+            SearchItems: =Search(Distinct(Aplicaciones,Title),ComboBox4.SearchText,"Result")
+            SelectionFill: =RGBA(135, 100, 184, 1)
+            SelectMultiple: =false
+            Size: =13
+            Width: =240
+            X: =929
+            Y: =16
+            ZIndex: =13
 
     BtPatch_3 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1011,7 +1049,8 @@ New As screen:
         Font: =Font.'Segoe UI'
         Italic: =true
         Size: =13
-        Text: ="Previsualización"
+        Text: ="Previsualización de tareas seleccionadas"
+        Width: =350
         X: =96
         Y: =532
         ZIndex: =34
