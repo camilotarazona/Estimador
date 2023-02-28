@@ -287,9 +287,11 @@ Details As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Reset(ComboBox1_3);
+            =Clear(colEstimacion);
+            Reset(ComboBox1_3);
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);
+            Reset(ComboBox1_6);
             Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(HomeAdmin,CoverRight);

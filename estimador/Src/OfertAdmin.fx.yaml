@@ -103,6 +103,7 @@ OfertAdmin As screen:
             Reset(ComboBox1_3);
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);
+            Reset(ComboBox1_6);
             Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(HomeAdmin,CoverRight);
@@ -185,6 +186,7 @@ OfertAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =78
         Y: =9
