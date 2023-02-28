@@ -576,7 +576,7 @@ Details As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =437
         X: =793
-        Y: =252
+        Y: =278
         ZIndex: =22
 
     BtPatch_4 As button:
@@ -698,4 +698,39 @@ Details As screen:
         X: =1180
         Y: =650
         ZIndex: =23
+
+    Label3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: ="Descripción general"
+        Width: =190
+        X: =793
+        Y: =230
+        ZIndex: =24
+
+    Label13 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: =DatePicker1
+        X: =1127
+        Y: =75
+        ZIndex: =25
 

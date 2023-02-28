@@ -191,14 +191,7 @@ DetailsUser As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =//Clear(colselecciones);
-            Clear(colEstimacion);
-            Reset(DropTipo_2);
-            Reset(DropClas_2);
-            Reset(DropCompl_2);
-            Reset(TextInput2);
-            Reset(TxINI_1);
-            Navigate(NewUser,CoverRight)
+            =Navigate(NewUser,CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -418,6 +411,25 @@ DetailsUser As screen:
             Y: =109
             ZIndex: =10
 
+    Label13_2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(231, 224, 241, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =94
+        Size: =13
+        Text: =TextInput2_1.Text
+        VerticalAlign: =VerticalAlign.Top
+        Width: =437
+        X: =793
+        Y: =278
+        ZIndex: =22
+
     Group13_1 As group:
         Height: =5
         Width: =5
@@ -440,8 +452,8 @@ DetailsUser As screen:
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
             Width: =100
-            X: =1065
-            Y: =622
+            X: =1004
+            Y: =99
             ZIndex: =16
 
         Label11_1 As label:
@@ -458,9 +470,27 @@ DetailsUser As screen:
             Size: =25
             Text: ="Horas"
             Width: =100
-            X: =1065
-            Y: =692
+            X: =1004
+            Y: =169
             ZIndex: =17
+
+    Label3_88 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: ="Descripción general"
+        Width: =190
+        X: =793
+        Y: =230
+        ZIndex: =23
 
     Group12_1 As group:
         Height: =5
@@ -484,8 +514,8 @@ DetailsUser As screen:
             Size: =40
             Text: =CountRows(Gallery3.AllItems)
             Width: =100
-            X: =1191
-            Y: =622
+            X: =1130
+            Y: =99
             ZIndex: =19
 
         Label11_7 As label:
@@ -502,8 +532,8 @@ DetailsUser As screen:
             Size: =25
             Text: ="Tareas"
             Width: =110
-            X: =1186
-            Y: =692
+            X: =1125
+            Y: =169
             ZIndex: =20
 
     Group9_1 As group:
@@ -527,8 +557,8 @@ DetailsUser As screen:
             Size: =25
             Text: ="Jornadas"
             Width: =145
-            X: =890
-            Y: =692
+            X: =829
+            Y: =169
             ZIndex: =18
 
         Label9_17 As label:
@@ -548,7 +578,7 @@ DetailsUser As screen:
                 = RoundUp(Sum(Gallery3_1.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
                  //RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8,0)
             Width: =100
-            X: =912
-            Y: =622
+            X: =851
+            Y: =99
             ZIndex: =21
 

@@ -688,7 +688,7 @@ OfertAdmin As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1040
+        X: =1053
         Y: =6
         ZIndex: =49
 
