@@ -336,6 +336,7 @@ New As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Save"
+        Visible: =false
         Width: =123
         X: =1180
         Y: =720

@@ -364,6 +364,7 @@ LoadFunctions As screen:
         Items: =Blank()
         ItemSpacing: =12
         MaxAttachments: =1
+        MaxAttachmentSize: =1
         NoAttachmentsColor: =RGBA(166, 166, 166, 1)
         PaddingBottom: =5
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)

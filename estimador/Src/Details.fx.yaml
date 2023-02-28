@@ -91,7 +91,7 @@ Details As screen:
         Items: =colEstimacion
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =259
+        TemplateSize: =222
         Width: =602
         X: =80
         Y: =202
@@ -204,7 +204,7 @@ Details As screen:
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            Height: =85
+            Height: =60
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -213,9 +213,9 @@ Details As screen:
             Size: =16
             Text: =ThisItem.'Comentario Estimacion'
             VerticalAlign: =VerticalAlign.Top
-            Width: =403
+            Width: =550
             X: =32
-            Y: =160
+            Y: =149
             ZIndex: =8
 
         Title4_16 As label:
@@ -371,12 +371,12 @@ Details As screen:
         Icon: =Icon.BackArrow
         OnSelect: |
             =//Clear(colselecciones);
-            Clear(colEstimacion);
-            Reset(ComboBox1_3);
-            Reset(ComboBox1_4);
-            Reset(ComboBox1_5);
-            Reset (TextInput2_1);
-            Reset(TxINI);
+            //Clear(colEstimacion);
+            //Reset(ComboBox1_3);
+            //Reset(ComboBox1_4);
+            //Reset(ComboBox1_5);
+            //Reset (TextInput2_1);
+            //Reset(TxINI);
             Navigate(New,CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -448,8 +448,8 @@ Details As screen:
             Size: =40
             Text: =CountRows(Gallery3.AllItems)
             Width: =100
-            X: =1191
-            Y: =622
+            X: =1094
+            Y: =113
             ZIndex: =17
 
         Label11_5 As label:
@@ -466,8 +466,8 @@ Details As screen:
             Size: =25
             Text: ="Tareas"
             Width: =110
-            X: =1186
-            Y: =692
+            X: =1089
+            Y: =183
             ZIndex: =18
 
     Group13 As group:
@@ -492,8 +492,8 @@ Details As screen:
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
             Width: =136
-            X: =1050
-            Y: =622
+            X: =953
+            Y: =113
             ZIndex: =14
 
         Label11 As label:
@@ -510,8 +510,8 @@ Details As screen:
             Size: =25
             Text: ="Horas"
             Width: =136
-            X: =1050
-            Y: =692
+            X: =953
+            Y: =183
             ZIndex: =15
 
     Group9 As group:
@@ -535,8 +535,8 @@ Details As screen:
             Size: =25
             Text: ="Jornadas"
             Width: =145
-            X: =890
-            Y: =692
+            X: =793
+            Y: =183
             ZIndex: =16
 
         Label9_6 As label:
@@ -556,8 +556,8 @@ Details As screen:
                 = RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
                  //RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8,0)
             Width: =100
-            X: =912
-            Y: =622
+            X: =815
+            Y: =113
             ZIndex: =19
 
     Label13_1 As label:
@@ -576,6 +576,126 @@ Details As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =437
         X: =793
-        Y: =202
+        Y: =252
         ZIndex: =22
+
+    BtPatch_4 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: |-
+            =If(IsBlank(TxINI.Text),DisplayMode.Disabled, DisplayMode.Edit)
+            // IsEmpty(If(IsBlank(CbxSelec_3.Value),DisplayMode.Disabled, DisplayMode.Edit)) 
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+        OnSelect: |-
+            =//ClearCollect(
+            //    colselecciones,
+            //    Filter(
+            //        GalPruebaConex_3.AllItems,
+            //        CbxSelec_3.Value
+            //    )
+            //);
+            
+            ForAll(
+                colEstimacion,
+                Patch(
+                    Estimacion,
+                    Defaults(Estimacion),
+                    {
+                        NumeroINI:NumeroINI,
+                        Clasificacion: Clasificacion,
+                        TipoEstimacion: TipoEstimacion,
+                        Descripcion: Descripcion,
+                        Complejidad: Complejidad,
+                        Esfuerzo:Esfuerzo,
+                        'Comentario Estimacion': 'Comentario Estimacion',
+                        Aplicacion: Aplicacion,
+                        'Fecha Estimacion': DatePicker1.SelectedDate,
+                        'Comentario General': TextInput2_1.Text
+                        
+                    }
+                )
+            );
+            
+            ClearCollect(ColDatosOferta,
+                {   
+                        Title: TxINI.Text,
+                        Configuraion_Desarrollo:LbConfDes.Text,
+                        Apoyo_Pruebas: LbApo.Text,
+                        Entrega_linea_Base: LbEnLiBas.Text,
+                        '%_Riesgo': LbRiesg.Text,
+                        Total_Sin_Riesgo: LbTSinR.Text,
+                        Total: LbTtal.Text
+                    }
+            );
+            ForAll(
+                ColDatosOferta,
+                Patch(
+                    Oferta,
+                    Defaults(Oferta),
+                    {
+                        Title:TxINI.Text,
+                        Configuraion_Desarrollo:LbConfDes.Text,
+                        Apoyo_Pruebas: LbApo.Text,
+                        Entrega_linea_Base: LbEnLiBas.Text,
+                        '%_Riesgo': LbRiesg.Text,
+                        Total_Sin_Riesgo: LbTSinR.Text,
+                        Total: LbTtal.Text
+                    }
+                ));
+            ClearCollect(ColDatosOfertaInt,
+                {   
+                        Title: TxINI.Text,
+                        Gestion: LbRG.Text,
+                        Configuraion_Desarrollo:LbRConf.Text,
+                        Pruebas: LbRPrue.Text,
+                        Documentacion: LbRDoc.Text,
+                        Gestion_del_Cambio: LbRGstC.Text,
+                        Total: LbtotalH.Text
+                    }
+            );
+            ForAll(
+                ColDatosOfertaInt,
+                Patch(
+                    Oferta_Interna,
+                    Defaults(Oferta_Interna),
+                    {
+                        Title: TxINI.Text,
+                        Gestion: LbRG.Text,
+                        Configuracion_Desarrollo:LbRConf.Text,
+                        Pruebas: LbRPrue.Text,
+                        Documentacion: LbRDoc.Text,
+                        Gestion_del_Cambio: LbRGstC.Text,
+                        Total: LbtotalH.Text
+            
+                        
+                    }
+                ));
+            Notify(
+                "INI "&TxINI.Text&"  Guardada con exito",
+                Success,
+                2000
+            );
+            
+            Navigate(Details,ScreenTransition.Cover)
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        PressedColor: =RGBA(39, 113, 194, 1)
+        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Save"
+        Width: =123
+        X: =1180
+        Y: =650
+        ZIndex: =23
 
