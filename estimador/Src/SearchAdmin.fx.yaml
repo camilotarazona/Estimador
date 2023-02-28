@@ -174,7 +174,7 @@ SearchAdmin As screen:
             =//Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
             //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
             // el metodo .Run lo que hace es correr el flujo creado en power Automate con los parametros entre parentesis (nombre archivo/ "Buquedapdf.html" + contenido archivo/ HtmlText2_2.HtmlText)
-            Pdf_Busqueda.Run("INI" & CbxNINI.Selected.Result & ".html",HtmlText2_2.HtmlText)
+            Pdf_Busqueda.Run("Busqueda_INI" & CbxNINI.Selected.Result & ".html",HtmlText2_2.HtmlText)
             ;Navigate(PDF,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -354,8 +354,8 @@ SearchAdmin As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         Height: =507
         Items: |-
-            =//Filter(Estimacion, NumeroINI = CbxNINI.Selected.Result)
-            Filter(Estimacion, NumeroINI = Dropdown1.Selected.Result)
+            =Filter(Estimacion, NumeroINI = CbxNINI.Selected.Result)
+            //Filter(Estimacion, NumeroINI = Dropdown1.Selected.Result)
              
         Layout: =Layout.Vertical
         TemplatePadding: =0
@@ -1090,38 +1090,6 @@ SearchAdmin As screen:
             X: =486
             Y: =336
             ZIndex: =78
-
-    Dropdown1 As dropdown:
-        AllowEmptySelection: =true
-        BorderColor: =RGBA(166, 166, 166, 1)
-        ChevronBackground: =RGBA(255, 255, 255, 1)
-        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-        ChevronFill: =RGBA(33, 33, 33, 1)
-        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Font: =Font.'Segoe UI'
-        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverColor: =RGBA(51, 51, 51, 1)
-        HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Distinct(Estimacion,NumeroINI)
-        PaddingBottom: =5
-        PaddingLeft: =12
-        PaddingRight: =5
-        PaddingTop: =5
-        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(135, 100, 184, 1)
-        SelectionFill: =RGBA(135, 100, 184, 1)
-        Size: =13
-        Width: =190
-        X: =354
-        Y: =150
-        ZIndex: =81
 
     Group1 As group:
         Height: =5

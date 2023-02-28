@@ -64,7 +64,7 @@ PDF As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =660
+        Height: =683
         Size: =13
         Text: =""
         Width: =1253
@@ -131,8 +131,14 @@ PDF As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Navigate(HomeAdmin,CoverRight);
-            Reset(CbxNINI)
+            =Clear(colEstimacion);
+            Reset(ComboBox1_3);
+            Reset(ComboBox1_4);
+            Reset(ComboBox1_5);
+            Reset(ComboBox1_6);
+            Reset (TextInput2_1);
+            Reset(TxINI);
+            Navigate(HomeAdmin,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -179,8 +185,9 @@ PDF As screen:
         Document: |-
             =// para poder visualizar el archivo guardado en la libreria Pdf_Ofertas se incluye todo este codigo que se toma de la ruta creada por el link del archivo, seguido del metodo EncodeUrl
             "appres://datasources/pdf_Ofertas/table/22dc809c-388f-4235-bc12-67a2450364be/rows/3/reference/https:%2F%2Fmsmanaged-na.azure-apim.net%2Fapim%2Fsharepointonline%2F27a7363adb0c4f08a90b3d14c79df75c%2Fdatasets%2Fhttps%25253a%25252f%25252fts.accenture.com%25252fsites%25252fSUMA133%2FGetFileContentByPath%3Fpath=%252f"&EncodeUrl(Gallery2.Selected.'Full Path')
-        Height: =607
-        Width: =565
+        Height: =646
+        Visible: =false
+        Width: =621
         X: =641
         Y: =99
         ZIndex: =11
@@ -231,7 +238,7 @@ PDF As screen:
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =417
+        Height: =208
         Items: |-
             =
             //pdf_Ofertas
@@ -383,4 +390,114 @@ PDF As screen:
         X: =863
         Y: =6
         ZIndex: =16
+
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =208
+        Items: |-
+            =
+            //Filter(pdf_Ofertas, Name= ComboBox2.Selected.Result)
+            Last(pdf_Ofertas)
+        Layout: =Layout.Vertical
+        OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
+        TemplatePadding: =0
+        TemplateSize: =104
+        Visible: =false
+        Width: =434
+        X: =108
+        Y: =497
+        ZIndex: =17
+
+        Title5_1 As label:
+            Color: =If(ThisItem.IsSelected,MediumPurple,Black)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =56
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =25
+            Text: =ThisItem.Name
+            Width: =340
+            X: =22
+            Y: =22
+            ZIndex: =1
+
+        NextArrow4_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(160, 66, 227, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Search
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator5_1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        NextArrow4_2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(160, 66, 227, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Download
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =309
+            Y: =22
+            ZIndex: =5
+
+    PdfViewer1_2 As pdfViewer:
+        Document: |-
+            =// para poder visualizar el archivo guardado en la libreria Pdf_Ofertas se incluye todo este codigo que se toma de la ruta creada por el link del archivo, seguido del metodo EncodeUrl
+            "appres://datasources/pdf_Ofertas/table/22dc809c-388f-4235-bc12-67a2450364be/rows/3/reference/https:%2F%2Fmsmanaged-na.azure-apim.net%2Fapim%2Fsharepointonline%2F27a7363adb0c4f08a90b3d14c79df75c%2Fdatasets%2Fhttps%25253a%25252f%25252fts.accenture.com%25252fsites%25252fSUMA133%2FGetFileContentByPath%3Fpath=%252f"&EncodeUrl(Gallery2_1.Selected.'Full Path')
+        Height: =646
+        Width: =621
+        X: =661
+        Y: =119
+        ZIndex: =18
 
