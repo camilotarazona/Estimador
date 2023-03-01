@@ -1082,13 +1082,13 @@ New As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         InputTextPlaceholder: ="Filtrar por Descripcion"
-        Items: =Distinct(CargaFuncionesPws,Title)
+        Items: =Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_3.Selected.Result),Title)
         NoSelectionText: ="Filtrar por Descripcion"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
         SearchFields: =["Result"]
-        SearchItems: =Search(Distinct(CargaFuncionesPws,Title),ComboBox1_6.SearchText,"Result")
+        SearchItems: =Search(Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_3.Selected.Result),Title),ComboBox1_6.SearchText,"Result")
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
