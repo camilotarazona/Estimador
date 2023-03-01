@@ -1,11 +1,11 @@
-New As screen:
+New_pruebas As screen:
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
     OnHidden: |
         =
     OnVisible: |-
         =UpdateContext({varReseteo:true})
 
-    Image1_3 As image:
+    Image1_20 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -23,7 +23,7 @@ New As screen:
         Width: =1366
         ZIndex: =1
 
-    Label10_13 As label:
+    Label10_38 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -40,7 +40,7 @@ New As screen:
         Y: =73
         ZIndex: =2
 
-    Label10_14 As label:
+    Label10_39 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -58,7 +58,7 @@ New As screen:
         Y: =459
         ZIndex: =3
 
-    Label12_4 As label:
+    Label12_19 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -76,7 +76,7 @@ New As screen:
         Y: =65
         ZIndex: =4
 
-    Rectangle2 As rectangle:
+    Rectangle2_118 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -89,7 +89,7 @@ New As screen:
         Width: =1366
         ZIndex: =5
 
-    Label1_3 As label:
+    Label1_25 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -107,7 +107,7 @@ New As screen:
         Y: =65
         ZIndex: =6
 
-    Icon1_3 As icon.AddDocument:
+    Icon1_21 As icon.AddDocument:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -121,12 +121,12 @@ New As screen:
         Icon: =Icon.Home
         OnSelect: |
             =Navigate(HomeAdmin,CoverRight);
-            Reset(ComboBox1_6);
-            Reset(ComboBox1_5);
-            Reset(ComboBox1_4);
-            Reset(ComboBox1_3);
-            Reset(TxINI);
-            Reset(TextInput2_1);
+            Reset(ComboBox1_14);
+            Reset(ComboBox1_13);
+            Reset(ComboBox1_12);
+            Reset(ComboBox1_11);
+            Reset(TxINI_2);
+            Reset(TextInput2_3);
             Clear(colEstimacion);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -136,7 +136,7 @@ New As screen:
         Y: =6
         ZIndex: =7
 
-    Rectangle1_15 As rectangle:
+    Rectangle1_17 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -151,7 +151,7 @@ New As screen:
         Y: =125
         ZIndex: =8
 
-    Label2_1 As label:
+    Label2_10 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -168,7 +168,7 @@ New As screen:
         Y: =19
         ZIndex: =9
 
-    Icon3 As icon.NextArrow:
+    Icon3_4 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(183, 162, 212, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -182,7 +182,7 @@ New As screen:
         Icon: =Icon.NextArrow
         OnSelect: |+
             =Navigate(Details,Cover);
-            Reset(ComboBox1_3)
+            Reset(ComboBox1_11)
             
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -192,7 +192,7 @@ New As screen:
         Y: =699
         ZIndex: =10
 
-    TxINI As text:
+    TxINI_2 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -221,13 +221,13 @@ New As screen:
         Y: =141
         ZIndex: =12
 
-    BtPatch As button:
+    BtPatch_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: |-
-            =If(IsBlank(TxINI.Text),DisplayMode.Disabled, DisplayMode.Edit)
+            =If(IsBlank(TxINI_2.Text),DisplayMode.Disabled, DisplayMode.Edit)
             // IsEmpty(If(IsBlank(CbxSelec_3.Value),DisplayMode.Disabled, DisplayMode.Edit)) 
         Fill: =RGBA(160, 66, 227, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
@@ -259,8 +259,8 @@ New As screen:
                         Esfuerzo:Esfuerzo,
                         'Comentario Estimacion': 'Comentario Estimacion',
                         Aplicacion: Aplicacion,
-                        'Fecha Estimacion': DatePicker1.SelectedDate,
-                        'Comentario General': TextInput2_1.Text
+                        'Fecha Estimacion': DatePicker1_2.SelectedDate,
+                        'Comentario General': TextInput2_3.Text
                         
                     }
                 )
@@ -268,7 +268,7 @@ New As screen:
             
             ClearCollect(ColDatosOferta,
                 {   
-                        Title: TxINI.Text,
+                        Title: TxINI_2.Text,
                         Configuraion_Desarrollo:LbConfDes.Text,
                         Apoyo_Pruebas: LbApo.Text,
                         Entrega_linea_Base: LbEnLiBas.Text,
@@ -283,7 +283,7 @@ New As screen:
                     Oferta,
                     Defaults(Oferta),
                     {
-                        Title:TxINI.Text,
+                        Title:TxINI_2.Text,
                         Configuraion_Desarrollo:LbConfDes.Text,
                         Apoyo_Pruebas: LbApo.Text,
                         Entrega_linea_Base: LbEnLiBas.Text,
@@ -294,7 +294,7 @@ New As screen:
                 ));
             ClearCollect(ColDatosOfertaInt,
                 {   
-                        Title: TxINI.Text,
+                        Title: TxINI_2.Text,
                         Gestion: LbRG.Text,
                         Configuraion_Desarrollo:LbRConf.Text,
                         Pruebas: LbRPrue.Text,
@@ -309,7 +309,7 @@ New As screen:
                     Oferta_Interna,
                     Defaults(Oferta_Interna),
                     {
-                        Title: TxINI.Text,
+                        Title: TxINI_2.Text,
                         Gestion: LbRG.Text,
                         Configuracion_Desarrollo:LbRConf.Text,
                         Pruebas: LbRPrue.Text,
@@ -321,7 +321,7 @@ New As screen:
                     }
                 ));
             Notify(
-                "INI "&TxINI.Text&"  Guardada con exito",
+                "INI "&TxINI_2.Text&"  Guardada con exito",
                 Success,
                 2000
             );
@@ -342,7 +342,7 @@ New As screen:
         Y: =712
         ZIndex: =13
 
-    LbUser As label:
+    LbUser_2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -359,19 +359,17 @@ New As screen:
         Y: =19
         ZIndex: =15
 
-    "GalPruebaConex_3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+    "GalPruebaConex_5 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         Height: =198
         Items: |+
             =
               Filter(
-                CargaFuncionesPws, Tipo = ComboBox1_3.Selected.Result,Title = ComboBox1_6.Selected.Result,Clasificacion = ComboBox1_4.Selected.Result,Complejidad = ComboBox1_5.Selected.Result)
-               // IsBlank(ComboBox1_3.Selected.Result) Or IsEmpty(ComboBox1_3.Selected.Result) Or Tipo = ComboBox1_3.Selected.Result,
-                //IsBlank(ComboBox1_4.Selected.Result) Or IsEmpty(ComboBox1_4.Selected.Result) Or Clasificacion = ComboBox1_4.Selected.Result,
-                //IsBlank(ComboBox1_5.Selected.Result) Or IsEmpty(ComboBox1_5.Selected.Result) Or Complejidad =           ComboBox1_5.Selected.Result,
-                //IsBlank(ComboBox1_6.Selected.Result) Or IsEmpty(ComboBox1_6.Selected.Result) Or Title =           ComboBox1_6.Selected.Result
-                
-                //)
+                CargaFuncionesPws,
+             Tipo = ComboBox1_11.Selected.Result,Title = ComboBox1_14.Selected.Result,Clasificacion = ComboBox1_12.Selected.Result,Complejidad = ComboBox1_13.Selected.Result)
+               // IsBlank(ComboBox1_12.Selected.Result) Or IsEmpty(ComboBox1_12.Selected.Result) Or Clasificacion = ComboBox1_12.Selected.Result,
+                //IsBlank(ComboBox1_13.Selected.Result) Or IsEmpty(ComboBox1_13.Selected.Result) Or Complejidad =           ComboBox1_13.Selected.Result,
+            // )
             
         Layout: =Layout.Vertical
         TemplatePadding: =0
@@ -381,7 +379,7 @@ New As screen:
         Y: =325
         ZIndex: =23
 
-        Title7_3 As label:
+        Title7_5 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -400,7 +398,7 @@ New As screen:
             Y: =16
             ZIndex: =1
 
-        Subtitle7_18 As label:
+        Subtitle7_29 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -420,7 +418,7 @@ New As screen:
             Y: =19
             ZIndex: =2
 
-        Separator8_3 As rectangle:
+        Separator8_5 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             Height: =1
@@ -429,7 +427,7 @@ New As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
 
-        Subtitle7_15 As label:
+        Subtitle7_25 As label:
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -449,7 +447,7 @@ New As screen:
             Y: =16
             ZIndex: =5
 
-        Subtitle7_19 As label:
+        Subtitle7_28 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -469,7 +467,7 @@ New As screen:
             Y: =16
             ZIndex: =6
 
-        Subtitle7_17 As label:
+        Subtitle7_27 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -489,7 +487,7 @@ New As screen:
             Y: =16
             ZIndex: =7
 
-        Subtitle7_16 As label:
+        Subtitle7_26 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(102, 215, 247, 1)
             Font: =Font.'Segoe UI'
@@ -508,7 +506,7 @@ New As screen:
             Y: =16
             ZIndex: =8
 
-        CbxSelec_3 As checkbox:
+        CbxSelec_5 As checkbox:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -536,7 +534,7 @@ New As screen:
             Y: =34
             ZIndex: =9
 
-        TextInput3 As text:
+        TextInput3_2 As text:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -566,7 +564,7 @@ New As screen:
             Y: =85
             ZIndex: =10
 
-        Dropdown3 As dropdown:
+        Dropdown3_2 As dropdown:
             AllowEmptySelection: =true
             BorderColor: =RGBA(166, 166, 166, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -600,11 +598,11 @@ New As screen:
             Y: =46
             ZIndex: =11
 
-        Button2 As button:
+        Button2_2 As button:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            DisplayMode: =If(IsBlank(ComboBox4.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit)
+            DisplayMode: =If(IsBlank(ComboBox4_2.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit)
             Fill: =RGBA(160, 66, 227, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             FontWeight: =FontWeight.Semibold
@@ -617,14 +615,14 @@ New As screen:
                     colEstimacion,
                     Defaults(colEstimacion),
                     {
-                     NumeroINI: TxINI.Text,
-                     TipoEstimacion: Subtitle7_19.Text,
-                     Clasificacion: Subtitle7_15.Text,
-                     Descripcion: Subtitle7_18.Text,
-                     Complejidad: Subtitle7_17.Text,
-                     Esfuerzo: Value(Subtitle7_16.Text),
-                     'Comentario Estimacion': TextInput3.Text,
-                     Aplicacion: ComboBox4.Selected.Result         
+                     NumeroINI: TxINI_2.Text,
+                     TipoEstimacion: Subtitle7_28.Text,
+                     Clasificacion: Subtitle7_25.Text,
+                     Descripcion: Subtitle7_29.Text,
+                     Complejidad: Subtitle7_27.Text,
+                     Esfuerzo: Value(Subtitle7_26.Text),
+                     'Comentario Estimacion': TextInput3_2.Text,
+                     Aplicacion: ComboBox4_2.Selected.Result         
                     }
                 );
             Size: =15
@@ -634,7 +632,7 @@ New As screen:
             Y: =101
             ZIndex: =12
 
-        ComboBox4 As combobox:
+        ComboBox4_2 As combobox:
             BorderColor: =RGBA(166, 166, 166, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
             ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -659,7 +657,7 @@ New As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(135, 100, 184, 1)
             SearchFields: =["Result"]
-            SearchItems: =Search(Distinct(Aplicaciones,Title),ComboBox4.SearchText,"Result")
+            SearchItems: =Search(Distinct(Aplicaciones,Title),ComboBox4_2.SearchText,"Result")
             SelectionFill: =RGBA(135, 100, 184, 1)
             SelectMultiple: =false
             Size: =13
@@ -668,7 +666,7 @@ New As screen:
             Y: =16
             ZIndex: =13
 
-        Label14_3 As label:
+        Label14_5 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -687,7 +685,7 @@ New As screen:
             Y: =16
             ZIndex: =14
 
-        Label14_4 As label:
+        Label14_6 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -706,65 +704,7 @@ New As screen:
             Y: =87
             ZIndex: =15
 
-    BtPatch_3 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: |-
-            =If(IsBlank(TxINI.Text),DisplayMode.Disabled, DisplayMode.Edit) 
-            // IsEmpty(If(IsBlank(CbxSelec_3.Value),DisplayMode.Disabled, DisplayMode.Edit)) 
-        Fill: =RGBA(160, 66, 227, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-        OnSelect: |+
-            =ClearCollect(
-                colselecciones1,
-                Filter(
-                    GalPruebaConex_3.AllItems,
-                    CbxSelec_3.Value,
-                    TextInput3.Text
-                )
-            );
-            ForAll(
-                colselecciones1,
-                Patch(
-                    Estimacion,
-                    Defaults(Estimacion),
-                    {
-                        NumeroINI:TxINI.Text,
-                        Clasificacion: Clasificacion,
-                        TipoEstimacion: Tipo,
-                        Descripcion: Comentario,
-                        Complejidad: Complejidad,
-                        Esfuerzo:Esfuerzo,
-                        'Comentario Estimacion': TextInput3.Text,
-                        Aplicacion: Dropdown3.Selected.Result
-                        
-                    }
-                )
-            );
-            
-        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-        PressedColor: =RGBA(39, 113, 194, 1)
-        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15
-        Text: ="Save"
-        Visible: =false
-        Width: =123
-        X: =1243
-        Y: =70
-        ZIndex: =24
-
-    "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+    "Gallery4_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         Height: =110
         Items: =colEstimacion
@@ -776,7 +716,7 @@ New As screen:
         Y: =582
         ZIndex: =25
 
-        Title2 As label:
+        Title2_3 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -794,7 +734,7 @@ New As screen:
             Y: =6
             ZIndex: =1
 
-        Subtitle2 As label:
+        Subtitle2_2 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -812,7 +752,7 @@ New As screen:
             Y: =6
             ZIndex: =2
 
-        Body1 As label:
+        Body1_2 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -830,7 +770,7 @@ New As screen:
             Y: =61
             ZIndex: =3
 
-        NextArrow2 As icon.ChevronRight:
+        NextArrow2_2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(135, 100, 184, 1)
@@ -858,7 +798,7 @@ New As screen:
             Y: =5
             ZIndex: =4
 
-        Separator2 As rectangle:
+        Separator2_2 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             Height: =1
@@ -867,7 +807,7 @@ New As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-        Title2_2 As label:
+        Title2_4 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -886,7 +826,7 @@ New As screen:
             Y: =6
             ZIndex: =6
 
-    ComboBox1_3 As combobox:
+    ComboBox1_11 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -910,7 +850,7 @@ New As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
         SearchFields: =["Result"]
-        SearchItems: =Search(Distinct(CargaFuncionesPws,Tipo),ComboBox1_3.SearchText,"Result")
+        SearchItems: =Search(Distinct(CargaFuncionesPws,Tipo),ComboBox1_11.SearchText,"Result")
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
@@ -919,7 +859,7 @@ New As screen:
         Y: =259
         ZIndex: =26
 
-    ComboBox1_4 As combobox:
+    ComboBox1_12 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -943,7 +883,7 @@ New As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
         SearchFields: =["Result"]
-        SearchItems: =Search(Distinct(CargaFuncionesPws,Clasificacion),ComboBox1_4.SearchText,"Result")
+        SearchItems: =Search(Distinct(CargaFuncionesPws,Clasificacion),ComboBox1_12.SearchText,"Result")
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
@@ -952,7 +892,7 @@ New As screen:
         Y: =259
         ZIndex: =27
 
-    ComboBox1_5 As combobox:
+    ComboBox1_13 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -986,7 +926,7 @@ New As screen:
         Y: =259
         ZIndex: =28
 
-    TextInput2_1 As text:
+    TextInput2_3 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -1015,7 +955,7 @@ New As screen:
         Y: =194
         ZIndex: =29
 
-    BtReset_3 As button:
+    BtReset_5 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1029,10 +969,10 @@ New As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
         OnSelect: |+
-            =Reset(ComboBox1_3);
-            Reset(ComboBox1_4);
-            Reset(ComboBox1_5);
-            Reset(ComboBox1_6);
+            =Reset(ComboBox1_11);
+            Reset(ComboBox1_12);
+            Reset(ComboBox1_13);
+            Reset(ComboBox1_14);
             
             
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
@@ -1045,7 +985,7 @@ New As screen:
         Y: =704
         ZIndex: =31
 
-    DatePicker1 As datepicker:
+    DatePicker1_2 As datepicker:
         BorderColor: =RGBA(166, 166, 166, 1)
         CalendarHeaderFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         Color: =RGBA(51, 51, 51, 1)
@@ -1064,7 +1004,7 @@ New As screen:
         Y: =113
         ZIndex: =32
 
-    ComboBox1_6 As combobox:
+    ComboBox1_14 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -1082,13 +1022,13 @@ New As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         InputTextPlaceholder: ="Filtrar por Descripcion"
-        Items: =Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_3.Selected.Result),Title)
+        Items: =Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_11.Selected.Result),Title)
         NoSelectionText: ="Filtrar por Descripcion"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
         SearchFields: =["Result"]
-        SearchItems: =Search(Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_3.Selected.Result),Title),ComboBox1_6.SearchText,"Result")
+        SearchItems: =Search(Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_11.Selected.Result),Title),ComboBox1_14.SearchText,"Result")
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
@@ -1097,7 +1037,7 @@ New As screen:
         Y: =259
         ZIndex: =33
 
-    Label2 As label:
+    Label2_15 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -1115,7 +1055,7 @@ New As screen:
         Y: =532
         ZIndex: =34
 
-    Label14 As label:
+    Label14_7 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -1134,7 +1074,7 @@ New As screen:
         Y: =141
         ZIndex: =35
 
-    Label14_1 As label:
+    Label14_8 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -1153,7 +1093,7 @@ New As screen:
         Y: =197
         ZIndex: =36
 
-    Label14_2 As label:
+    Label14_9 As label:
         Align: =Align.Right
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None

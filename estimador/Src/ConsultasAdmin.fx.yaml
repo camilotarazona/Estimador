@@ -153,8 +153,8 @@ ConsultasAdmin As screen:
         Height: =37
         Size: =13
         Text: =User().Email
-        Width: =296
-        X: =1070
+        Width: =350
+        X: =1007
         Y: =15
         ZIndex: =10
 
