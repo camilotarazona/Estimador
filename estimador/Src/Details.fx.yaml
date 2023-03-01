@@ -402,7 +402,7 @@ Details As screen:
         Text: |-
             =" Number INI:"
         Width: =179
-        X: =922
+        X: =895
         Y: =13
         ZIndex: =13
 
@@ -421,8 +421,8 @@ Details As screen:
         Text: |-
             =TxINI.Text
             //Last(Estimacion).NumeroINI
-        Width: =130
-        X: =1101
+        Width: =210
+        X: =1080
         Y: =13
         ZIndex: =20
 

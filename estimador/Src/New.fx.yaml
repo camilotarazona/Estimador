@@ -72,8 +72,8 @@ New As screen:
         Size: =13
         Text: =""
         Width: =1302
-        X: =32
-        Y: =80
+        X: =20
+        Y: =65
         ZIndex: =4
 
     Rectangle2 As rectangle:
@@ -170,7 +170,7 @@ New As screen:
 
     Icon3 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(183, 162, 212, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -188,8 +188,8 @@ New As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1283
-        Y: =9
+        X: =1253
+        Y: =699
         ZIndex: =10
 
     TxINI As text:
@@ -204,20 +204,20 @@ New As screen:
         Font: =Font.'Segoe UI'
         Format: =TextFormat.Number
         HintText: |-
-            ="Ingresar # INI"
+            ="# INI"
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         PressedBorderColor: =RGBA(135, 100, 184, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
         Size: =20
-        Width: =196
-        X: =96
+        Width: =150
+        X: =389
         Y: =141
         ZIndex: =12
 
@@ -338,8 +338,8 @@ New As screen:
         Text: ="Save"
         Visible: =false
         Width: =123
-        X: =1180
-        Y: =720
+        X: =962
+        Y: =712
         ZIndex: =13
 
     LbUser As label:
@@ -354,8 +354,8 @@ New As screen:
         Height: =37
         Size: =13
         Text: =User().Email
-        Width: =293
-        X: =990
+        Width: =340
+        X: =1016
         Y: =19
         ZIndex: =15
 
@@ -376,8 +376,8 @@ New As screen:
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =198
-        Width: =1197
-        X: =83
+        Width: =1026
+        X: =96
         Y: =325
         ZIndex: =23
 
@@ -414,6 +414,7 @@ New As screen:
             Size: =16
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
+            Visible: =false
             Width: =353
             X: =223
             Y: =19
@@ -442,6 +443,7 @@ New As screen:
             Size: =18
             Text: =ThisItem.Tipo
             VerticalAlign: =VerticalAlign.Top
+            Visible: =false
             Width: =180
             X: =18
             Y: =16
@@ -461,6 +463,7 @@ New As screen:
             Size: =18
             Text: =ThisItem.Clasificacion
             VerticalAlign: =VerticalAlign.Top
+            Visible: =false
             Width: =88
             X: =782
             Y: =16
@@ -480,6 +483,7 @@ New As screen:
             Size: =18
             Text: =ThisItem.Complejidad
             VerticalAlign: =VerticalAlign.Top
+            Visible: =false
             Width: =138
             X: =606
             Y: =16
@@ -543,7 +547,7 @@ New As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =56
-            HintText: ="Ingresar Comentario o descripcion de la tarea a realizar"
+            HintText: ="Ingresar comentario o descripcion de la tarea a realizar"
             HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
@@ -552,13 +556,13 @@ New As screen:
             PressedBorderColor: =RGBA(135, 100, 184, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
             Size: =13
-            Width: =1161
-            X: =10
+            Width: =561
+            X: =238
             Y: =85
             ZIndex: =10
 
@@ -623,8 +627,9 @@ New As screen:
                 );
             Size: =15
             Text: ="Añadir"
-            X: =1000
-            Y: =150
+            Width: =120
+            X: =853
+            Y: =101
             ZIndex: =12
 
         ComboBox4 As combobox:
@@ -657,9 +662,47 @@ New As screen:
             SelectMultiple: =false
             Size: =13
             Width: =240
-            X: =929
+            X: =238
             Y: =16
             ZIndex: =13
+
+        Label14_3 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            Text: |-
+                ="Seleccionar Aplicacion:"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =220
+            X: =12
+            Y: =16
+            ZIndex: =14
+
+        Label14_4 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            Text: |-
+                ="Ingresar comentario:"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =220
+            X: =12
+            Y: =87
+            ZIndex: =15
 
     BtPatch_3 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -736,7 +779,6 @@ New As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =38
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -745,9 +787,9 @@ New As screen:
             Size: =20
             Text: =ThisItem.Aplicacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =492
-            X: =388
-            Y: =17
+            Width: =340
+            X: =248
+            Y: =6
             ZIndex: =1
 
         Subtitle2 As label:
@@ -763,9 +805,9 @@ New As screen:
             Size: =18
             Text: =ThisItem.'TipoEstimacion (Clasificacion)'
             VerticalAlign: =VerticalAlign.Top
-            Width: =371
+            Width: =220
             X: =17
-            Y: =15
+            Y: =6
             ZIndex: =2
 
         Body1 As label:
@@ -783,7 +825,7 @@ New As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =1058
             X: =17
-            Y: =59
+            Y: =61
             ZIndex: =3
 
         NextArrow2 As icon.ChevronRight:
@@ -823,6 +865,25 @@ New As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
+        Title2_2 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Descripcion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =440
+            X: =607
+            Y: =6
+            ZIndex: =6
+
     ComboBox1_3 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -852,7 +913,7 @@ New As screen:
         SelectMultiple: =false
         Size: =13
         Width: =160
-        X: =96
+        X: =108
         Y: =259
         ZIndex: =26
 
@@ -885,7 +946,7 @@ New As screen:
         SelectMultiple: =false
         Size: =13
         Width: =220
-        X: =302
+        X: =1017
         Y: =259
         ZIndex: =27
 
@@ -919,12 +980,11 @@ New As screen:
         SelectMultiple: =false
         Size: =13
         Width: =235
-        X: =569
+        X: =750
         Y: =259
         ZIndex: =28
 
     TextInput2_1 As text:
-        Align: =Align.Center
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -932,7 +992,6 @@ New As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(231, 224, 241, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =50
@@ -944,13 +1003,13 @@ New As screen:
         PressedBorderColor: =RGBA(135, 100, 184, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
         Size: =13
-        Width: =1150
-        X: =96
+        Width: =650
+        X: =389
         Y: =194
         ZIndex: =29
 
@@ -983,9 +1042,9 @@ New As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Reset"
-        Width: =123
-        X: =1037
-        Y: =720
+        Width: =100
+        X: =1141
+        Y: =704
         ZIndex: =31
 
     DatePicker1 As datepicker:
@@ -1036,7 +1095,7 @@ New As screen:
         SelectMultiple: =false
         Size: =13
         Width: =420
-        X: =853
+        X: =300
         Y: =259
         ZIndex: =33
 
@@ -1057,4 +1116,62 @@ New As screen:
         X: =96
         Y: =532
         ZIndex: =34
+
+    Label14 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: |-
+            ="Ingresar numero de Iniciativa:"
+        VerticalAlign: =VerticalAlign.Bottom
+        Width: =290
+        X: =103
+        Y: =141
+        ZIndex: =35
+
+    Label14_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: |-
+            ="Ingresar descripción:"
+        VerticalAlign: =VerticalAlign.Bottom
+        Width: =290
+        X: =103
+        Y: =197
+        ZIndex: =36
+
+    Label14_2 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: |-
+            ="Fecha estimacion:"
+        VerticalAlign: =VerticalAlign.Bottom
+        Width: =290
+        X: =793
+        Y: =113
+        ZIndex: =37
 

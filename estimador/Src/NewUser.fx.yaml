@@ -119,7 +119,15 @@ NewUser As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
-        OnSelect: =Navigate(HomeUser,CoverRight);
+        OnSelect: |-
+            =Clear(colEstimacion);
+            Reset(ComboBox1_7);
+            Reset(ComboBox1_8);
+            Reset(ComboBox1_9);
+            Reset(ComboBox1_10);
+            Reset (TextInput2_2);
+            Reset(TxINI_1);
+            Navigate(HomeUser,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -408,7 +416,7 @@ NewUser As screen:
 
     Icon3_1 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(183, 162, 212, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -426,8 +434,8 @@ NewUser As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1283
-        Y: =9
+        X: =1253
+        Y: =699
         ZIndex: =24
 
     BtReset_4 As button:
@@ -459,9 +467,9 @@ NewUser As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Reset"
-        Width: =123
-        X: =1037
-        Y: =720
+        Width: =100
+        X: =1141
+        Y: =704
         ZIndex: =25
 
     "Gallery4_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
@@ -575,10 +583,10 @@ NewUser As screen:
             =
               Filter(
                 CargaFuncionesPws,
-                IsBlank(ComboBox1_3.Selected.Result) Or IsEmpty(ComboBox1_3.Selected.Result) Or Tipo = ComboBox1_3.Selected.Result,
-                IsBlank(ComboBox1_4.Selected.Result) Or IsEmpty(ComboBox1_4.Selected.Result) Or Clasificacion = ComboBox1_4.Selected.Result,
-                IsBlank(ComboBox1_5.Selected.Result) Or IsEmpty(ComboBox1_5.Selected.Result) Or Complejidad =           ComboBox1_5.Selected.Result,
-                IsBlank(ComboBox1_6.Selected.Result) Or IsEmpty(ComboBox1_6.Selected.Result) Or Title =           ComboBox1_6.Selected.Result
+                IsBlank(ComboBox1_7.Selected.Result) Or IsEmpty(ComboBox1_7.Selected.Result) Or Tipo = ComboBox1_7.Selected.Result,
+                IsBlank(ComboBox1_8.Selected.Result) Or IsEmpty(ComboBox1_8.Selected.Result) Or Clasificacion = ComboBox1_8.Selected.Result,
+                IsBlank(ComboBox1_9.Selected.Result) Or IsEmpty(ComboBox1_9.Selected.Result) Or Complejidad =           ComboBox1_9.Selected.Result,
+                IsBlank(ComboBox1_10.Selected.Result) Or IsEmpty(ComboBox1_10.Selected.Result) Or Title =           ComboBox1_10.Selected.Result
                 
                 )
             

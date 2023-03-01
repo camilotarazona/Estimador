@@ -209,6 +209,7 @@ PDF As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =78
         Y: =9
@@ -365,6 +366,7 @@ PDF As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
+        Visible: =false
         Width: =220
         X: =142
         Y: =181
@@ -498,7 +500,7 @@ PDF As screen:
         Height: =646
         ShowControls: =true
         Width: =621
-        X: =687
-        Y: =93
+        X: =497
+        Y: =91
         ZIndex: =18
 

@@ -98,7 +98,15 @@ OfertUser As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
-        OnSelect: =Navigate(HomeUser,CoverRight);
+        OnSelect: |-
+            =Clear(colEstimacion);
+            Reset(ComboBox1_7);
+            Reset(ComboBox1_8);
+            Reset(ComboBox1_9);
+            Reset(ComboBox1_10);
+            Reset (TextInput2_2);
+            Reset(TxINI_1);
+            Navigate(HomeUser,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -156,6 +164,7 @@ OfertUser As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =78
         Y: =9
@@ -203,7 +212,7 @@ OfertUser As screen:
 
     Icon4_8 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(246, 88, 16, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
