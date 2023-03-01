@@ -794,6 +794,7 @@ Edicion As screen:
         ZIndex: =22
 
     Label16 As label:
+        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -802,9 +803,11 @@ Edicion As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =62
+        Height: =82
         Size: =25
-        Text: ="Seguro desea eliminar la tarea"
+        Text: |-
+            =//"Seguro desea eliminar la tarea "& TiDes &""
+            "Seguro desea eliminar la tarea "&TiDescrip_1.Text&""
         Visible: =_popUpEliminarVisible
         Width: =467
         X: =476

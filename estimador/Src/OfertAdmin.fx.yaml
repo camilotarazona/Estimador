@@ -227,7 +227,7 @@ OfertAdmin As screen:
         Text: |-
             =TxINI.Text
             //Last(Estimacion).NumeroINI
-        Width: =97
+        Width: =297
         X: =407
         Y: =177
         ZIndex: =13

@@ -211,13 +211,13 @@ New As screen:
         PressedBorderColor: =RGBA(135, 100, 184, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =10
-        RadiusBottomRight: =10
-        RadiusTopLeft: =10
-        RadiusTopRight: =10
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =20
         Width: =150
-        X: =389
+        X: =311
         Y: =141
         ZIndex: =12
 
@@ -556,13 +556,13 @@ New As screen:
             PressedBorderColor: =RGBA(135, 100, 184, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =13
             Width: =561
-            X: =238
+            X: =147
             Y: =85
             ZIndex: =10
 
@@ -664,7 +664,7 @@ New As screen:
             SelectMultiple: =false
             Size: =13
             Width: =240
-            X: =238
+            X: =147
             Y: =16
             ZIndex: =13
 
@@ -680,7 +680,7 @@ New As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: |-
-                ="Seleccionar Aplicacion:"
+                ="Aplicacion:"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =220
             X: =12
@@ -699,7 +699,7 @@ New As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: |-
-                ="Ingresar comentario:"
+                ="Comentario:"
             VerticalAlign: =VerticalAlign.Bottom
             Width: =220
             X: =12
@@ -1005,13 +1005,13 @@ New As screen:
         PressedBorderColor: =RGBA(135, 100, 184, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =10
-        RadiusBottomRight: =10
-        RadiusTopLeft: =10
-        RadiusTopRight: =10
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =13
         Width: =650
-        X: =389
+        X: =311
         Y: =194
         ZIndex: =29
 
@@ -1127,7 +1127,7 @@ New As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Ingresar numero de Iniciativa:"
+            ="Numero de Iniciativa:"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =290
         X: =103
@@ -1146,7 +1146,7 @@ New As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Ingresar descripción:"
+            ="Descripción:"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =290
         X: =103
