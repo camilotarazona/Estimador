@@ -609,7 +609,9 @@ New As screen:
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             FontWeight: =FontWeight.Semibold
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            HoverFill: |-
+                =//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                ColorFade(RGBA(109, 49, 162, 1), -20%)
             OnSelect: |
                 =Patch(
                     colEstimacion,
@@ -1036,10 +1038,6 @@ New As screen:
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
         Size: =15
         Text: ="Reset"
         Width: =100
