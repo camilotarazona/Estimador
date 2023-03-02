@@ -171,10 +171,11 @@ ConsultasAdmin As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
         OnSelect: |-
-            =Set(Archivo_pdf,PDF(ConsultasAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));Navigate(PDF,ScreenTransition.Cover)
+            =Set(Archivo_pdf,PDF(ConsultasAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));Navigate(PDF_1,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =917
         Y: =9

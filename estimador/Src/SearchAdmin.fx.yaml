@@ -153,8 +153,8 @@ SearchAdmin As screen:
         Height: =37
         Size: =13
         Text: =User().Email
-        Width: =296
-        X: =1070
+        Width: =356
+        X: =990
         Y: =15
         ZIndex: =10
 
@@ -236,29 +236,6 @@ SearchAdmin As screen:
         X: =100
         Y: =150
         ZIndex: =13
-
-    Icon6_1 As icon.Send:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Send
-        OnSelect: |-
-            =Sendanemail.Run({file: {name:"pruebapdf.pdf", contentBytes: PDF(SearchAdmin)}})
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =false
-        Width: =50
-        X: =993
-        Y: =80
-        ZIndex: =14
 
     Label9_1 As label:
         Align: =Align.Justify
@@ -1090,6 +1067,32 @@ SearchAdmin As screen:
             X: =486
             Y: =336
             ZIndex: =78
+
+    Icon4_15 As icon.DocumentPDF:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 191, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DocumentPDF
+        OnSelect: |-
+            =Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
+            //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
+            // el metodo .Run lo que hace es correr el flujo creado en power Automate con los parametros entre parentesis (nombre archivo/ "Buquedapdf.html" + contenido archivo/ HtmlText2_2.HtmlText)
+            //Pdf_Busqueda.Run("Busqueda_INI" & CbxNINI.Selected.Result & ".html",HtmlText2_2.HtmlText)
+            ;Navigate(PDF_1,ScreenTransition.Cover)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =853
+        Y: =6
+        ZIndex: =81
 
     Group1 As group:
         Height: =5

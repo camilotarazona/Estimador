@@ -87,11 +87,11 @@ Details As screen:
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =507
+        Height: =475
         Items: =colEstimacion
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =222
+        TemplateSize: =259
         Width: =602
         X: =80
         Y: =202
@@ -201,6 +201,7 @@ Details As screen:
             ZIndex: =7
 
         Subtitle4_4 As label:
+            AutoHeight: =true
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -215,7 +216,7 @@ Details As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =550
             X: =32
-            Y: =149
+            Y: =155
             ZIndex: =8
 
         Title4_16 As label:
@@ -561,6 +562,7 @@ Details As screen:
             ZIndex: =19
 
     Label13_1 As label:
+        AutoHeight: =true
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -570,7 +572,7 @@ Details As screen:
         Fill: =RGBA(231, 224, 241, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =94
+        Height: =44
         Size: =13
         Text: =TextInput2_1.Text
         VerticalAlign: =VerticalAlign.Top

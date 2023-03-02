@@ -1,0 +1,459 @@
+PDF_html As screen:
+    LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+
+    Image1_19 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =768
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='MicrosoftTeams-image'
+        ImagePosition: =ImagePosition.Center
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =1366
+        ZIndex: =1
+
+    Label10_36 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =""
+        Width: =1252
+        X: =66
+        Y: =73
+        ZIndex: =2
+
+    Label10_37 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =143
+        Size: =13
+        Text: =""
+        Width: =436
+        X: =106
+        Y: =459
+        ZIndex: =3
+
+    Label12_18 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(229, 248, 254, 0.55)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =660
+        Size: =13
+        Text: =""
+        Width: =1253
+        X: =65
+        Y: =73
+        ZIndex: =4
+
+    Rectangle2_117 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderThickness: =4
+        Height: =68
+        HoverFill: =RGBA(109, 49, 162, 1)
+        PressedFill: =RGBA(109, 49, 162, 1)
+        Width: =1366
+        ZIndex: =5
+
+    Label1_24 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(109, 49, 162, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =60
+        Size: =40
+        Text: ="ESTIMATION"
+        Width: =350
+        X: =128
+        Y: =65
+        ZIndex: =6
+
+    Rectangle1_51 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(109, 49, 162, 1)
+        FocusedBorderThickness: =4
+        Height: =7
+        HoverFill: =RGBA(109, 49, 162, 1)
+        PressedFill: =RGBA(109, 49, 162, 1)
+        Width: =350
+        X: =120
+        Y: =125
+        ZIndex: =7
+
+    Icon1_20 As icon.AddDocument:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Home
+        OnSelect: |-
+            =Navigate(HomeAdmin,CoverRight);
+            Reset(CbxNINI)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =15
+        Y: =6
+        ZIndex: =8
+
+    Label4_11 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =37
+        Size: =13
+        Text: =User().Email
+        Width: =328
+        X: =1014
+        Y: =15
+        ZIndex: =9
+
+    Label3_10 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =42
+        Size: =35
+        Text: ="PDF Viewer"
+        Width: =285
+        X: =140
+        Y: =19
+        ZIndex: =10
+
+    Icon4_12 As icon.BackArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: |
+            =Navigate(SearchAdmin,CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =78
+        Y: =9
+        ZIndex: =12
+
+    Icon6_5 As icon.Send:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Send
+        OnSelect: |-
+            =Sendanemail.Run({file: {name:"pruebapdf.pdf", contentBytes: PDF(SearchAdmin)}})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =45
+        X: =942
+        Y: =9
+        ZIndex: =13
+
+    HtmlText2_2 As htmlViewer:
+        Height: =503
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Detalles estimacion numero INI: " & CbxNINI.Selected.Result & "</h2>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas </th>
+              </tr>
+              " & Concat(
+                GalEstimaciones.AllItems,
+                "
+              <tr>
+                <td>" & TipoEstimacion & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & Clasificacion & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & RoundUp(Esfuerzo/8,0) & " </td>
+              </tr>"
+            ) & "
+            </table>
+            <h2>Detalles Actividades y jornadas: " & CbxNINI.Selected.Result & "</h2>
+            
+            <table>
+              <tr>
+                <th> Configuracion-Desarrollo </th>
+                <th> Apoyo a pruebas </th>
+                <th> Entrega linea base </th>
+                <th> % de Riesgo </th>
+                <th> Total sin riesgo </th>
+                <th> Total Dias </th>
+              </tr>
+             
+              <tr>
+                <td>" & LbConfDes_1.Text & " </td>
+                <td>" & LbApo_1.Text & " </td>
+                <td>" & LbEnLiBas_1.Text & " </td>
+                <td>" & LbRiesg_1 & " </td>
+                <td>" & LbTSinR_1 & " </td>
+                <td>" & LbTtal_1 & " </td>
+              </tr>
+              
+            </table>
+            
+            <h2>Total jornadas: " & Label9_7.Text & "</h2>
+            <h2>Total horas: " & Label9_8.Text & "</h2>
+            <h2>Total tareas: " & Label9_9.Text & "</h2>
+            </body>
+            </html>"
+        Visible: =false
+        Width: =853
+        X: =478
+        Y: =167
+        ZIndex: =15
+
+    HtmlText3 As htmlViewer:
+        Height: =610
+        HtmlText: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 60px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 2px;
+            }
+            
+            th {
+              background-color: black;
+              color: rgb(255, 255, 255);
+            }
+            
+            td {
+              font-size: 10px;
+            }
+            
+            .tabla-uno .fila .columna {
+              display: flex;
+              
+            }
+            
+            .tabla-uno .fila .columna .header, 
+            .tabla-uno .fila .columna .contenido {
+              border: 3px solid #909090;
+              border-bottom: none;
+              padding: 12px;
+              
+            }
+             
+            .tabla-uno .fila .columna .header{
+              width: 40%;
+              background-color: #ffffff;
+              color: black;
+              font-weight: bold;
+              margin-left: 200px;
+            }
+             
+            
+            .tabla-uno .fila .columna .contenido{
+              width: 60%;
+              margin-right: 200px;
+              
+            }
+            
+            .fecha{
+              text-align: right;
+              margin-right: 15px;
+            }
+            
+            .titulo{
+              text-align: center;
+              font-weight: bold;
+            }
+            
+            </style>
+            </head>
+            <body>
+            " & Concat(
+                GalEstimaciones.AllItems,
+                "
+            
+            <h4 class= fecha>Fecha de emisión: " & Title4_29.Text & "</h4>
+            <h2 class=titulo> Estimacion</h2>
+            <h3 class=INI> Iniciativa: " & CbxNINI.Selected.Result & "</h3>
+            <h3 class=descripcion> Descripcion general: " & Subtitle4_11.Text & " </h3>
+              "
+            ) & "
+            <table class='tabla-uno'>
+              <tr>
+                <th>Actividad</th>
+                <th>Jornadas</th>
+              </tr>
+              <tr>
+                <td>Configuracion-Desarrollo</td>
+                <td>" & LbConfDes.Text &"</td>
+              </tr>
+              <tr>
+                <td>Apoyo a pruebas</td>
+                <td> " & LbApo.Text & "</td>
+              </tr>
+              <tr>
+                <td>Entrega linea base</td>
+                <td>" & LbEnLiBas.Text & "</td>
+              </tr>
+              <tr>
+                <td>% de Riesgo</td>
+                <td>" & LbRiesg & "</td>
+              </tr>
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR & "</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>" & LbTtal & "</td>
+              </tr>
+            </table>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>
+            
+              
+              "
+            ) & "
+            </table>
+                <table>
+                <tr>
+                <td colspan='6'>Total</td>
+                <td>" & LbRConf_1 &"</td>
+                </tr>
+                </table>
+            
+            </body>
+            </html>"
+        Width: =947
+        X: =140
+        Y: =132
+        ZIndex: =16
+
