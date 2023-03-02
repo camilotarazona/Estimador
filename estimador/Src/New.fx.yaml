@@ -217,7 +217,7 @@ New As screen:
         RadiusTopRight: =0
         Size: =20
         Width: =150
-        X: =311
+        X: =246
         Y: =141
         ZIndex: =12
 
@@ -627,6 +627,10 @@ New As screen:
                      Aplicacion: ComboBox4.Selected.Result         
                     }
                 );
+                Reset(ComboBox1_3);
+                Reset(ComboBox1_4);
+                Reset(ComboBox1_5);
+                Reset(ComboBox1_6);
             Size: =15
             Text: ="Añadir"
             Width: =120
@@ -1011,7 +1015,7 @@ New As screen:
         RadiusTopRight: =0
         Size: =13
         Width: =650
-        X: =311
+        X: =246
         Y: =194
         ZIndex: =29
 
@@ -1040,6 +1044,7 @@ New As screen:
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         Size: =15
         Text: ="Reset"
+        Visible: =false
         Width: =100
         X: =1141
         Y: =704
@@ -1127,9 +1132,9 @@ New As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Numero de Iniciativa:"
+            ="Iniciativa:"
         VerticalAlign: =VerticalAlign.Bottom
-        Width: =290
+        Width: =120
         X: =103
         Y: =141
         ZIndex: =35
@@ -1148,7 +1153,7 @@ New As screen:
         Text: |-
             ="Descripción:"
         VerticalAlign: =VerticalAlign.Bottom
-        Width: =290
+        Width: =130
         X: =103
         Y: =197
         ZIndex: =36
@@ -1172,4 +1177,22 @@ New As screen:
         X: =793
         Y: =113
         ZIndex: =37
+
+    Label15 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Italic: =true
+        Size: =13
+        Text: =CountRows(Gallery4.AllItems)
+        Width: =50
+        X: =420
+        Y: =532
+        ZIndex: =38
 

@@ -208,8 +208,8 @@ OfertAdmin As screen:
         Text: |-
             =" Number INI:"
         Width: =179
-        X: =213
-        Y: =177
+        X: =282
+        Y: =193
         ZIndex: =12
 
     LbINI_2 As label:
@@ -228,8 +228,8 @@ OfertAdmin As screen:
             =TxINI.Text
             //Last(Estimacion).NumeroINI
         Width: =297
-        X: =407
-        Y: =177
+        X: =476
+        Y: =193
         ZIndex: =13
 
     Icon4_6 As icon.DocumentPDF:
@@ -266,8 +266,8 @@ OfertAdmin As screen:
         HoverFill: =RGBA(142, 79, 201, 0.82)
         PressedFill: =RGBA(142, 79, 201, 0.82)
         Width: =562
-        X: =98
-        Y: =240
+        X: =282
+        Y: =258
         ZIndex: =21
 
     Icon4_13 As icon.DocumentPDF:
@@ -314,8 +314,8 @@ OfertAdmin As screen:
             Size: =40
             Text: =CountRows(Gallery3.AllItems)
             Width: =100
-            X: =1192
-            Y: =596
+            X: =1114
+            Y: =125
             ZIndex: =18
 
         Label11_16 As label:
@@ -332,8 +332,8 @@ OfertAdmin As screen:
             Size: =25
             Text: ="Tareas"
             Width: =110
-            X: =1187
-            Y: =662
+            X: =1109
+            Y: =191
             ZIndex: =19
 
     Group4 As group:
@@ -357,9 +357,10 @@ OfertAdmin As screen:
             Height: =65
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
+            Visible: =false
             Width: =130
-            X: =1023
-            Y: =596
+            X: =1112
+            Y: =454
             ZIndex: =14
 
         Label11_14 As label:
@@ -375,9 +376,10 @@ OfertAdmin As screen:
             FontWeight: =FontWeight.Semibold
             Size: =25
             Text: ="Horas"
+            Visible: =false
             Width: =100
-            X: =1020
-            Y: =662
+            X: =1109
+            Y: =520
             ZIndex: =15
 
     Group2 As group:
@@ -404,8 +406,8 @@ OfertAdmin As screen:
                 =//RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
                 LbTtal.Text
             Width: =100
-            X: =843
-            Y: =596
+            X: =940
+            Y: =124
             ZIndex: =16
 
         Label11_15 As label:
@@ -422,8 +424,8 @@ OfertAdmin As screen:
             Size: =25
             Text: ="Jornadas"
             Width: =145
-            X: =821
-            Y: =662
+            X: =918
+            Y: =190
             ZIndex: =17
 
     HtmlText2 As htmlViewer:
@@ -710,8 +712,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =240
+            X: =282
+            Y: =258
             ZIndex: =22
 
         Label3_11 As label:
@@ -729,8 +731,8 @@ OfertAdmin As screen:
             Size: =25
             Text: ="Actividad"
             Width: =170
-            X: =175
-            Y: =269
+            X: =359
+            Y: =287
             ZIndex: =23
 
         Label3_12 As label:
@@ -749,8 +751,8 @@ OfertAdmin As screen:
             Text: ="Dias"
             VerticalAlign: =VerticalAlign.Top
             Width: =96
-            X: =490
-            Y: =269
+            X: =674
+            Y: =287
             ZIndex: =24
 
         Rectangle2_13 As rectangle:
@@ -764,8 +766,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =336
+            X: =282
+            Y: =354
             ZIndex: =25
 
         Rectangle2_14 As rectangle:
@@ -779,8 +781,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =3
-            X: =428
-            Y: =255
+            X: =612
+            Y: =273
             ZIndex: =26
 
         Rectangle2_15 As rectangle:
@@ -794,8 +796,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =389
+            X: =282
+            Y: =407
             ZIndex: =27
 
         Rectangle2_16 As rectangle:
@@ -809,8 +811,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =445
+            X: =282
+            Y: =463
             ZIndex: =28
 
         Rectangle2_17 As rectangle:
@@ -824,8 +826,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =499
+            X: =282
+            Y: =517
             ZIndex: =29
 
         Rectangle2_18 As rectangle:
@@ -839,8 +841,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =555
+            X: =282
+            Y: =573
             ZIndex: =30
 
         Rectangle2_19 As rectangle:
@@ -854,8 +856,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =608
+            X: =282
+            Y: =626
             ZIndex: =31
 
         Rectangle2_20 As rectangle:
@@ -869,8 +871,8 @@ OfertAdmin As screen:
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
-            X: =98
-            Y: =664
+            X: =282
+            Y: =682
             ZIndex: =32
 
         Label3_13 As label:
@@ -887,8 +889,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="Configuracion-Desarrollo"
             Width: =310
-            X: =105
-            Y: =346
+            X: =289
+            Y: =364
             ZIndex: =33
 
         Label3_14 As label:
@@ -905,8 +907,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="Apoyo Pruebas"
             Width: =310
-            X: =105
-            Y: =396
+            X: =289
+            Y: =414
             ZIndex: =34
 
         Label3_15 As label:
@@ -923,8 +925,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="Entrega Line Base"
             Width: =310
-            X: =105
-            Y: =450
+            X: =289
+            Y: =468
             ZIndex: =35
 
         Label3_16 As label:
@@ -941,8 +943,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="% Riesgo = 10%"
             Width: =310
-            X: =105
-            Y: =505
+            X: =289
+            Y: =523
             ZIndex: =36
 
         Label3_17 As label:
@@ -959,8 +961,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="Total Sin Riesgo"
             Width: =310
-            X: =105
-            Y: =565
+            X: =289
+            Y: =583
             ZIndex: =37
 
         Label3_18 As label:
@@ -977,8 +979,8 @@ OfertAdmin As screen:
             Size: =20
             Text: ="Total"
             Width: =310
-            X: =105
-            Y: =618
+            X: =289
+            Y: =636
             ZIndex: =38
 
         LbConfDes As label:
@@ -993,8 +995,8 @@ OfertAdmin As screen:
             Size: =20
             Text: =RoundDown(Sum(LbRGstC.Text,LbRDoc.Text,LbRConf,LbRG)/8,0)
             Width: =82
-            X: =517
-            Y: =346
+            X: =701
+            Y: =364
             ZIndex: =39
 
         LbApo As label:
@@ -1009,8 +1011,8 @@ OfertAdmin As screen:
             Size: =20
             Text: =RoundUp(LbRPrue.Text/8,0)
             Width: =82
-            X: =517
-            Y: =405
+            X: =701
+            Y: =423
             ZIndex: =40
 
         LbEnLiBas As label:
@@ -1025,8 +1027,8 @@ OfertAdmin As screen:
             Size: =20
             Text: =RoundUp(LbRPrue.Text/8,0)
             Width: =82
-            X: =517
-            Y: =452
+            X: =701
+            Y: =470
             ZIndex: =41
 
         LbRiesg As label:
@@ -1041,8 +1043,8 @@ OfertAdmin As screen:
             Size: =20
             Text: =RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%*10%/8,0)
             Width: =82
-            X: =517
-            Y: =508
+            X: =701
+            Y: =526
             ZIndex: =42
 
         LbTSinR As label:
@@ -1057,8 +1059,8 @@ OfertAdmin As screen:
             Size: =20
             Text: =Sum(LbEnLiBas,LbApo,LbConfDes)
             Width: =82
-            X: =517
-            Y: =564
+            X: =701
+            Y: =582
             ZIndex: =43
 
         LbTtal As label:
@@ -1073,7 +1075,7 @@ OfertAdmin As screen:
             Size: =20
             Text: =Sum(LbEnLiBas,LbApo,LbConfDes,LbRiesg)
             Width: =82
-            X: =517
-            Y: =618
+            X: =701
+            Y: =636
             ZIndex: =44
 

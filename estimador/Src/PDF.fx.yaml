@@ -248,6 +248,7 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
+        Visible: =false
         Width: =434
         X: =108
         Y: =289
@@ -366,6 +367,7 @@ PDF As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
+        Visible: =false
         Width: =220
         X: =142
         Y: =181
@@ -403,9 +405,9 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
-        Width: =434
-        X: =108
-        Y: =497
+        Width: =391
+        X: =74
+        Y: =144
         ZIndex: =17
 
         Title5_1 As label:
@@ -487,8 +489,8 @@ PDF As screen:
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
-            X: =309
-            Y: =22
+            X: =271
+            Y: =18
             ZIndex: =5
 
     PdfViewer1_2 As pdfViewer:
@@ -501,4 +503,121 @@ PDF As screen:
         X: =497
         Y: =91
         ZIndex: =18
+
+    BtPatch_6 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: |-
+            =If(IsBlank(TxINI.Text),DisplayMode.Disabled, DisplayMode.Edit)
+            // IsEmpty(If(IsBlank(CbxSelec_3.Value),DisplayMode.Disabled, DisplayMode.Edit)) 
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+        OnSelect: |-
+            =//ClearCollect(
+            //    colselecciones,
+            //    Filter(
+            //        GalPruebaConex_3.AllItems,
+            //        CbxSelec_3.Value
+            //    )
+            //);
+            
+            ForAll(
+                colEstimacion,
+                Patch(
+                    Estimacion,
+                    Defaults(Estimacion),
+                    {
+                        NumeroINI:NumeroINI,
+                        Clasificacion: Clasificacion,
+                        TipoEstimacion: TipoEstimacion,
+                        Descripcion: Descripcion,
+                        Complejidad: Complejidad,
+                        Esfuerzo:Esfuerzo,
+                        'Comentario Estimacion': 'Comentario Estimacion',
+                        Aplicacion: Aplicacion,
+                        'Fecha Estimacion': DatePicker1.SelectedDate,
+                        'Comentario General': TextInput2_1.Text
+                        
+                    }
+                )
+            );
+            
+            ClearCollect(ColDatosOferta,
+                {   
+                        Title: TxINI.Text,
+                        Configuraion_Desarrollo:LbConfDes.Text,
+                        Apoyo_Pruebas: LbApo.Text,
+                        Entrega_linea_Base: LbEnLiBas.Text,
+                        '%_Riesgo': LbRiesg.Text,
+                        Total_Sin_Riesgo: LbTSinR.Text,
+                        Total: LbTtal.Text
+                    }
+            );
+            ForAll(
+                ColDatosOferta,
+                Patch(
+                    Oferta,
+                    Defaults(Oferta),
+                    {
+                        Title:TxINI.Text,
+                        Configuraion_Desarrollo:LbConfDes.Text,
+                        Apoyo_Pruebas: LbApo.Text,
+                        Entrega_linea_Base: LbEnLiBas.Text,
+                        '%_Riesgo': LbRiesg.Text,
+                        Total_Sin_Riesgo: LbTSinR.Text,
+                        Total: LbTtal.Text
+                    }
+                ));
+            ClearCollect(ColDatosOfertaInt,
+                {   
+                        Title: TxINI.Text,
+                        Gestion: LbRG.Text,
+                        Configuraion_Desarrollo:LbRConf.Text,
+                        Pruebas: LbRPrue.Text,
+                        Documentacion: LbRDoc.Text,
+                        Gestion_del_Cambio: LbRGstC.Text,
+                        Total: LbtotalH.Text
+                    }
+            );
+            ForAll(
+                ColDatosOfertaInt,
+                Patch(
+                    Oferta_Interna,
+                    Defaults(Oferta_Interna),
+                    {
+                        Title: TxINI.Text,
+                        Gestion: LbRG.Text,
+                        Configuracion_Desarrollo:LbRConf.Text,
+                        Pruebas: LbRPrue.Text,
+                        Documentacion: LbRDoc.Text,
+                        Gestion_del_Cambio: LbRGstC.Text,
+                        Total: LbtotalH.Text
+            
+                        
+                    }
+                ));
+            Notify(
+                "INI "&TxINI.Text&"  Guardada con exito",
+                Success,
+                2000
+            );
+            //Navigate(HomeAdmin,ScreenTransition.Fade)
+            //Navigate(Details,ScreenTransition.Cover)
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        PressedColor: =RGBA(39, 113, 194, 1)
+        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        Size: =15
+        Text: ="Guardar Estimación"
+        Width: =150
+        X: =1139
+        Y: =644
+        ZIndex: =19
 

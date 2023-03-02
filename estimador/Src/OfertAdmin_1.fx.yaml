@@ -837,6 +837,7 @@ OfertAdmin_1 As screen:
             Height: =65
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
+            Visible: =false
             Width: =136
             X: =885
             Y: =620
@@ -855,6 +856,7 @@ OfertAdmin_1 As screen:
             FontWeight: =FontWeight.Semibold
             Size: =25
             Text: ="Horas"
+            Visible: =false
             Width: =130
             X: =887
             Y: =682

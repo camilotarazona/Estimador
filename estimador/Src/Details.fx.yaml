@@ -337,15 +337,15 @@ Details As screen:
 
     Icon3_2 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(109, 49, 162, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        HoverFill: =ColorFade(Self.Fill, -20%)
         Icon: =Icon.NextArrow
         OnSelect: |
             =Navigate(OfertAdmin,ScreenTransition.Cover)
@@ -353,8 +353,8 @@ Details As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1303
-        Y: =9
+        X: =1230
+        Y: =627
         ZIndex: =11
 
     Icon4_1 As icon.BackArrow:
@@ -694,9 +694,10 @@ Details As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Save"
+        Visible: =false
         Width: =123
-        X: =1180
-        Y: =650
+        X: =993
+        Y: =637
         ZIndex: =23
 
     Label3 As label:
