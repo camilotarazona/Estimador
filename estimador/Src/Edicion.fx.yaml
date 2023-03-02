@@ -753,64 +753,120 @@ Edicion As screen:
         Y: =4
         ZIndex: =20
 
-    Rectangle1 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(0, 0, 0, 0.3)
-        FocusedBorderThickness: =4
-        Height: =557
-        HoverFill: =RGBA(0, 0, 0, 0.3)
-        PressedFill: =RGBA(135, 100, 184, 1)
-        Visible: =_popUpEliminarVisible
-        Width: =1206
-        X: =90
-        Y: =174
-        ZIndex: =21
+    popUpEliminar As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
 
-    Button3 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(135, 100, 184, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =232
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(135, 100, 184, 1)
-        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        Size: =15
-        Text: =""
-        Visible: =_popUpEliminarVisible
-        Width: =707
-        X: =345
-        Y: =275
-        ZIndex: =22
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0.3)
+            FocusedBorderThickness: =4
+            Height: =557
+            HoverFill: =RGBA(0, 0, 0, 0.3)
+            PressedFill: =RGBA(135, 100, 184, 1)
+            Visible: =_popUpEliminarVisible
+            Width: =1206
+            X: =90
+            Y: =174
+            ZIndex: =21
 
-    Label16 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =82
-        Size: =25
-        Text: |-
-            =//"Seguro desea eliminar la tarea "& TiDes &""
-            "Seguro desea eliminar la tarea "&TiDescrip_1.Text&""
-        Visible: =_popUpEliminarVisible
-        Width: =467
-        X: =476
-        Y: =311
-        ZIndex: =23
+        Button3 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(135, 100, 184, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =232
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(135, 100, 184, 1)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Size: =15
+            Text: =""
+            Visible: =_popUpEliminarVisible
+            Width: =707
+            X: =345
+            Y: =275
+            ZIndex: =22
+
+        Label16 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =82
+            Size: =25
+            Text: |-
+                =//"Seguro desea eliminar la tarea "& TiDes &""
+                "Seguro desea eliminar la tarea "&TiDescrip_1.Text&""
+            Visible: =_popUpEliminarVisible
+            Width: =467
+            X: =476
+            Y: =311
+            ZIndex: =23
+
+        Button4 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(192, 64, 199, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: =Set(_popUpEliminarVisible,false)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Size: =18
+            Text: ="Cancelar"
+            Visible: =_popUpEliminarVisible
+            X: =757
+            Y: =432
+            ZIndex: =24
+
+        Button4_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =Remove(CargaFuncionesPws,_tareaPAraEliminar);
+                Notify("tarea eliminada con exito",NotificationType.Success,1000);
+                Set(_popUpEliminarVisible,false)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            Size: =18
+            Text: ="Eliminar"
+            Visible: =_popUpEliminarVisible
+            X: =502
+            Y: =432
+            ZIndex: =25
 

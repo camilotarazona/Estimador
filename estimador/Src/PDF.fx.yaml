@@ -366,7 +366,6 @@ PDF As screen:
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =13
-        Visible: =false
         Width: =220
         X: =142
         Y: =181
@@ -404,7 +403,6 @@ PDF As screen:
         OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
         TemplatePadding: =0
         TemplateSize: =104
-        Visible: =false
         Width: =434
         X: =108
         Y: =497
