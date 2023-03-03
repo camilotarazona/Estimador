@@ -380,7 +380,8 @@ HomeAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Size: =30
-        Text: ="Filter"
+        Text: ="Historial"
+        Width: =190
         X: =179
         Y: =285
         ZIndex: =25

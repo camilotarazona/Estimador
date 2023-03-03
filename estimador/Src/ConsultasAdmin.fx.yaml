@@ -115,7 +115,11 @@ ConsultasAdmin As screen:
         Icon: =Icon.Home
         OnSelect: |-
             =Navigate(HomeAdmin,CoverRight);
-            Reset(CbxNINI_2)
+            Reset(CbxNINI_2);
+            Reset(DropAplicacion);
+            Reset(DropTipo_4);
+            Reset(DropClas_3);
+            Reset(DropCompl_3)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -135,7 +139,7 @@ ConsultasAdmin As screen:
         Font: =Font.'Segoe UI'
         Height: =42
         Size: =35
-        Text: ="ConsultasAdmin"
+        Text: ="HistorialAdmin"
         Width: =380
         X: =106
         Y: =19
