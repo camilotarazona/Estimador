@@ -250,6 +250,7 @@ HomeUser As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =52
         X: =101
         Y: =367
@@ -266,6 +267,7 @@ HomeUser As screen:
         Font: =Font.'Segoe UI'
         Size: =30
         Text: ="Ofert"
+        Visible: =false
         X: =179
         Y: =377
         ZIndex: =25

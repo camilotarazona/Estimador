@@ -153,8 +153,8 @@ SearchUser As screen:
         Height: =37
         Size: =13
         Text: =User().Email
-        Width: =296
-        X: =1070
+        Width: =350
+        X: =970
         Y: =15
         ZIndex: =10
 
@@ -171,12 +171,15 @@ SearchUser As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
         OnSelect: |-
-            =Set(Archivo_pdf,PDF(SearchUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));Navigate(PDFUser,ScreenTransition.Cover)
+            =//Set(Archivo_pdf,PDF(SearchUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));Navigate(PDFUser_1,ScreenTransition.Cover)
+            Set(Archivo_pdf,PDF(SearchUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));
+            Navigate(PDFUser_1,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
-        X: =917
+        X: =904
         Y: =9
         ZIndex: =11
 
@@ -1111,6 +1114,7 @@ SearchUser As screen:
             ZIndex: =7
 
         Subtitle4_10 As label:
+            AutoHeight: =true
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(231, 224, 241, 0.49)

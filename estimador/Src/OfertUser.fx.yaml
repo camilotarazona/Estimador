@@ -81,7 +81,7 @@ OfertUser As screen:
         Height: =60
         Size: =40
         Text: ="ESTIMATION"
-        Width: =350
+        Width: =390
         X: =128
         Y: =65
         ZIndex: =6
@@ -223,7 +223,8 @@ OfertUser As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.DocumentPDF
         OnSelect: |-
-            =Set(Archivo_pdf,PDF(OfertUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
+            =Set(Archivo_pdf,PDF(OfertUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));
+            Navigate(PDFUser_1,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -246,6 +247,180 @@ OfertUser As screen:
         X: =98
         Y: =240
         ZIndex: =21
+
+    Icon4_18 As icon.DocumentPDF:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.DocumentPDF
+        OnSelect: |-
+            =crear_Pdf.Run("INI" & TxINI_1.Text & ".html",HtmlText1_1.HtmlText);
+            Navigate(PDFUser,Cover)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =1089
+        Y: =11
+        ZIndex: =45
+
+    HtmlText1_1 As htmlViewer:
+        Height: =409
+        HtmlText: |-
+            =// texto en formato html para creacion de pdf
+            
+            "<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 60px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 2px;
+            }
+            
+            th {
+              background-color: black;
+              color: rgb(255, 255, 255);
+            }
+            
+            td {
+              font-size: 10px;
+            }
+            
+            .tabla-uno .fila .columna {
+              display: flex;
+              
+            }
+            
+            .tabla-uno .fila .columna .header, 
+            .tabla-uno .fila .columna .contenido {
+              border: 3px solid #909090;
+              border-bottom: none;
+              padding: 12px;
+              
+            }
+             
+            .tabla-uno .fila .columna .header{
+              width: 40%;
+              background-color: #ffffff;
+              color: black;
+              font-weight: bold;
+              margin-left: 200px;
+            }
+             
+            
+            .tabla-uno .fila .columna .contenido{
+              width: 60%;
+              margin-right: 200px;
+              
+            }
+            
+            .fecha{
+              text-align: right;
+              margin-right: 15px;
+            }
+            
+            .titulo{
+              text-align: center;
+              font-weight: bold;
+            }
+            
+            </style>
+            </head>
+            <body>
+            
+            <h4 class= fecha>Fecha de emisión: " & DatePicker1_1 & "</h4>
+            <h2 class=titulo> Estimacion</h2>
+            <h3 class=INI> Iniciativa: " & TxINI_1.Text & "</h3>
+            <h3 class=descripcion> Descripcion general: " & TextInput2_2.Text & " </h3>
+            
+            <table class='tabla-uno'>
+              <tr>
+                <th>Actividad</th>
+                <th>Jornadas</th>
+              </tr>
+              <tr>
+                <td>Configuracion-Desarrollo</td>
+                <td>" & LbConfDes_2.Text &"</td>
+              </tr>
+              <tr>
+                <td>Apoyo a pruebas</td>
+                <td> " & LbApo_2.Text & "</td>
+              </tr>
+              <tr>
+                <td>Entrega linea base</td>
+                <td>" & LbEnLiBas_2.Text & "</td>
+              </tr>
+              <tr>
+                <td>% de Riesgo</td>
+                <td>" & LbRiesg_2 & "</td>
+              </tr>
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR_2 & "</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>" & LbTtal_2 & "</td>
+              </tr>
+            </table>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3_1.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>
+            
+              
+              "
+            ) & "
+            </table>
+                <table>
+                <tr>
+                <td colspan='6'>Total</td>
+                <td>" & LbRConf_2 &"</td>
+                </tr>
+                </table>
+            
+            </body>
+            </html>"
+        Width: =706
+        X: =660
+        Y: =99
+        ZIndex: =46
 
     Group3_19 As group:
         Height: =5

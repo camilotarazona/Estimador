@@ -420,6 +420,7 @@ DetailsUser As screen:
             ZIndex: =10
 
     Label13_2 As label:
+        AutoHeight: =true
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -431,7 +432,7 @@ DetailsUser As screen:
         Font: =Font.'Segoe UI'
         Height: =94
         Size: =13
-        Text: =TextInput2_1.Text
+        Text: =TextInput2_2.Text
         VerticalAlign: =VerticalAlign.Top
         Width: =437
         X: =793
@@ -714,6 +715,7 @@ DetailsUser As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Save"
+        Visible: =false
         Width: =123
         X: =1180
         Y: =650
