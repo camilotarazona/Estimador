@@ -392,27 +392,27 @@ PDF_html As screen:
               </tr>
               <tr>
                 <td>Configuracion-Desarrollo</td>
-                <td>" & LbConfDes.Text &"</td>
+                <td>" & LbConfDes_1.Text &"</td>
               </tr>
               <tr>
                 <td>Apoyo a pruebas</td>
-                <td> " & LbApo.Text & "</td>
+                <td> " & LbApo_1.Text & "</td>
               </tr>
               <tr>
                 <td>Entrega linea base</td>
-                <td>" & LbEnLiBas.Text & "</td>
+                <td>" & LbEnLiBas_1.Text & "</td>
               </tr>
               <tr>
                 <td>% de Riesgo</td>
-                <td>" & LbRiesg & "</td>
+                <td>" & LbRiesg_1 & "</td>
               </tr>
               <tr>
                 <td>Total sin riesgo</td>
-                <td>" & LbTSinR & "</td>
+                <td>" & LbTSinR_1 & "</td>
               </tr>
               <tr>
                 <td>Total</td>
-                <td>" & LbTtal & "</td>
+                <td>" & LbTtal_1 & "</td>
               </tr>
             </table>
             

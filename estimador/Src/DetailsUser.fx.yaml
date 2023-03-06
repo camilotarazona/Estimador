@@ -67,8 +67,8 @@ DetailsUser As screen:
         Height: =660
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 
@@ -123,6 +123,7 @@ DetailsUser As screen:
             Reset(ComboBox1_10);
             Reset (TextInput2_2);
             Reset(TxINI_1);
+            Reset(ComboBox4_3);
             Navigate(HomeUser,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -250,11 +251,11 @@ DetailsUser As screen:
 
     "Gallery3_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =507
+        Height: =448
         Items: =colEstimacion
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =259
+        TemplateSize: =221
         Width: =602
         X: =80
         Y: =202
@@ -364,6 +365,7 @@ DetailsUser As screen:
             ZIndex: =7
 
         Subtitle4_8 As label:
+            AutoHeight: =true
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'

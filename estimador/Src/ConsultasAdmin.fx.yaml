@@ -158,7 +158,7 @@ ConsultasAdmin As screen:
         Size: =13
         Text: =User().Email
         Width: =350
-        X: =1007
+        X: =955
         Y: =15
         ZIndex: =10
 
@@ -223,14 +223,13 @@ ConsultasAdmin As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         InputTextPlaceholder: ="Search INI"
-        IsSearchable: =false
         Items: =Distinct(Estimacion,NumeroINI)
         NoSelectionText: ="Search INI"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
         SearchFields: =["Result"]
-        SearchItems: =[]
+        SearchItems: =Search(Distinct(Estimacion,NumeroINI),CbxNINI_2.SearchText,"Result")
         SelectionFill: =RGBA(135, 100, 184, 1)
         SelectMultiple: =false
         Size: =20
@@ -1228,8 +1227,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(142, 79, 201, 0.78)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =236
+            X: =459
+            Y: =77
             ZIndex: =25
 
         Rectangle2_99 As rectangle:
@@ -1244,8 +1243,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =231
+            X: =459
+            Y: =72
             ZIndex: =26
 
         Label3_76 As label:
@@ -1264,8 +1263,8 @@ ConsultasAdmin As screen:
             Text: ="Actividad"
             Visible: =false
             Width: =170
-            X: =809
-            Y: =260
+            X: =536
+            Y: =101
             ZIndex: =27
 
         Label3_77 As label:
@@ -1285,8 +1284,8 @@ ConsultasAdmin As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
             Width: =96
-            X: =1124
-            Y: =260
+            X: =851
+            Y: =101
             ZIndex: =28
 
         Rectangle2_103 As rectangle:
@@ -1301,8 +1300,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =327
+            X: =459
+            Y: =168
             ZIndex: =29
 
         Rectangle2_100 As rectangle:
@@ -1317,8 +1316,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =3
-            X: =1062
-            Y: =246
+            X: =789
+            Y: =87
             ZIndex: =30
 
         Rectangle2_104 As rectangle:
@@ -1333,8 +1332,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =380
+            X: =459
+            Y: =221
             ZIndex: =31
 
         Rectangle2_106 As rectangle:
@@ -1349,8 +1348,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =436
+            X: =459
+            Y: =277
             ZIndex: =32
 
         Rectangle2_108 As rectangle:
@@ -1365,8 +1364,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =490
+            X: =459
+            Y: =331
             ZIndex: =33
 
         Rectangle2_110 As rectangle:
@@ -1381,8 +1380,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =546
+            X: =459
+            Y: =387
             ZIndex: =34
 
         Rectangle2_112 As rectangle:
@@ -1397,8 +1396,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =599
+            X: =459
+            Y: =440
             ZIndex: =35
 
         Rectangle2_114 As rectangle:
@@ -1413,8 +1412,8 @@ ConsultasAdmin As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
-            X: =732
-            Y: =655
+            X: =459
+            Y: =496
             ZIndex: =36
 
         Label3_80 As label:
@@ -1432,8 +1431,8 @@ ConsultasAdmin As screen:
             Text: ="Configuracion-Desarrollo"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =337
+            X: =466
+            Y: =178
             ZIndex: =37
 
         Label3_82 As label:
@@ -1451,8 +1450,8 @@ ConsultasAdmin As screen:
             Text: ="Apoyo Pruebas"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =387
+            X: =466
+            Y: =228
             ZIndex: =38
 
         Label3_83 As label:
@@ -1470,8 +1469,8 @@ ConsultasAdmin As screen:
             Text: ="Entrega Line Base"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =441
+            X: =466
+            Y: =282
             ZIndex: =39
 
         Label3_84 As label:
@@ -1489,8 +1488,8 @@ ConsultasAdmin As screen:
             Text: ="% Riesgo = 10%"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =496
+            X: =466
+            Y: =337
             ZIndex: =40
 
         Label3_85 As label:
@@ -1508,8 +1507,8 @@ ConsultasAdmin As screen:
             Text: ="Total Sin Riesgo"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =556
+            X: =466
+            Y: =397
             ZIndex: =41
 
         Label3_86 As label:
@@ -1528,8 +1527,8 @@ ConsultasAdmin As screen:
             Text: ="Total"
             Visible: =false
             Width: =310
-            X: =739
-            Y: =609
+            X: =466
+            Y: =450
             ZIndex: =42
 
         LbConfDes_4 As label:
@@ -1545,8 +1544,8 @@ ConsultasAdmin As screen:
             Text: =RoundDown(Sum(LbRGstC_6.Text,LbRDoc_6.Text,LbRConf_6,LbRG_6)/8,0)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =337
+            X: =878
+            Y: =178
             ZIndex: =43
 
         LbApo_4 As label:
@@ -1562,8 +1561,8 @@ ConsultasAdmin As screen:
             Text: =RoundUp(LbRPrue_6.Text/8,0)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =396
+            X: =878
+            Y: =237
             ZIndex: =44
 
         LbEnLiBas_4 As label:
@@ -1579,8 +1578,8 @@ ConsultasAdmin As screen:
             Text: =RoundUp(LbRPrue_6.Text/8,0)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =443
+            X: =878
+            Y: =284
             ZIndex: =45
 
         LbRiesg_4 As label:
@@ -1596,8 +1595,8 @@ ConsultasAdmin As screen:
             Text: =RoundUp(Sum(GalEstimaciones_2.AllItems,Esfuerzo)/80%*10%/8,0)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =499
+            X: =878
+            Y: =340
             ZIndex: =46
 
         LbTSinR_4 As label:
@@ -1613,8 +1612,8 @@ ConsultasAdmin As screen:
             Text: =Sum(LbEnLiBas_4,LbApo_4,LbConfDes_4)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =555
+            X: =878
+            Y: =396
             ZIndex: =47
 
         LbTtal_4 As label:
@@ -1630,8 +1629,8 @@ ConsultasAdmin As screen:
             Text: =Sum(LbEnLiBas_4,LbApo_4,LbConfDes_4,LbRiesg_4)
             Visible: =false
             Width: =82
-            X: =1151
-            Y: =609
+            X: =878
+            Y: =450
             ZIndex: =48
 
     DropTipo_4 As dropdown:

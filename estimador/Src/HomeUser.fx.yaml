@@ -64,11 +64,11 @@ HomeUser As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =648
+        Height: =668
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 

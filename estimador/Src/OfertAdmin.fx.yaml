@@ -50,8 +50,8 @@ OfertAdmin As screen:
         Height: =660
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 
@@ -104,6 +104,7 @@ OfertAdmin As screen:
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);
             Reset(ComboBox1_6);
+            Reset(ComboBox4);
             Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(HomeAdmin,CoverRight);
@@ -186,7 +187,6 @@ OfertAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =false
         Width: =50
         X: =78
         Y: =9
@@ -514,8 +514,8 @@ OfertAdmin As screen:
             </body>
             </html>"
         Visible: =false
-        Width: =666
-        X: =700
+        Width: =583
+        X: =783
         Y: =167
         ZIndex: =47
 
@@ -666,8 +666,8 @@ OfertAdmin As screen:
             </body>
             </html>"
         Visible: =false
-        Width: =706
-        X: =660
+        Width: =506
+        X: =860
         Y: =99
         ZIndex: =48
 
@@ -748,10 +748,9 @@ OfertAdmin As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             Size: =25
-            Text: ="Dias"
+            Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
-            Width: =96
-            X: =674
+            X: =654
             Y: =287
             ZIndex: =24
 

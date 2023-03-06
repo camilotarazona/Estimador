@@ -64,10 +64,11 @@ EditOfert As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =648
+        Height: =634
         Size: =13
         Text: =""
-        Width: =1342
+        Width: =1270
+        X: =48
         Y: =120
         ZIndex: =4
 
@@ -201,7 +202,7 @@ EditOfert As screen:
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(142, 79, 201, 0.83)
         FocusedBorderThickness: =4
-        Height: =427
+        Height: =424
         HoverFill: =RGBA(142, 79, 201, 0.82)
         PressedFill: =RGBA(142, 79, 201, 0.82)
         Width: =665

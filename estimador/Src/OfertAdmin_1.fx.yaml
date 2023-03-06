@@ -121,6 +121,7 @@ OfertAdmin_1 As screen:
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);
             Reset(ComboBox1_6);
+            Reset(ComboBox4);
             Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(HomeAdmin,CoverRight);
@@ -181,7 +182,6 @@ OfertAdmin_1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =false
         Width: =50
         X: =78
         Y: =9
@@ -250,6 +250,7 @@ OfertAdmin_1 As screen:
         RadiusTopRight: =0
         Size: =15
         Text: ="Save"
+        Visible: =false
         Width: =123
         X: =1161
         Y: =669
@@ -794,8 +795,8 @@ OfertAdmin_1 As screen:
             Size: =40
             Text: =RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8,0)
             Width: =112
-            X: =734
-            Y: =620
+            X: =979
+            Y: =125
             ZIndex: =15
 
         Label11_12 As label:
@@ -812,8 +813,8 @@ OfertAdmin_1 As screen:
             Size: =25
             Text: ="Jornadas"
             Width: =145
-            X: =708
-            Y: =682
+            X: =953
+            Y: =187
             ZIndex: =16
 
     Group14 As group:
@@ -884,8 +885,8 @@ OfertAdmin_1 As screen:
             Size: =40
             Text: =CountRows(Gallery3.AllItems)
             Width: =84
-            X: =1033
-            Y: =620
+            X: =1138
+            Y: =125
             ZIndex: =17
 
         Label11_13 As label:
@@ -902,7 +903,7 @@ OfertAdmin_1 As screen:
             Size: =25
             Text: ="Tareas"
             Width: =118
-            X: =1029
-            Y: =682
+            X: =1134
+            Y: =187
             ZIndex: =18
 

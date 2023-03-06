@@ -174,8 +174,8 @@ SearchAdmin As screen:
             =//Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
             //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
             // el metodo .Run lo que hace es correr el flujo creado en power Automate con los parametros entre parentesis (nombre archivo/ "Buquedapdf.html" + contenido archivo/ HtmlText2_2.HtmlText)
-            Pdf_Busqueda.Run("Busqueda_INI" & CbxNINI.Selected.Result & ".html",HtmlText2_2.HtmlText)
-            ;Navigate(PDF,ScreenTransition.Cover)
+            //Pdf_Busqueda.Run("Busqueda_INI" & CbxNINI.Selected.Result & ".html",HtmlText3.HtmlText);
+            Navigate(PDf_busquedas,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -1079,7 +1079,7 @@ SearchAdmin As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.DocumentPDF
+        Icon: =Icon.OpenInNewWindow
         OnSelect: |-
             =Set(Archivo_pdf,PDF(SearchAdmin,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}))
             //crear_Pdf.Run("Busquedapdf.html",HtmlText2_2.HtmlText)
@@ -1090,7 +1090,7 @@ SearchAdmin As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =853
+        X: =840
         Y: =6
         ZIndex: =81
 
@@ -1311,10 +1311,9 @@ SearchAdmin As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             Size: =25
-            Text: ="Dias"
+            Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
-            Width: =96
-            X: =1124
+            X: =1100
             Y: =260
             ZIndex: =28
 

@@ -64,11 +64,11 @@ Edicion As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =648
+        Height: =662
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 
@@ -169,7 +169,7 @@ Edicion As screen:
         Size: =13
         Text: =User().Email
         Width: =325
-        X: =1012
+        X: =960
         Y: =18
         ZIndex: =10
 
@@ -644,7 +644,7 @@ Edicion As screen:
         Size: =13
         Width: =196
         X: =1010
-        Y: =260
+        Y: =258
         ZIndex: =16
 
     DropCompl_1 As dropdown:
@@ -700,10 +700,14 @@ Edicion As screen:
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =15
         Text: ="Reset"
         Width: =123
-        X: =863
+        X: =1083
         Y: =386
         ZIndex: =18
 

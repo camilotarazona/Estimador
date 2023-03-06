@@ -64,11 +64,11 @@ Details As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =660
+        Height: =666
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 
@@ -293,6 +293,7 @@ Details As screen:
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);
             Reset(ComboBox1_6);
+            Reset(ComboBox4);
             Reset (TextInput2_1);
             Reset(TxINI);
             Navigate(HomeAdmin,CoverRight);
@@ -338,7 +339,7 @@ Details As screen:
 
     Icon3_2 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(109, 49, 162, 1)
+        Color: =RGBA(183, 162, 212, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -354,13 +355,13 @@ Details As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1230
-        Y: =627
+        X: =1253
+        Y: =689
         ZIndex: =11
 
     Icon4_1 As icon.BackArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(183, 162, 212, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -368,7 +369,7 @@ Details As screen:
         Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverFill: =ColorFade(Self.Fill, -20%)
         Icon: =Icon.BackArrow
         OnSelect: |
             =//Clear(colselecciones);
@@ -383,8 +384,8 @@ Details As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =78
-        Y: =9
+        X: =90
+        Y: =689
         ZIndex: =12
 
     Label10_1 As label:

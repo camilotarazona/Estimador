@@ -1389,10 +1389,9 @@ SearchUser As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             Size: =25
-            Text: ="Dias"
+            Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
-            Width: =96
-            X: =1085
+            X: =1065
             Y: =260
             ZIndex: =28
 

@@ -67,8 +67,8 @@ HomeAdmin As screen:
         Height: =648
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
+        Width: =1270
+        X: =48
         Y: =73
         ZIndex: =4
 
@@ -379,11 +379,12 @@ HomeAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
+        Height: =50
         Size: =30
-        Text: ="Historial"
+        Text: ="History"
         Width: =190
         X: =179
-        Y: =285
+        Y: =276
         ZIndex: =25
 
     Group5 As group:

@@ -47,12 +47,12 @@ OfertUser As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =660
+        Height: =675
         Size: =13
         Text: =""
-        Width: =1253
-        X: =65
-        Y: =73
+        Width: =1270
+        X: =48
+        Y: =68
         ZIndex: =4
 
     Rectangle2_70 As rectangle:
@@ -106,6 +106,7 @@ OfertUser As screen:
             Reset(ComboBox1_10);
             Reset (TextInput2_2);
             Reset(TxINI_1);
+            Reset(ComboBox4_3);
             Navigate(HomeUser,CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -164,7 +165,6 @@ OfertUser As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =false
         Width: =50
         X: =78
         Y: =9
@@ -417,6 +417,7 @@ OfertUser As screen:
             
             </body>
             </html>"
+        Visible: =false
         Width: =706
         X: =660
         Y: =99
@@ -608,10 +609,9 @@ OfertUser As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             Size: =25
-            Text: ="Dias"
+            Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
-            Width: =96
-            X: =490
+            X: =465
             Y: =269
             ZIndex: =24
 
