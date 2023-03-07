@@ -1144,7 +1144,10 @@ New As screen:
         Icon: =Icon.NextArrow
         OnSelect: |+
             =Navigate(Details,Cover);
-            Reset(ComboBox1_3)
+            Reset(ComboBox1_3);
+            Reset(ComboBox1_4);
+            Reset(ComboBox1_5);
+            Reset(ComboBox1_6)
             
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)

@@ -35,7 +35,7 @@ OfertAdmin As screen:
         Width: =527
         X: =15
         Y: =459
-        ZIndex: =3
+        ZIndex: =2
 
     Label12_6 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -53,7 +53,7 @@ OfertAdmin As screen:
         Width: =1270
         X: =48
         Y: =73
-        ZIndex: =4
+        ZIndex: =3
 
     Rectangle2_9 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -66,7 +66,7 @@ OfertAdmin As screen:
         HoverFill: =RGBA(160, 66, 227, 1)
         PressedFill: =RGBA(160, 66, 227, 1)
         Width: =1366
-        ZIndex: =5
+        ZIndex: =4
 
     Label1_12 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -84,7 +84,7 @@ OfertAdmin As screen:
         Width: =350
         X: =128
         Y: =65
-        ZIndex: =6
+        ZIndex: =5
 
     Icon1_11 As icon.AddDocument:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -114,7 +114,7 @@ OfertAdmin As screen:
         Width: =50
         X: =15
         Y: =6
-        ZIndex: =7
+        ZIndex: =6
 
     Rectangle1_48 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -129,7 +129,7 @@ OfertAdmin As screen:
         Width: =350
         X: =120
         Y: =125
-        ZIndex: =8
+        ZIndex: =7
 
     Label3_7 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -146,7 +146,7 @@ OfertAdmin As screen:
         Width: =285
         X: =140
         Y: =19
-        ZIndex: =9
+        ZIndex: =8
 
     Icon3_5 As icon.NextArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -168,7 +168,7 @@ OfertAdmin As screen:
         Width: =50
         X: =1303
         Y: =9
-        ZIndex: =10
+        ZIndex: =9
 
     Icon4_4 As icon.BackArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -190,7 +190,7 @@ OfertAdmin As screen:
         Width: =50
         X: =78
         Y: =9
-        ZIndex: =11
+        ZIndex: =10
 
     Label10_6 As label:
         Align: =Align.Center
@@ -210,7 +210,7 @@ OfertAdmin As screen:
         Width: =179
         X: =282
         Y: =193
-        ZIndex: =12
+        ZIndex: =11
 
     LbINI_2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -230,7 +230,7 @@ OfertAdmin As screen:
         Width: =297
         X: =476
         Y: =193
-        ZIndex: =13
+        ZIndex: =12
 
     Icon4_6 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -253,7 +253,7 @@ OfertAdmin As screen:
         Width: =50
         X: =1061
         Y: =9
-        ZIndex: =20
+        ZIndex: =19
 
     Rectangle3_2 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -262,13 +262,13 @@ OfertAdmin As screen:
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(142, 79, 201, 0.83)
         FocusedBorderThickness: =4
-        Height: =427
+        Height: =368
         HoverFill: =RGBA(142, 79, 201, 0.82)
         PressedFill: =RGBA(142, 79, 201, 0.82)
         Width: =562
         X: =282
         Y: =258
-        ZIndex: =21
+        ZIndex: =20
 
     Icon4_13 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -290,143 +290,7 @@ OfertAdmin As screen:
         Width: =50
         X: =1137
         Y: =9
-        ZIndex: =45
-
-    Group6 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =45
-
-        Label9_16 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =65
-            Size: =40
-            Text: =CountRows(Gallery3.AllItems)
-            Width: =100
-            X: =1114
-            Y: =125
-            ZIndex: =18
-
-        Label11_16 As label:
-            Align: =Align.Justify
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Size: =25
-            Text: ="Tareas"
-            Width: =110
-            X: =1109
-            Y: =191
-            ZIndex: =19
-
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =45
-
-        Label9_14 As label:
-            Align: =Align.Justify
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =65
-            Size: =40
-            Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
-            Visible: =false
-            Width: =130
-            X: =1112
-            Y: =454
-            ZIndex: =14
-
-        Label11_14 As label:
-            Align: =Align.Justify
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Size: =25
-            Text: ="Horas"
-            Visible: =false
-            Width: =100
-            X: =1109
-            Y: =520
-            ZIndex: =15
-
-    Group2 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =45
-
-        Label9_15 As label:
-            Align: =Align.Justify
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =65
-            Size: =40
-            Text: |-
-                =//RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
-                LbTtal.Text
-            Width: =100
-            X: =940
-            Y: =124
-            ZIndex: =16
-
-        Label11_15 As label:
-            Align: =Align.Justify
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Size: =25
-            Text: ="Jornadas"
-            Width: =145
-            X: =918
-            Y: =190
-            ZIndex: =17
+        ZIndex: =21
 
     HtmlText2 As htmlViewer:
         Height: =305
@@ -517,7 +381,7 @@ OfertAdmin As screen:
         Width: =583
         X: =783
         Y: =167
-        ZIndex: =47
+        ZIndex: =22
 
     HtmlText1 As htmlViewer:
         Height: =409
@@ -669,7 +533,7 @@ OfertAdmin As screen:
         Width: =506
         X: =860
         Y: =99
-        ZIndex: =48
+        ZIndex: =23
 
     Icon4_14 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -692,7 +556,367 @@ OfertAdmin As screen:
         Width: =50
         X: =1053
         Y: =6
-        ZIndex: =49
+        ZIndex: =24
+
+    Icon4_20 As icon.DocumentPDF:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.OpenInNewWindow
+        OnSelect: |-
+            =//crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText1.HtmlText);
+            //Navigate(PDF,Cover)
+            Set(_Prvpdf,RichTextEditor1);
+            Launch(_Prvpdf)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =979
+        Y: =6
+        ZIndex: =25
+
+    Rectangle8 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(122, 90, 166, 1)
+        FocusedBorderThickness: =4
+        Height: =56
+        HoverFill: =RGBA(135, 100, 184, 1)
+        PressedFill: =RGBA(135, 100, 184, 1)
+        Width: =562
+        X: =282
+        Y: =626
+        ZIndex: =26
+
+    Label3_17 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =46
+        Size: =20
+        Text: ="Total Sin Riesgo"
+        Width: =310
+        X: =289
+        Y: =633
+        ZIndex: =27
+
+    LbTSinR As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =20
+        Text: =Sum(LbEnLiBas,LbApo,LbConfDes)
+        Width: =82
+        X: =701
+        Y: =632
+        ZIndex: =28
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =45
+
+        Label9_16 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =65
+            Size: =40
+            Text: =CountRows(Gallery3.AllItems)
+            Width: =100
+            X: =1114
+            Y: =125
+            ZIndex: =17
+
+        Label11_16 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =25
+            Text: ="Tareas"
+            Width: =110
+            X: =1109
+            Y: =191
+            ZIndex: =18
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =45
+
+        Label9_14 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =65
+            Size: =40
+            Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
+            Visible: =false
+            Width: =130
+            X: =1112
+            Y: =454
+            ZIndex: =13
+
+        Label11_14 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =25
+            Text: ="Horas"
+            Visible: =false
+            Width: =100
+            X: =1109
+            Y: =520
+            ZIndex: =14
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =45
+
+        Label9_15 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =65
+            Size: =40
+            Text: |-
+                =//RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%/8+LbRiesg,0)
+                LbTtal.Text
+            Width: =100
+            X: =940
+            Y: =124
+            ZIndex: =15
+
+        Label11_15 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =25
+            Text: ="Jornadas"
+            Width: =145
+            X: =918
+            Y: =190
+            ZIndex: =16
+
+    RichTextEditor1 As richTextEditor:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Default: |-
+            ="<html>
+            <head>
+            <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 60px;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 2px;
+            }
+            
+            th {
+              background-color: black;
+              color: rgb(255, 255, 255);
+            }
+            
+            td {
+              font-size: 10px;
+            }
+            
+            .tabla-uno .fila .columna {
+              display: flex;
+              
+            }
+            
+            .tabla-uno .fila .columna .header, 
+            .tabla-uno .fila .columna .contenido {
+              border: 3px solid #909090;
+              border-bottom: none;
+              padding: 12px;
+              
+            }
+             
+            .tabla-uno .fila .columna .header{
+              width: 40%;
+              background-color: #ffffff;
+              color: black;
+              font-weight: bold;
+              margin-left: 200px;
+            }
+             
+            
+            .tabla-uno .fila .columna .contenido{
+              width: 60%;
+              margin-right: 200px;
+              
+            }
+            
+            .fecha{
+              text-align: right;
+              margin-right: 15px;
+            }
+            
+            .titulo{
+              text-align: center;
+              font-weight: bold;
+            }
+            
+            </style>
+            </head>
+            <body>
+            
+            <h4 class= fecha>Fecha de emisión: " & DatePicker1 & "</h4>
+            <h2 class=titulo> Estimacion</h2>
+            <h3 class=INI> Iniciativa: " & TxINI.Text & "</h3>
+            <h3 class=descripcion> Descripcion general: " & TextInput2_1.Text & " </h3>
+            
+            <table class='tabla-uno'>
+              <tr>
+                <th>Actividad</th>
+                <th>Jornadas</th>
+              </tr>
+              <tr>
+                <td>Configuracion-Desarrollo</td>
+                <td>" & LbConfDes.Text &"</td>
+              </tr>
+              <tr>
+                <td>Apoyo a pruebas</td>
+                <td> " & LbApo.Text & "</td>
+              </tr>
+              <tr>
+                <td>Entrega linea base</td>
+                <td>" & LbEnLiBas.Text & "</td>
+              </tr>
+              <tr>
+                <td>% de Riesgo</td>
+                <td>" & LbRiesg & "</td>
+              </tr>
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR & "</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>" & LbTtal & "</td>
+              </tr>
+            </table>
+            
+            <table>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripcion </th>
+                <th> Clasificacion </th>
+                <th> Complejidad </th>
+                <th> Aplicacion </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>
+            
+              
+              "
+            ) & "
+            </table>
+                <table>
+                <tr>
+                <td colspan='6'>Total</td>
+                <td>" & LbRConf_1 &"</td>
+                </tr>
+                </table>
+            
+            </body>
+            </html>"
+        Height: =624
+        Width: =849
+        X: =269
+        Y: =132
+        ZIndex: =50
 
     Group8 As group:
         Height: =5
@@ -714,7 +938,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =258
-            ZIndex: =22
+            ZIndex: =29
 
         Label3_11 As label:
             Align: =Align.Center
@@ -733,7 +957,7 @@ OfertAdmin As screen:
             Width: =170
             X: =359
             Y: =287
-            ZIndex: =23
+            ZIndex: =30
 
         Label3_12 As label:
             Align: =Align.Center
@@ -752,7 +976,7 @@ OfertAdmin As screen:
             VerticalAlign: =VerticalAlign.Top
             X: =654
             Y: =287
-            ZIndex: =24
+            ZIndex: =31
 
         Rectangle2_13 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -767,22 +991,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =354
-            ZIndex: =25
-
-        Rectangle2_14 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(102, 26, 163, 1)
-            FocusedBorderThickness: =4
-            Height: =412
-            HoverFill: =RGBA(109, 49, 162, 1)
-            PressedFill: =RGBA(109, 49, 162, 1)
-            Width: =3
-            X: =612
-            Y: =273
-            ZIndex: =26
+            ZIndex: =32
 
         Rectangle2_15 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -797,7 +1006,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =407
-            ZIndex: =27
+            ZIndex: =33
 
         Rectangle2_16 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -812,7 +1021,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =463
-            ZIndex: =28
+            ZIndex: =34
 
         Rectangle2_17 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -827,7 +1036,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =517
-            ZIndex: =29
+            ZIndex: =35
 
         Rectangle2_18 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -842,7 +1051,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =573
-            ZIndex: =30
+            ZIndex: =36
 
         Rectangle2_19 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -857,7 +1066,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =626
-            ZIndex: =31
+            ZIndex: =37
 
         Rectangle2_20 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -872,7 +1081,7 @@ OfertAdmin As screen:
             Width: =562
             X: =282
             Y: =682
-            ZIndex: =32
+            ZIndex: =38
 
         Label3_13 As label:
             Align: =Align.Center
@@ -890,7 +1099,7 @@ OfertAdmin As screen:
             Width: =310
             X: =289
             Y: =364
-            ZIndex: =33
+            ZIndex: =39
 
         Label3_14 As label:
             Align: =Align.Center
@@ -908,7 +1117,7 @@ OfertAdmin As screen:
             Width: =310
             X: =289
             Y: =414
-            ZIndex: =34
+            ZIndex: =40
 
         Label3_15 As label:
             Align: =Align.Center
@@ -926,7 +1135,7 @@ OfertAdmin As screen:
             Width: =310
             X: =289
             Y: =468
-            ZIndex: =35
+            ZIndex: =41
 
         Label3_16 As label:
             Align: =Align.Center
@@ -944,25 +1153,7 @@ OfertAdmin As screen:
             Width: =310
             X: =289
             Y: =523
-            ZIndex: =36
-
-        Label3_17 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =46
-            Size: =20
-            Text: ="Total Sin Riesgo"
-            Width: =310
-            X: =289
-            Y: =583
-            ZIndex: =37
+            ZIndex: =42
 
         Label3_18 As label:
             Align: =Align.Center
@@ -979,8 +1170,8 @@ OfertAdmin As screen:
             Text: ="Total"
             Width: =310
             X: =289
-            Y: =636
-            ZIndex: =38
+            Y: =580
+            ZIndex: =43
 
         LbConfDes As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -996,7 +1187,7 @@ OfertAdmin As screen:
             Width: =82
             X: =701
             Y: =364
-            ZIndex: =39
+            ZIndex: =44
 
         LbApo As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1012,7 +1203,7 @@ OfertAdmin As screen:
             Width: =82
             X: =701
             Y: =423
-            ZIndex: =40
+            ZIndex: =45
 
         LbEnLiBas As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1028,7 +1219,7 @@ OfertAdmin As screen:
             Width: =82
             X: =701
             Y: =470
-            ZIndex: =41
+            ZIndex: =46
 
         LbRiesg As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1044,23 +1235,7 @@ OfertAdmin As screen:
             Width: =82
             X: =701
             Y: =526
-            ZIndex: =42
-
-        LbTSinR As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Size: =20
-            Text: =Sum(LbEnLiBas,LbApo,LbConfDes)
-            Width: =82
-            X: =701
-            Y: =582
-            ZIndex: =43
+            ZIndex: =47
 
         LbTtal As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1075,6 +1250,21 @@ OfertAdmin As screen:
             Text: =Sum(LbEnLiBas,LbApo,LbConfDes,LbRiesg)
             Width: =82
             X: =701
-            Y: =636
-            ZIndex: =44
+            Y: =580
+            ZIndex: =48
+
+        Rectangle2_14 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 26, 163, 1)
+            FocusedBorderThickness: =4
+            Height: =412
+            HoverFill: =RGBA(109, 49, 162, 1)
+            PressedFill: =RGBA(109, 49, 162, 1)
+            Width: =3
+            X: =612
+            Y: =273
+            ZIndex: =49
 

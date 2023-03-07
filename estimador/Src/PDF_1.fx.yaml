@@ -396,7 +396,8 @@ PDF_1 As screen:
         ZIndex: =16
 
     PdfViewer2 As pdfViewer:
-        Document: =Archivo_pdf
+        Document: |
+            =Archivo_pdf
         Height: =467
         Width: =677
         X: =570
