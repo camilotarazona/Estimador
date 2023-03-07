@@ -1648,6 +1648,7 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
+        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1663,7 +1664,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =411
+        Y: =405
         ZIndex: =82
 
     LbTipo_3 As label:
@@ -1756,7 +1757,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =482
+        Y: =480
         ZIndex: =88
 
     DropCompl_3 As dropdown:
@@ -1777,7 +1778,7 @@ HistoryAdmin As screen:
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Distinct(CargaFuncionesPws,Complejidad)
+        Items: =Distinct('Prueba conexion',Complejidad)
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5
@@ -1807,6 +1808,7 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
+        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1822,7 +1824,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =347
+        Y: =340
         ZIndex: =90
 
     LbTipo_4 As label:
