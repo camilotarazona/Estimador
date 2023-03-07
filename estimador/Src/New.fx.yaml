@@ -1169,7 +1169,7 @@ New As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Función:"
+            ="Tarea:"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =130
         X: =103
