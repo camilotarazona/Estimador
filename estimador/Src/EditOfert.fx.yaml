@@ -244,7 +244,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Actividad"
             Width: =173
             X: =815
@@ -437,7 +437,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             Height: =42
             Size: =17
-            Text: ="Documetación"
+            Text: ="Documentación"
             Width: =314
             X: =744
             Y: =455
@@ -491,7 +491,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="%"
             VerticalAlign: =VerticalAlign.Top
             Width: =63
@@ -675,7 +675,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Horas"
             VerticalAlign: =VerticalAlign.Top
             Width: =103
@@ -858,7 +858,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Días"
             VerticalAlign: =VerticalAlign.Top
             Width: =90
@@ -1078,7 +1078,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Actividad"
             Width: =191
             X: =127
@@ -1097,7 +1097,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="%"
             VerticalAlign: =VerticalAlign.Top
             Width: =71
@@ -1345,7 +1345,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Horas"
             VerticalAlign: =VerticalAlign.Top
             Width: =104
@@ -1691,7 +1691,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =42
-            Size: =25
+            Size: =22
             Text: ="Días"
             VerticalAlign: =VerticalAlign.Top
             Width: =91
