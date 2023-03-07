@@ -338,7 +338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BtPatch",
-      "ParentIndex": 30,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -950,7 +950,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BtReset_3",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1255,7 +1255,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 11,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1531,7 +1531,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CbxSelec_3",
-      "ParentIndex": 7,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1876,7 +1876,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_3",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2248,7 +2248,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_4",
-      "ParentIndex": 21,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2615,7 +2615,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_5",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2982,7 +2982,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_6",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3291,7 +3291,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3992,7 +3999,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown3",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4266,7 +4273,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery4",
-      "ParentIndex": 27,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4513,7 +4520,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalPruebaConex_3",
-      "ParentIndex": 23,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4939,7 +4946,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3",
-      "ParentIndex": 28,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5955,7 +5962,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_14",
-      "ParentIndex": 24,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6804,7 +6811,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_1",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7094,7 +7101,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_15",
-      "ParentIndex": 22,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7971,7 +7978,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_4",
-      "ParentIndex": 10,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8254,7 +8261,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label15",
-      "ParentIndex": 26,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8537,7 +8544,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2",
-      "ParentIndex": 25,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9926,6 +9933,117 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
+    "Rectangle5": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "BorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "DisplayMode",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "ZIndex",
+        "BorderThickness",
+        "FocusedBorderThickness"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "Rectangle5",
+      "ParentIndex": 23,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderThickness",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultRectangleStyle",
+      "Type": "ControlInfo"
+    },
     "Separator2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
@@ -10478,7 +10596,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle7_15",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10730,7 +10848,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle7_16",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10996,7 +11114,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle7_17",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11269,7 +11387,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySubtitle.ID%",
       "Name": "Subtitle7_18",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11528,7 +11646,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle7_19",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11847,7 +11965,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput2_1",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12166,7 +12284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput3",
-      "ParentIndex": 9,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12949,7 +13067,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title7_3",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

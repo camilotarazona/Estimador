@@ -539,8 +539,8 @@ New As screen:
             RadiusTopRight: =0
             Size: =13
             Width: =561
-            X: =147
-            Y: =85
+            X: =146
+            Y: =7
             ZIndex: =10
 
         Dropdown3 As dropdown:
@@ -611,8 +611,8 @@ New As screen:
             Size: =15
             Text: ="Añadir"
             Width: =120
-            X: =853
-            Y: =101
+            X: =793
+            Y: =17
             ZIndex: =12
 
         Label14_4 As label:
@@ -631,7 +631,7 @@ New As screen:
             VerticalAlign: =VerticalAlign.Bottom
             Width: =220
             X: =12
-            Y: =87
+            Y: =7
             ZIndex: =15
 
     BtPatch_3 As button:
@@ -829,11 +829,10 @@ New As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Result"]
         Font: =Font.'Segoe UI'
-        Height: =50
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Filtrar por Tipo"
+        InputTextPlaceholder: ="Tipo"
         Items: =Distinct(CargaFuncionesPws,Tipo)
         NoSelectionText: ="Filtrar por Tipo"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -846,7 +845,7 @@ New As screen:
         Size: =13
         Width: =160
         X: =246
-        Y: =331
+        Y: =300
         ZIndex: =16
 
     ComboBox1_4 As combobox:
@@ -863,16 +862,15 @@ New As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Result"]
         Font: =Font.'Segoe UI'
-        Height: =50
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Filtrar por Clasificacion"
+        InputTextPlaceholder: ="Clasificacion"
         IsSearchable: =false
         Items: |-
             =//Distinct(CargaFuncionesPws,Clasificacion)
             Distinct(Filter(CargaFuncionesPws,Complejidad=ComboBox1_5.Selected.Result),Clasificacion)
-        NoSelectionText: ="Filtrar por Clasificacion"
+        NoSelectionText: ="Clasificacion"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
@@ -883,7 +881,7 @@ New As screen:
         Size: =13
         Width: =150
         X: =1065
-        Y: =331
+        Y: =300
         ZIndex: =17
 
     ComboBox1_5 As combobox:
@@ -900,16 +898,15 @@ New As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Result"]
         Font: =Font.'Segoe UI'
-        Height: =50
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Filtrar por Complejidad"
+        InputTextPlaceholder: ="Complejidad"
         IsSearchable: =false
         Items: |-
             =//Distinct('Prueba conexion',Complejidad)
             Distinct(Filter(CargaFuncionesPws,Title=ComboBox1_6.Selected.Result),Complejidad)
-        NoSelectionText: ="Filtrar por Complejidad"
+        NoSelectionText: ="Complejidad"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
@@ -920,7 +917,7 @@ New As screen:
         Size: =13
         Width: =150
         X: =886
-        Y: =331
+        Y: =300
         ZIndex: =18
 
     TextInput2_1 As text:
@@ -933,12 +930,10 @@ New As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =50
         HintText: ="Ingresar descripcion general"
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        Mode: =TextMode.MultiLine
         PressedBorderColor: =RGBA(135, 100, 184, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
@@ -1016,11 +1011,10 @@ New As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Result"]
         Font: =Font.'Segoe UI'
-        Height: =50
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Filtrar por Descripcion"
+        InputTextPlaceholder: ="Descripcion"
         Items: =Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_3.Selected.Result),Title)
         NoSelectionText: ="Filtrar por Descripcion"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -1033,7 +1027,7 @@ New As screen:
         Size: =13
         Width: =420
         X: =436
-        Y: =331
+        Y: =300
         ZIndex: =22
 
     Label2 As label:
@@ -1089,7 +1083,7 @@ New As screen:
         VerticalAlign: =VerticalAlign.Bottom
         Width: =130
         X: =103
-        Y: =197
+        Y: =194
         ZIndex: =25
 
     Label14_2 As label:
@@ -1173,7 +1167,7 @@ New As screen:
         VerticalAlign: =VerticalAlign.Bottom
         Width: =130
         X: =103
-        Y: =333
+        Y: =300
         ZIndex: =30
 
     ComboBox4 As combobox:
@@ -1207,7 +1201,7 @@ New As screen:
         Size: =13
         Width: =240
         X: =246
-        Y: =264
+        Y: =247
         ZIndex: =31
 
     Label14_3 As label:
@@ -1225,6 +1219,20 @@ New As screen:
             ="Aplicación:"
         VerticalAlign: =VerticalAlign.Bottom
         X: =103
-        Y: =264
+        Y: =247
         ZIndex: =32
+
+    Rectangle5 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(135, 100, 184, 1)
+        FocusedBorderThickness: =4
+        Height: =13
+        HoverFill: =RGBA(135, 100, 184, 1)
+        PressedFill: =RGBA(135, 100, 184, 1)
+        X: =336
+        Y: =341
+        ZIndex: =33
 
