@@ -120,7 +120,7 @@ New_pruebas As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |
-            =Navigate(HomeAdmin,CoverRight);
+            =Navigate(HomeAdmin,ScreenTransition.CoverRight);
             Reset(ComboBox1_14);
             Reset(ComboBox1_13);
             Reset(ComboBox1_12);
@@ -181,7 +181,7 @@ New_pruebas As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.NextArrow
         OnSelect: |+
-            =Navigate(Details,Cover);
+            =Navigate(Details,ScreenTransition.Cover);
             Reset(ComboBox1_11)
             
         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -322,7 +322,7 @@ New_pruebas As screen:
                 ));
             Notify(
                 "INI "&TxINI_2.Text&"  Guardada con exito",
-                Success,
+                NotificationType.Success,
                 2000
             );
             

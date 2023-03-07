@@ -120,7 +120,7 @@ New As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |
-            =Navigate(HomeAdmin,CoverRight);
+            =Navigate(HomeAdmin,ScreenTransition.CoverRight);
             Reset(ComboBox1_6);
             Reset(ComboBox4);
             Reset(ComboBox1_5);
@@ -299,7 +299,7 @@ New As screen:
                 ));
             Notify(
                 "INI "&TxINI.Text&"  Guardada con exito",
-                Success,
+                NotificationType.Success,
                 2000
             );
             
@@ -1143,7 +1143,7 @@ New As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.NextArrow
         OnSelect: |+
-            =Navigate(Details,Cover);
+            =Navigate(Details,ScreenTransition.Cover);
             Reset(ComboBox1_3);
             Reset(ComboBox1_4);
             Reset(ComboBox1_5);

@@ -114,7 +114,7 @@ SearchAdmin As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Navigate(HomeAdmin,CoverRight);
+            =Navigate(HomeAdmin,ScreenTransition.CoverRight);
             Reset(CbxNINI)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -1485,7 +1485,7 @@ SearchAdmin As screen:
             Font: =Font.'Segoe UI'
             Height: =46
             Size: =20
-            Text: ="Entrega Line Base"
+            Text: ="Entrega Linea Base"
             Width: =310
             X: =739
             Y: =441

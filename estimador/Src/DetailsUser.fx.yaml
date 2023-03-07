@@ -124,7 +124,7 @@ DetailsUser As screen:
             Reset (TextInput2_2);
             Reset(TxINI_1);
             Reset(ComboBox4_3);
-            Navigate(HomeUser,CoverRight);
+            Navigate(HomeUser,ScreenTransition.CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -200,7 +200,7 @@ DetailsUser As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(NewUser,CoverRight)
+            =Navigate(NewUser,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -703,7 +703,7 @@ DetailsUser As screen:
                 ));
             Notify(
                 "INI "&TxINI_1.Text&"  Guardada con exito",
-                Success,
+                NotificationType.Success,
                 2000
             );
             Navigate(OfertUser,ScreenTransition.Cover)

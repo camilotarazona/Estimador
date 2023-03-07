@@ -107,7 +107,7 @@ OfertAdmin As screen:
             Reset(ComboBox4);
             Reset (TextInput2_1);
             Reset(TxINI);
-            Navigate(HomeAdmin,CoverRight);
+            Navigate(HomeAdmin,ScreenTransition.CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -183,7 +183,7 @@ OfertAdmin As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(Details,CoverRight)
+            =Navigate(Details,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -549,7 +549,7 @@ OfertAdmin As screen:
         Icon: =Icon.DocumentPDF
         OnSelect: |-
             =crear_Pdf.Run("INI" & TxINI.Text & ".html",HtmlText1.HtmlText);
-            Navigate(PDF,Cover)
+            Navigate(PDF,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -913,9 +913,10 @@ OfertAdmin As screen:
             </body>
             </html>"
         Height: =624
+        Visible: =false
         Width: =849
-        X: =269
-        Y: =132
+        X: =239
+        Y: =109
         ZIndex: =50
 
     Group8 As group:
@@ -1131,7 +1132,7 @@ OfertAdmin As screen:
             Font: =Font.'Segoe UI'
             Height: =46
             Size: =20
-            Text: ="Entrega Line Base"
+            Text: ="Entrega Linea Base"
             Width: =310
             X: =289
             Y: =468
@@ -1165,6 +1166,7 @@ OfertAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
             Height: =46
             Size: =20
             Text: ="Total"
@@ -1246,6 +1248,7 @@ OfertAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
             Size: =20
             Text: =Sum(LbEnLiBas,LbApo,LbConfDes,LbRiesg)
             Width: =82

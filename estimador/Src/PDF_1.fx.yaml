@@ -138,7 +138,7 @@ PDF_1 As screen:
             Reset(ComboBox1_6);
             Reset (TextInput2_1);
             Reset(TxINI);
-            Navigate(HomeAdmin,CoverRight);
+            Navigate(HomeAdmin,ScreenTransition.CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -205,7 +205,7 @@ PDF_1 As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(SearchAdmin,CoverRight)
+            =Navigate(SearchAdmin,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -255,7 +255,7 @@ PDF_1 As screen:
         ZIndex: =14
 
         Title5_3 As label:
-            Color: =If(ThisItem.IsSelected,MediumPurple,Black)
+            Color: =If(ThisItem.IsSelected,Color.MediumPurple,Color.Black)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold

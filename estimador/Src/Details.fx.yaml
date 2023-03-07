@@ -296,7 +296,7 @@ Details As screen:
             Reset(ComboBox4);
             Reset (TextInput2_1);
             Reset(TxINI);
-            Navigate(HomeAdmin,CoverRight);
+            Navigate(HomeAdmin,ScreenTransition.CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -379,7 +379,7 @@ Details As screen:
             //Reset(ComboBox1_5);
             //Reset (TextInput2_1);
             //Reset(TxINI);
-            Navigate(New,CoverRight)
+            Navigate(New,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -683,7 +683,7 @@ Details As screen:
                 ));
             Notify(
                 "INI "&TxINI.Text&"  Guardada con exito",
-                Success,
+                NotificationType.Success,
                 2000
             );
             Navigate(OfertAdmin,ScreenTransition.Cover)

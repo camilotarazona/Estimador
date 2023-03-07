@@ -243,7 +243,7 @@ LoadFunctions As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
-        OnSelect: =Navigate(HomeAdmin,CoverRight); Reset(ControlCarga)
+        OnSelect: =Navigate(HomeAdmin,ScreenTransition.CoverRight); Reset(ControlCarga)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -398,7 +398,7 @@ LoadFunctions As screen:
             ImportExcel.Run({file: {contentBytes:First(ControlCarga.Attachments).Value, name:First(ControlCarga.Attachments).Name}});
             Notify(
                 "Funciones cargadas con exito",
-                Success,
+                NotificationType.Success,
                 3000
             )
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)

@@ -114,7 +114,7 @@ SearchUser As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Navigate(HomeUser,CoverRight);
+            =Navigate(HomeUser,ScreenTransition.CoverRight);
             Reset(CbxNINI_1)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)

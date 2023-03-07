@@ -107,7 +107,7 @@ OfertUser As screen:
             Reset (TextInput2_2);
             Reset(TxINI_1);
             Reset(ComboBox4_3);
-            Navigate(HomeUser,CoverRight);
+            Navigate(HomeUser,ScreenTransition.CoverRight);
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -262,7 +262,7 @@ OfertUser As screen:
         Icon: =Icon.DocumentPDF
         OnSelect: |-
             =crear_Pdf.Run("INI" & TxINI_1.Text & ".html",HtmlText1_1.HtmlText);
-            Navigate(PDFUser,Cover)
+            Navigate(PDFUser,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -783,7 +783,7 @@ OfertUser As screen:
             Font: =Font.'Segoe UI'
             Height: =46
             Size: =20
-            Text: ="Entrega Line Base"
+            Text: ="Entrega Linea Base"
             Width: =310
             X: =105
             Y: =450

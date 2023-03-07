@@ -50,12 +50,12 @@ usuarios As screen:
                 "Si" in First(varLogUsuario).Administrator,
                 Navigate(
                     HomeAdmin,
-                    Cover
+                    ScreenTransition.Cover
                 )
             );
             Notify(
                 "Bienvenido "& User().Email &"",
-                Success,
+                NotificationType.Success,
                 2000
             )
         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -97,7 +97,7 @@ usuarios As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.AddUser
-        OnSelect: =Navigate(HomeUser,Cover)
+        OnSelect: =Navigate(HomeUser,ScreenTransition.Cover)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)

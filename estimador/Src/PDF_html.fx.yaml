@@ -131,7 +131,7 @@ PDF_html As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Navigate(HomeAdmin,CoverRight);
+            =Navigate(HomeAdmin,ScreenTransition.CoverRight);
             Reset(CbxNINI)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -188,7 +188,7 @@ PDF_html As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(SearchAdmin,CoverRight)
+            =Navigate(SearchAdmin,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)

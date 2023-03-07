@@ -131,7 +131,7 @@ PDFUser_1 As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
         OnSelect: |-
-            =Navigate(HomeUser,CoverRight);
+            =Navigate(HomeUser,ScreenTransition.CoverRight);
             Reset(ComboBox1_10);
             Reset(ComboBox1_9);
             Reset(ComboBox1_8);
@@ -203,7 +203,7 @@ PDFUser_1 As screen:
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(SearchUser,CoverRight)
+            =Navigate(SearchUser,ScreenTransition.CoverRight)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -329,7 +329,7 @@ PDFUser_1 As screen:
                 ));
             Notify(
                 "INI "&TxINI_1.Text&"  Guardada con exito",
-                Success,
+                NotificationType.Success,
                 2000
             );
             Navigate(OfertUser,ScreenTransition.Cover)
