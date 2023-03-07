@@ -495,7 +495,7 @@ SearchAdmin As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: |-
-                ="Aplicacion:"
+                ="Aplicación:"
             Width: =100
             X: =23
             Y: =115
@@ -1306,7 +1306,7 @@ SearchAdmin As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =44
-            Size: =25
+            Size: =22
             Text: ="Actividad"
             Width: =170
             X: =809
@@ -1325,7 +1325,7 @@ SearchAdmin As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =44
-            Size: =25
+            Size: =22
             Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
             X: =1100
@@ -1448,8 +1448,8 @@ SearchAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =44
-            Size: =20
-            Text: ="Configuracion-Desarrollo"
+            Size: =17
+            Text: ="Configuración-Desarrollo"
             Width: =310
             X: =739
             Y: =334
@@ -1466,7 +1466,7 @@ SearchAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =44
-            Size: =20
+            Size: =17
             Text: ="Apoyo Pruebas"
             Width: =310
             X: =739
@@ -1484,8 +1484,8 @@ SearchAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =44
-            Size: =20
-            Text: ="Entrega Linea Base"
+            Size: =17
+            Text: ="Entrega Línea Base"
             Width: =310
             X: =739
             Y: =435
@@ -1502,7 +1502,7 @@ SearchAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =44
-            Size: =20
+            Size: =17
             Text: ="% Riesgo = 10%"
             Width: =310
             X: =739
@@ -1588,7 +1588,7 @@ SearchAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =44
-            Size: =20
+            Size: =17
             Text: ="Total Sin Riesgo"
             Width: =310
             X: =739
