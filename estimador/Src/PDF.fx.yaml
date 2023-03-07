@@ -232,6 +232,7 @@ PDF As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =45
         X: =946
         Y: =6
@@ -452,6 +453,7 @@ PDF As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="View item details"
+            Visible: =false
             Width: =60
             X: =Parent.TemplateWidth - Self.Width - 5
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)

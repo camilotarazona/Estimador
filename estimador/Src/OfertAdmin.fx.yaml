@@ -509,6 +509,7 @@ OfertAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =1053
         Y: =6
@@ -767,107 +768,6 @@ OfertAdmin As screen:
         X: =90
         Y: =689
         ZIndex: =51
-
-    "Gallery2_5 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =208
-        Items: |-
-            =
-            //Filter(pdf_Ofertas, Name= ComboBox2.Selected.Result)
-            Last(pdf_Ofertas)
-        Layout: =Layout.Vertical
-        OnSelect: =Set(VartipoDocumento,ThisItem.'File name with extension')
-        TemplatePadding: =0
-        TemplateSize: =104
-        Width: =391
-        X: =890
-        Y: =390
-        ZIndex: =52
-
-        Title5_5 As label:
-            Color: =If(ThisItem.IsSelected,Color.MediumPurple,Color.Black)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =56
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =25
-            Text: =ThisItem.Name
-            Width: =340
-            X: =22
-            Y: =22
-            ZIndex: =1
-
-        NextArrow4_11 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(160, 66, 227, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =60
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Search
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
-
-        Separator5_5 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
-
-        NextArrow4_10 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(160, 66, 227, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =60
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Download
-            OnSelect: |-
-                =Set(_fpdf,ThisItem.'Link to item');
-                Launch(_fpdf)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =271
-            Y: =18
-            ZIndex: =5
 
     Group8 As group:
         Height: =5

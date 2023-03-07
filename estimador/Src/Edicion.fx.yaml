@@ -97,7 +97,11 @@ Edicion As screen:
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Home
-        OnSelect: =Navigate(HomeAdmin,ScreenTransition.CoverRight);
+        OnSelect: |-
+            =Navigate(HomeAdmin,ScreenTransition.CoverRight);
+            Reset(DropTipo_1);
+            Reset(DropClas_1);
+            Reset(DropCompl_1)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -150,8 +154,8 @@ Edicion As screen:
         Font: =Font.'Segoe UI'
         Height: =42
         Size: =35
-        Text: ="Edit"
-        Width: =209
+        Text: ="Edit Functions"
+        Width: =340
         X: =106
         Y: =19
         ZIndex: =9
@@ -555,7 +559,7 @@ Edicion As screen:
         FontWeight: =FontWeight.Semibold
         Height: =46
         Size: =20
-        Text: ="Clasificacion"
+        Text: ="Clasificación"
         Width: =166
         X: =820
         Y: =258
