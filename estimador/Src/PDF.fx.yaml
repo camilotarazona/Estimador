@@ -612,7 +612,7 @@ PDF As screen:
                 NotificationType.Success,
                 2000
             );
-            //Navigate(HomeAdmin,ScreenTransition.Fade)
+            Navigate(HomeAdmin,ScreenTransition.Fade)
             //Navigate(Details,ScreenTransition.Cover)
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
         PressedColor: =RGBA(39, 113, 194, 1)

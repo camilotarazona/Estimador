@@ -465,115 +465,51 @@ PDF_html_1 As screen:
         Y: =132
         ZIndex: =16
 
-    RichTextEditor1_1 As richTextEditor:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Default: |-
+    HtmlText4 As htmlViewer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =573
+        HtmlText: |-
             ="<html>
-            <head>
-            <style>
-            table {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width: 100%;
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 60px;
-            }
-            
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 2px;
-            }
-            
-            th {
-              background-color: black;
-              color: rgb(255, 255, 255);
-            }
-            
-            td {
-              font-size: 10px;
-            }
-            
-            .tabla-uno .fila .columna {
-              display: flex;
-              
-            }
-            
-            .tabla-uno .fila .columna .header, 
-            .tabla-uno .fila .columna .contenido {
-              border: 3px solid #909090;
-              border-bottom: none;
-              padding: 12px;
-              
-            }
-             
-            .tabla-uno .fila .columna .header{
-              width: 40%;
-              background-color: #ffffff;
-              color: black;
-              font-weight: bold;
-              margin-left: 200px;
-            }
-             
-            
-            .tabla-uno .fila .columna .contenido{
-              width: 60%;
-              margin-right: 200px;
-              
-            }
-            
-            .fecha{
-              text-align: right;
-              margin-right: 15px;
-            }
-            
-            .titulo{
-              text-align: center;
-              font-weight: bold;
-            }
-            
-            </style>
-            </head>
             <body>
             
-            <h4 class= fecha>Fecha de emisión: " & DatePicker1 & "</h4>
-            <h2 class=titulo> Estimacion</h2>
-            <h3 class=INI> Iniciativa: " & TxINI.Text & "</h3>
-            <h3 class=descripcion> Descripcion general: " & TextInput2_1.Text & " </h3>
+            <h4 style='text-align:right;margin-right: 25px;'><strong>Fecha de emisión:</strong> " & DatePicker1 & "</h4>
+            <h2 style='text-align:center;'> <strong>Estimacion</strong></h2>
+            <h3 style='text-align:left;margin-left: 15px'><strong> Iniciativa:</strong> " & TxINI.Text & "</h3>
+            <h3 style='text-align:left;margin-left: 15px'><strong>Descripcion general:</strong> " & TextInput2_1.Text & " </h3>
             
-            <table class='tabla-uno'>
+            <table style='width:100%;'>
               <tr>
-                <th>Actividad</th>
-                <th>Jornadas</th>
+                <th style='width:40%;text-align:right;'><strong>Actividad</strong></th>
+                <th style='width:40%;text-align:center;'><strong>Jornadas</strong></th>
               </tr>
               <tr>
-                <td>Configuracion-Desarrollo</td>
-                <td>" & LbConfDes.Text &"</td>
+                <td style='width:40%;text-align:right;'><strong>Configuracion-Desarrollo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbConfDes.Text &"</td>
               </tr>
               <tr>
-                <td>Apoyo a pruebas</td>
-                <td> " & LbApo.Text & "</td>
+                <td style='width:40%;text-align:right;'><strong>Apoyo a pruebas</strong></td>
+                <td style='width:40%;text-align:center;'> " & LbApo.Text & "</td>
               </tr>
               <tr>
-                <td>Entrega linea base</td>
-                <td>" & LbEnLiBas.Text & "</td>
+                <td style='width:40%;text-align:right;'><strong>Entrega linea base</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbEnLiBas.Text & "</td>
               </tr>
               <tr>
-                <td>% de Riesgo</td>
-                <td>" & LbRiesg & "</td>
+                <td style='width:40%;text-align:right;'><strong>Total sin riesgo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbTSinR & "</td>
               </tr>
               <tr>
-                <td>Total sin riesgo</td>
-                <td>" & LbTSinR & "</td>
+                <td style='width:40%;text-align:right;'><strong>% de Riesgo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbRiesg & "</td>
               </tr>
+              
               <tr>
-                <td>Total</td>
-                <td>" & LbTtal & "</td>
+                <td style='width:40%;text-align:right;'><strong>Total</strong></td>
+                <td style='width:40%;text-align:center;'><strong>" & LbTtal & "</strong></td>
               </tr>
             </table>
             
-            <table>
+            <table style='width:95%;margin-top: 30px;'>
               <tr>
                 <th> Tipo </th>
                 <th> Descripcion </th>
@@ -600,18 +536,12 @@ PDF_html_1 As screen:
               "
             ) & "
             </table>
-                <table>
-                <tr>
-                <td colspan='6'>Total</td>
-                <td>" & LbRConf_1 &"</td>
-                </tr>
-                </table>
+                
             
             </body>
             </html>"
-        Height: =587
-        Width: =822
-        X: =266
-        Y: =146
-        ZIndex: =17
+        Width: =848
+        X: =286
+        Y: =149
+        ZIndex: =18
 

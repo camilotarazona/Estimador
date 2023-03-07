@@ -3044,19 +3044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon1_19.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.Icon1_19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon1_19.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.Icon1_19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon1_19"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon1_19"
               }
             }
           ],
@@ -3074,19 +3074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon1_19.TabIndex"
+                  "fullyQualifiedName": "HistoryAdmin.Icon1_19.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon1_19.TabIndex",
+                  "fullyQualifiedName": "HistoryAdmin.Icon1_19.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon1_19"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon1_19"
               }
             }
           ],
@@ -3104,19 +3104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon4_11.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.Icon4_11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon4_11.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.Icon4_11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon4_11"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon4_11"
               }
             }
           ],
@@ -3134,19 +3134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon4_11.TabIndex"
+                  "fullyQualifiedName": "HistoryAdmin.Icon4_11.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon4_11.TabIndex",
+                  "fullyQualifiedName": "HistoryAdmin.Icon4_11.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon4_11"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon4_11"
               }
             }
           ],
@@ -3164,19 +3164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon6_4.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.Icon6_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon6_4.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.Icon6_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon6_4"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon6_4"
               }
             }
           ],
@@ -3194,19 +3194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon6_4.TabIndex"
+                  "fullyQualifiedName": "HistoryAdmin.Icon6_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.Icon6_4.TabIndex",
+                  "fullyQualifiedName": "HistoryAdmin.Icon6_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.Icon6_4"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.Icon6_4"
               }
             }
           ],
@@ -3224,19 +3224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.GalEstimaciones_2.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.GalEstimaciones_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.GalEstimaciones_2.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.GalEstimaciones_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.GalEstimaciones_2"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.GalEstimaciones_2"
               }
             }
           ],
@@ -3254,19 +3254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.GalEstimaciones_2.TabIndex"
+                  "fullyQualifiedName": "HistoryAdmin.GalEstimaciones_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.GalEstimaciones_2.TabIndex",
+                  "fullyQualifiedName": "HistoryAdmin.GalEstimaciones_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.GalEstimaciones_2"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.GalEstimaciones_2"
               }
             }
           ],
@@ -3284,19 +3284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.CbxNINI_2.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.CbxNINI_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.CbxNINI_2.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.CbxNINI_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.CbxNINI_2"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.CbxNINI_2"
               }
             }
           ],
@@ -3314,19 +3314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.DropAplicacion.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.DropAplicacion.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.DropAplicacion.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.DropAplicacion.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.DropAplicacion"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.DropAplicacion"
               }
             }
           ],
@@ -3344,19 +3344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.DropTipo_4.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.DropTipo_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.DropTipo_4.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.DropTipo_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.DropTipo_4"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.DropTipo_4"
               }
             }
           ],
@@ -3374,19 +3374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.DropClas_3.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.DropClas_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.DropClas_3.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.DropClas_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.DropClas_3"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.DropClas_3"
               }
             }
           ],
@@ -3404,19 +3404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.DropCompl_3.AccessibleLabel"
+                  "fullyQualifiedName": "HistoryAdmin.DropCompl_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.DropCompl_3.AccessibleLabel",
+                  "fullyQualifiedName": "HistoryAdmin.DropCompl_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.DropCompl_3"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.DropCompl_3"
               }
             }
           ],
@@ -8114,36 +8114,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PDF_html_1.RichTextEditor1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PDF_html_1.RichTextEditor1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PDF_html_1",
-                "type": "PDF_html_1.RichTextEditor1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.VartipoDocumento"
                 }
               ],
@@ -8774,19 +8744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ConsultasAdmin.LbRConf_7.Text"
+                  "fullyQualifiedName": "HistoryAdmin.LbRConf_7.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ConsultasAdmin.LbRConf_7.Text",
+                  "fullyQualifiedName": "HistoryAdmin.LbRConf_7.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
-                "module": "ConsultasAdmin",
-                "type": "ConsultasAdmin.LbRConf_7"
+                "module": "HistoryAdmin",
+                "type": "HistoryAdmin.LbRConf_7"
               }
             }
           ],
@@ -9027,6 +8997,36 @@
                 "member": "DisplayMode",
                 "module": "PDFUser",
                 "type": "PDFUser.BtPatch_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PDF_html_1.HtmlText4.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PDF_html_1.HtmlText4.HtmlText",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "HtmlText",
+                "module": "PDF_html_1",
+                "type": "PDF_html_1.HtmlText4"
               }
             }
           ],
@@ -9867,36 +9867,6 @@
                 "member": "Default",
                 "module": "EditOfert",
                 "type": "EditOfert.TextInput1_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PDF_html_1.RichTextEditor1_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PDF_html_1.RichTextEditor1_1.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "PDF_html_1",
-                "type": "PDF_html_1.RichTextEditor1_1"
               }
             }
           ],
