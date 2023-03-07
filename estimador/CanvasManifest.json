@@ -125,7 +125,6 @@
     "LoadFunctions",
     "EditOfert",
     "New",
-    "New_pruebas",
     "NewUser",
     "Details",
     "DetailsUser",
@@ -139,6 +138,7 @@
     "PDf_busquedas",
     "PDF_1",
     "PDF_html",
+    "PDF_html_1",
     "PDFUser",
     "PDFUser_1"
   ]

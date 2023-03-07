@@ -731,8 +731,8 @@ Edicion As screen:
         Size: =15
         Text: ="New Function"
         Visible: =false
-        X: =1095
-        Y: =386
+        X: =1094
+        Y: =467
         ZIndex: =19
 
     Image2_2 As image:

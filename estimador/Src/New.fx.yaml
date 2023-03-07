@@ -352,7 +352,7 @@ New As screen:
             
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =174
+        TemplateSize: =117
         Width: =1026
         X: =96
         Y: =347
@@ -481,8 +481,8 @@ New As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
             Width: =64
-            X: =301
-            Y: =16
+            X: =416
+            Y: =92
             ZIndex: =8
 
         CbxSelec_3 As checkbox:
@@ -523,7 +523,7 @@ New As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =56
+            Height: =77
             HintText: ="Comentario o descripción de la tarea a realizar"
             HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
@@ -694,14 +694,14 @@ New As screen:
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =110
+        Height: =243
         Items: =colEstimacion
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =110
-        Width: =1175
-        X: =87
-        Y: =582
+        TemplateSize: =130
+        Width: =1150
+        X: =83
+        Y: =509
         ZIndex: =15
 
         Title2 As label:
@@ -718,8 +718,7 @@ New As screen:
             Text: =ThisItem.Aplicacion
             VerticalAlign: =VerticalAlign.Top
             Width: =340
-            X: =248
-            Y: =6
+            X: =250
             ZIndex: =1
 
         Subtitle2 As label:
@@ -756,7 +755,7 @@ New As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =1058
             X: =17
-            Y: =61
+            Y: =40
             ZIndex: =3
 
         NextArrow2 As icon.ChevronRight:
@@ -815,6 +814,25 @@ New As screen:
             Y: =6
             ZIndex: =6
 
+        Subtitle2_3 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Esfuerzo
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =220
+            X: =14
+            Y: =53
+            ZIndex: =7
+
     ComboBox1_3 As combobox:
         BorderColor: =RGBA(166, 166, 166, 1)
         ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -867,9 +885,10 @@ New As screen:
         HoverFill: =RGBA(212, 212, 212, 1)
         InputTextPlaceholder: ="Clasificacion"
         IsSearchable: =false
-        Items: |-
+        Items: |+
             =//Distinct(CargaFuncionesPws,Clasificacion)
             Distinct(Filter(CargaFuncionesPws,Complejidad=ComboBox1_5.Selected.Result),Clasificacion)
+            
         NoSelectionText: ="Clasificación"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
@@ -994,7 +1013,7 @@ New As screen:
         Size: =16
         Width: =180
         X: =1093
-        Y: =113
+        Y: =141
         ZIndex: =21
 
     ComboBox1_6 As combobox:
@@ -1045,7 +1064,7 @@ New As screen:
         Text: ="Previsualización de tareas seleccionadas"
         Width: =350
         X: =96
-        Y: =532
+        Y: =467
         ZIndex: =23
 
     Label14 As label:
@@ -1099,11 +1118,11 @@ New As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Fecha estimacion:"
+            ="Fecha estimación:"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =290
         X: =793
-        Y: =113
+        Y: =141
         ZIndex: =26
 
     Label15 As label:
@@ -1121,7 +1140,7 @@ New As screen:
         Text: =CountRows(Gallery4.AllItems)
         Width: =50
         X: =420
-        Y: =532
+        Y: =467
         ZIndex: =27
 
     Icon3 As icon.NextArrow:

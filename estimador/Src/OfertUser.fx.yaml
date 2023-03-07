@@ -35,7 +35,7 @@ OfertUser As screen:
         Width: =527
         X: =15
         Y: =459
-        ZIndex: =3
+        ZIndex: =2
 
     Label12_14 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -53,7 +53,7 @@ OfertUser As screen:
         Width: =1270
         X: =48
         Y: =68
-        ZIndex: =4
+        ZIndex: =3
 
     Rectangle2_70 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -66,7 +66,7 @@ OfertUser As screen:
         HoverFill: =RGBA(160, 66, 227, 1)
         PressedFill: =RGBA(160, 66, 227, 1)
         Width: =1366
-        ZIndex: =5
+        ZIndex: =4
 
     Label1_18 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -84,7 +84,7 @@ OfertUser As screen:
         Width: =390
         X: =128
         Y: =65
-        ZIndex: =6
+        ZIndex: =5
 
     Icon1_18 As icon.AddDocument:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -114,7 +114,7 @@ OfertUser As screen:
         Width: =50
         X: =15
         Y: =6
-        ZIndex: =7
+        ZIndex: =6
 
     Rectangle1_49 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -129,7 +129,7 @@ OfertUser As screen:
         Width: =350
         X: =120
         Y: =125
-        ZIndex: =8
+        ZIndex: =7
 
     Label3_53 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -146,29 +146,7 @@ OfertUser As screen:
         Width: =285
         X: =140
         Y: =19
-        ZIndex: =9
-
-    Icon4_7 As icon.BackArrow:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.BackArrow
-        OnSelect: |
-            =Navigate(DetailsUser)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =50
-        X: =78
-        Y: =9
-        ZIndex: =11
+        ZIndex: =8
 
     Label10_29 As label:
         Align: =Align.Center
@@ -188,7 +166,7 @@ OfertUser As screen:
         Width: =179
         X: =213
         Y: =177
-        ZIndex: =12
+        ZIndex: =10
 
     LbINI_4 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -208,11 +186,11 @@ OfertUser As screen:
         Width: =97
         X: =407
         Y: =177
-        ZIndex: =13
+        ZIndex: =11
 
     Icon4_8 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(246, 88, 16, 1)
+        Color: =RGBA(255, 255, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -221,7 +199,7 @@ OfertUser As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.DocumentPDF
+        Icon: =Icon.OpenInNewWindow
         OnSelect: |-
             =Set(Archivo_pdf,PDF(OfertUser,{Orientation:PaperOrientation.Landscape,Size:PaperSize.A5}));
             Navigate(PDFUser_1,ScreenTransition.Cover)
@@ -229,9 +207,9 @@ OfertUser As screen:
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =50
-        X: =1300
+        X: =1253
         Y: =11
-        ZIndex: =20
+        ZIndex: =18
 
     Rectangle3_4 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -240,13 +218,13 @@ OfertUser As screen:
         DisabledFill: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(142, 79, 201, 0.83)
         FocusedBorderThickness: =4
-        Height: =427
+        Height: =374
         HoverFill: =RGBA(142, 79, 201, 0.82)
         PressedFill: =RGBA(142, 79, 201, 0.82)
         Width: =562
         X: =98
         Y: =240
-        ZIndex: =21
+        ZIndex: =19
 
     Icon4_18 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -269,7 +247,7 @@ OfertUser As screen:
         Width: =50
         X: =1089
         Y: =11
-        ZIndex: =45
+        ZIndex: =20
 
     HtmlText1_1 As htmlViewer:
         Height: =409
@@ -420,7 +398,44 @@ OfertUser As screen:
         Visible: =false
         Width: =706
         X: =660
-        Y: =99
+        Y: =214
+        ZIndex: =21
+
+    Rectangle9 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(135, 100, 184, 1)
+        FocusedBorderThickness: =4
+        Height: =58
+        HoverFill: =RGBA(135, 100, 184, 1)
+        PressedFill: =RGBA(135, 100, 184, 1)
+        Width: =562
+        X: =98
+        Y: =609
+        ZIndex: =22
+
+    Icon4_23 As icon.BackArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(183, 162, 212, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        Icon: =Icon.BackArrow
+        OnSelect: |
+            =Navigate(DetailsUser,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =90
+        Y: =689
         ZIndex: =46
 
     Group3_19 As group:
@@ -443,10 +458,11 @@ OfertUser As screen:
             Height: =53
             Size: =40
             Text: =Sum(Gallery3.AllItems,Esfuerzo)/80%
+            Visible: =false
             Width: =130
             X: =932
             Y: =628
-            ZIndex: =14
+            ZIndex: =12
 
         Label11_18 As label:
             Align: =Align.Justify
@@ -462,10 +478,11 @@ OfertUser As screen:
             Height: =42
             Size: =25
             Text: ="Horas"
+            Visible: =false
             Width: =139
             X: =929
             Y: =688
-            ZIndex: =15
+            ZIndex: =13
 
     Group3_17 As group:
         Height: =5
@@ -484,13 +501,13 @@ OfertUser As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =51
+            Height: =52
             Size: =40
             Text: =CountRows(Gallery3.AllItems)
             Width: =84
-            X: =1062
-            Y: =635
-            ZIndex: =18
+            X: =1135
+            Y: =147
+            ZIndex: =16
 
         Label11_19 As label:
             Align: =Align.Justify
@@ -507,9 +524,9 @@ OfertUser As screen:
             Size: =25
             Text: ="Tareas"
             Width: =118
-            X: =1057
-            Y: =688
-            ZIndex: =19
+            X: =1135
+            Y: =210
+            ZIndex: =17
 
     Group3_18 As group:
         Height: =5
@@ -532,9 +549,9 @@ OfertUser As screen:
             Size: =40
             Text: =RoundUp(Sum(Gallery3_1.AllItems,Esfuerzo)/80%/8+LbRiesg_2,0)
             Width: =112
-            X: =752
-            Y: =635
-            ZIndex: =16
+            X: =976
+            Y: =142
+            ZIndex: =14
 
         Label11_17 As label:
             Align: =Align.Justify
@@ -551,9 +568,9 @@ OfertUser As screen:
             Size: =25
             Text: ="Jornadas"
             Width: =199
-            X: =730
-            Y: =686
-            ZIndex: =17
+            X: =940
+            Y: =206
+            ZIndex: =15
 
     Group8_2 As group:
         Height: =5
@@ -569,13 +586,13 @@ OfertUser As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =15
+            Height: =14
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
             X: =98
             Y: =240
-            ZIndex: =22
+            ZIndex: =23
 
         Label3_54 As label:
             Align: =Align.Center
@@ -594,7 +611,7 @@ OfertUser As screen:
             Width: =170
             X: =175
             Y: =269
-            ZIndex: =23
+            ZIndex: =24
 
         Label3_55 As label:
             Align: =Align.Center
@@ -613,7 +630,7 @@ OfertUser As screen:
             VerticalAlign: =VerticalAlign.Top
             X: =465
             Y: =269
-            ZIndex: =24
+            ZIndex: =25
 
         Rectangle2_73 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -628,7 +645,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =336
-            ZIndex: =25
+            ZIndex: =26
 
         Rectangle2_72 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -637,13 +654,13 @@ OfertUser As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =412
+            Height: =413
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =3
             X: =428
-            Y: =255
-            ZIndex: =26
+            Y: =254
+            ZIndex: =27
 
         Rectangle2_74 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -658,7 +675,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =389
-            ZIndex: =27
+            ZIndex: =28
 
         Rectangle2_75 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -673,7 +690,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =445
-            ZIndex: =28
+            ZIndex: =29
 
         Rectangle2_76 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -688,7 +705,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =499
-            ZIndex: =29
+            ZIndex: =30
 
         Rectangle2_77 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -702,8 +719,8 @@ OfertUser As screen:
             PressedFill: =RGBA(109, 49, 162, 1)
             Width: =562
             X: =98
-            Y: =555
-            ZIndex: =30
+            Y: =556
+            ZIndex: =31
 
         Rectangle2_78 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -718,7 +735,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =608
-            ZIndex: =31
+            ZIndex: =32
 
         Rectangle2_79 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -733,7 +750,7 @@ OfertUser As screen:
             Width: =562
             X: =98
             Y: =664
-            ZIndex: =32
+            ZIndex: =33
 
         Label3_56 As label:
             Align: =Align.Center
@@ -751,7 +768,7 @@ OfertUser As screen:
             Width: =310
             X: =105
             Y: =346
-            ZIndex: =33
+            ZIndex: =34
 
         Label3_57 As label:
             Align: =Align.Center
@@ -769,7 +786,7 @@ OfertUser As screen:
             Width: =310
             X: =105
             Y: =396
-            ZIndex: =34
+            ZIndex: =35
 
         Label3_58 As label:
             Align: =Align.Center
@@ -787,7 +804,7 @@ OfertUser As screen:
             Width: =310
             X: =105
             Y: =450
-            ZIndex: =35
+            ZIndex: =36
 
         Label3_59 As label:
             Align: =Align.Center
@@ -805,7 +822,7 @@ OfertUser As screen:
             Width: =310
             X: =105
             Y: =505
-            ZIndex: =36
+            ZIndex: =37
 
         Label3_60 As label:
             Align: =Align.Center
@@ -822,8 +839,8 @@ OfertUser As screen:
             Text: ="Total Sin Riesgo"
             Width: =310
             X: =105
-            Y: =565
-            ZIndex: =37
+            Y: =614
+            ZIndex: =38
 
         Label3_61 As label:
             Align: =Align.Center
@@ -835,13 +852,14 @@ OfertUser As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
             Height: =46
             Size: =20
             Text: ="Total"
             Width: =310
             X: =105
-            Y: =618
-            ZIndex: =38
+            Y: =563
+            ZIndex: =39
 
         LbConfDes_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -857,7 +875,7 @@ OfertUser As screen:
             Width: =82
             X: =517
             Y: =346
-            ZIndex: =39
+            ZIndex: =40
 
         LbApo_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -873,7 +891,7 @@ OfertUser As screen:
             Width: =82
             X: =517
             Y: =405
-            ZIndex: =40
+            ZIndex: =41
 
         LbEnLiBas_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -889,7 +907,7 @@ OfertUser As screen:
             Width: =82
             X: =517
             Y: =452
-            ZIndex: =41
+            ZIndex: =42
 
         LbRiesg_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -905,7 +923,7 @@ OfertUser As screen:
             Width: =82
             X: =517
             Y: =508
-            ZIndex: =42
+            ZIndex: =43
 
         LbTSinR_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -920,8 +938,8 @@ OfertUser As screen:
             Text: =Sum(LbEnLiBas_2,LbApo_2,LbConfDes_2)
             Width: =82
             X: =517
-            Y: =564
-            ZIndex: =43
+            Y: =620
+            ZIndex: =44
 
         LbTtal_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -932,10 +950,11 @@ OfertUser As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
             Size: =20
             Text: =Sum(LbEnLiBas_2,LbApo_2,LbConfDes_2,LbRiesg_2)
             Width: =82
             X: =517
-            Y: =618
-            ZIndex: =44
+            Y: =563
+            ZIndex: =45
 

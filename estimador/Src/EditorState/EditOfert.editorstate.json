@@ -75,7 +75,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "Group7_2": {
+    "Group16": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -93,8 +93,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group7_2",
-      "ParentIndex": 88,
+      "Name": "Group16",
+      "ParentIndex": 87,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -126,7 +126,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group8_1": {
+    "Group17": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -144,8 +144,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group8_1",
-      "ParentIndex": 87,
+      "Name": "Group17",
+      "ParentIndex": 88,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1497,7 +1497,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label10_12",
-      "ParentIndex": 54,
+      "ParentIndex": 58,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3789,7 +3789,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_42",
-      "ParentIndex": 57,
+      "ParentIndex": 56,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6675,7 +6675,14 @@
         "FontWeight",
         "Align",
         "VerticalAlign",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         "Width",
         "Height",
@@ -7269,7 +7276,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbDoc_2",
-      "ParentIndex": 58,
+      "ParentIndex": 57,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9336,7 +9343,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle2_55",
-      "ParentIndex": 55,
+      "ParentIndex": 54,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10392,7 +10399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle2_63",
-      "ParentIndex": 56,
+      "ParentIndex": 55,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -137,12 +137,12 @@ ConsultasAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =42
+        Height: =50
         Size: =35
-        Text: ="HistorialAdmin"
+        Text: ="HistoryAdmin"
         Width: =380
         X: =106
-        Y: =19
+        Y: =14
         ZIndex: =9
 
     Label4_10 As label:
@@ -403,8 +403,8 @@ ConsultasAdmin As screen:
             Size: =18
             Text: =ThisItem.Descripcion
             VerticalAlign: =VerticalAlign.Top
-            Width: =429
-            X: =23
+            Width: =420
+            X: =32
             Y: =49
             ZIndex: =2
 
@@ -488,7 +488,7 @@ ConsultasAdmin As screen:
             Text: =ThisItem.'Comentario Estimacion'
             VerticalAlign: =VerticalAlign.Top
             Width: =403
-            X: =40
+            X: =31
             Y: =161
             ZIndex: =8
 
@@ -506,7 +506,7 @@ ConsultasAdmin As screen:
             Text: =ThisItem.Aplicacion
             VerticalAlign: =VerticalAlign.Top
             Width: =250
-            X: =150
+            X: =141
             Y: =115
             ZIndex: =9
 
@@ -527,7 +527,7 @@ ConsultasAdmin As screen:
             Text: |-
                 ="Aplicacion:"
             Width: =100
-            X: =40
+            X: =31
             Y: =115
             ZIndex: =10
 
@@ -1844,4 +1844,37 @@ ConsultasAdmin As screen:
         X: =816
         Y: =340
         ZIndex: =91
+
+    BtReset_2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(160, 66, 227, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+        OnSelect: |-
+            =Reset(DropTipo_4);
+            Reset(DropClas_3);
+            Reset(DropCompl_3);
+            Reset(DropAplicacion);
+            Reset(CbxNINI_2)
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Reset"
+        Width: =123
+        X: =1068
+        Y: =616
+        ZIndex: =92
 
