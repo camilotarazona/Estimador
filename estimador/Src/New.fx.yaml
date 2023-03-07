@@ -481,8 +481,8 @@ New As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
             Width: =64
-            X: =416
-            Y: =92
+            X: =843
+            Y: =61
             ZIndex: =8
 
         CbxSelec_3 As checkbox:

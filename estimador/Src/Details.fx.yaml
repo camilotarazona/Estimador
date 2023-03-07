@@ -141,7 +141,100 @@ Details As screen:
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Title4_2 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Complejidad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =190
+            X: =390
+            Y: =56
             ZIndex: =4
+
+        Title4_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.'Clasificacion (TipoEstimacion)'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =190
+            X: =390
+            Y: =16
+            ZIndex: =5
+
+        Subtitle4_4 As label:
+            AutoHeight: =true
+            Color: =RGBA(109, 49, 162, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =60
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Comentario Estimacion'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =550
+            X: =32
+            Y: =155
+            ZIndex: =6
+
+        Title4_16 As label:
+            Color: =RGBA(160, 66, 227, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Aplicacion
+            VerticalAlign: =VerticalAlign.Top
+            Width: =320
+            X: =161
+            Y: =109
+            ZIndex: =7
+
+        Label1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(160, 66, 227, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Aplicacion"
+            Width: =100
+            X: =32
+            Y: =109
+            ZIndex: =8
 
         Title4_1 As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -162,100 +255,7 @@ Details As screen:
             Wrap: =false
             X: =329
             Y: =16
-            ZIndex: =5
-
-        Title4_2 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Complejidad
-            VerticalAlign: =VerticalAlign.Top
-            Width: =190
-            X: =390
-            Y: =56
-            ZIndex: =6
-
-        Title4_3 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.'Clasificacion (TipoEstimacion)'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =190
-            X: =390
-            Y: =16
-            ZIndex: =7
-
-        Subtitle4_4 As label:
-            AutoHeight: =true
-            Color: =RGBA(109, 49, 162, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            Height: =60
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: =ThisItem.'Comentario Estimacion'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =550
-            X: =32
-            Y: =155
-            ZIndex: =8
-
-        Title4_16 As label:
-            Color: =RGBA(160, 66, 227, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Aplicacion
-            VerticalAlign: =VerticalAlign.Top
-            Width: =320
-            X: =161
-            Y: =109
             ZIndex: =9
-
-        Label1 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(160, 66, 227, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: ="Aplicacion"
-            Width: =100
-            X: =32
-            Y: =109
-            ZIndex: =10
 
     Label1_5 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
