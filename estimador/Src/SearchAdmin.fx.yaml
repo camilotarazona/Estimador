@@ -340,7 +340,7 @@ SearchAdmin As screen:
         Width: =602
         X: =80
         Y: =202
-        ZIndex: =75
+        ZIndex: =72
 
         Title4_5 As label:
             Color: =RGBA(109, 49, 162, 1)
@@ -563,7 +563,7 @@ SearchAdmin As screen:
         Width: =50
         X: =840
         Y: =6
-        ZIndex: =76
+        ZIndex: =73
 
     Rectangle4_3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -578,7 +578,7 @@ SearchAdmin As screen:
         Width: =562
         X: =732
         Y: =591
-        ZIndex: =77
+        ZIndex: =74
 
     Group7_1 As group:
         Height: =5
@@ -601,7 +601,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =309
-            ZIndex: =45
+            ZIndex: =42
 
         Label3_32 As label:
             Align: =Align.Center
@@ -620,7 +620,7 @@ SearchAdmin As screen:
             Width: =170
             X: =222
             Y: =338
-            ZIndex: =46
+            ZIndex: =43
 
         Label3_34 As label:
             Align: =Align.Center
@@ -640,7 +640,7 @@ SearchAdmin As screen:
             Width: =80
             X: =615
             Y: =336
-            ZIndex: =47
+            ZIndex: =44
 
         Rectangle2_47 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -656,7 +656,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =405
-            ZIndex: =48
+            ZIndex: =45
 
         Rectangle2_48 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -672,7 +672,7 @@ SearchAdmin As screen:
             Width: =3
             X: =475
             Y: =324
-            ZIndex: =49
+            ZIndex: =46
 
         Rectangle2_46 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -688,7 +688,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =458
-            ZIndex: =50
+            ZIndex: =47
 
         Rectangle2_45 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -704,7 +704,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =514
-            ZIndex: =51
+            ZIndex: =48
 
         Rectangle2_44 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -720,7 +720,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =568
-            ZIndex: =52
+            ZIndex: =49
 
         Rectangle2_43 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -736,7 +736,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =624
-            ZIndex: =53
+            ZIndex: =50
 
         Rectangle2_42 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -752,7 +752,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =677
-            ZIndex: =54
+            ZIndex: =51
 
         Rectangle2_41 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -768,7 +768,7 @@ SearchAdmin As screen:
             Width: =562
             X: =145
             Y: =733
-            ZIndex: =55
+            ZIndex: =52
 
         LbGest_1 As label:
             Align: =Align.Center
@@ -787,7 +787,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =415
-            ZIndex: =56
+            ZIndex: =53
 
         "'LbConf-Des_1' As label":
             Align: =Align.Center
@@ -807,7 +807,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =465
-            ZIndex: =57
+            ZIndex: =54
 
         LbPrue_1 As label:
             Align: =Align.Center
@@ -826,7 +826,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =519
-            ZIndex: =58
+            ZIndex: =55
 
         LbDoc_1 As label:
             Align: =Align.Center
@@ -845,7 +845,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =574
-            ZIndex: =59
+            ZIndex: =56
 
         LbgstC_1 As label:
             Align: =Align.Center
@@ -864,7 +864,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =634
-            ZIndex: =60
+            ZIndex: =57
 
         Label3_35 As label:
             Align: =Align.Center
@@ -883,7 +883,7 @@ SearchAdmin As screen:
             Width: =310
             X: =152
             Y: =687
-            ZIndex: =61
+            ZIndex: =58
 
         LbRG_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -900,7 +900,7 @@ SearchAdmin As screen:
             Width: =73
             X: =513
             Y: =415
-            ZIndex: =62
+            ZIndex: =59
 
         LbRConf_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -917,7 +917,7 @@ SearchAdmin As screen:
             Width: =73
             X: =513
             Y: =474
-            ZIndex: =63
+            ZIndex: =60
 
         LbRPrue_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -934,7 +934,7 @@ SearchAdmin As screen:
             Width: =73
             X: =513
             Y: =521
-            ZIndex: =64
+            ZIndex: =61
 
         LbRDoc_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -951,7 +951,7 @@ SearchAdmin As screen:
             Width: =73
             X: =513
             Y: =577
-            ZIndex: =65
+            ZIndex: =62
 
         LbRGstC_2 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -968,7 +968,7 @@ SearchAdmin As screen:
             Width: =73
             X: =513
             Y: =633
-            ZIndex: =66
+            ZIndex: =63
 
         LbtotalH_1 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -985,7 +985,7 @@ SearchAdmin As screen:
             Width: =73
             X: =515
             Y: =687
-            ZIndex: =67
+            ZIndex: =64
 
         LbRG_3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1002,7 +1002,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =415
-            ZIndex: =68
+            ZIndex: =65
 
         LbRConf_3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1019,7 +1019,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =474
-            ZIndex: =69
+            ZIndex: =66
 
         LbRPrue_3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1036,7 +1036,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =521
-            ZIndex: =70
+            ZIndex: =67
 
         LbRDoc_3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1053,7 +1053,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =577
-            ZIndex: =71
+            ZIndex: =68
 
         LbRGstC_3 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1070,7 +1070,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =633
-            ZIndex: =72
+            ZIndex: =69
 
         LbTotalD_1 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1087,7 +1087,7 @@ SearchAdmin As screen:
             Width: =73
             X: =634
             Y: =687
-            ZIndex: =73
+            ZIndex: =70
 
         Label3_33 As label:
             Align: =Align.Center
@@ -1107,7 +1107,7 @@ SearchAdmin As screen:
             Width: =102
             X: =486
             Y: =336
-            ZIndex: =74
+            ZIndex: =71
 
     Group1 As group:
         Height: =5
@@ -1271,7 +1271,7 @@ SearchAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(142, 79, 201, 0.78)
             FocusedBorderThickness: =4
-            Height: =353
+            Height: =356
             HoverFill: =RGBA(142, 79, 201, 0.78)
             PressedFill: =RGBA(142, 79, 201, 0.78)
             Width: =562
@@ -1347,21 +1347,6 @@ SearchAdmin As screen:
             Y: =324
             ZIndex: =27
 
-        Rectangle2_32 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(102, 26, 163, 1)
-            FocusedBorderThickness: =4
-            Height: =400
-            HoverFill: =RGBA(109, 49, 162, 1)
-            PressedFill: =RGBA(109, 49, 162, 1)
-            Width: =3
-            X: =1062
-            Y: =245
-            ZIndex: =28
-
         Rectangle2_34 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -1375,7 +1360,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =375
-            ZIndex: =29
+            ZIndex: =28
 
         Rectangle2_35 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1390,7 +1375,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =430
-            ZIndex: =30
+            ZIndex: =29
 
         Rectangle2_36 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1405,7 +1390,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =482
-            ZIndex: =31
+            ZIndex: =30
 
         Rectangle2_37 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1420,7 +1405,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =536
-            ZIndex: =32
+            ZIndex: =31
 
         Rectangle2_38 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1435,7 +1420,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =588
-            ZIndex: =33
+            ZIndex: =32
 
         Rectangle2_39 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1450,7 +1435,7 @@ SearchAdmin As screen:
             Width: =562
             X: =732
             Y: =643
-            ZIndex: =34
+            ZIndex: =33
 
         Label3_25 As label:
             Align: =Align.Center
@@ -1468,7 +1453,7 @@ SearchAdmin As screen:
             Width: =310
             X: =739
             Y: =334
-            ZIndex: =35
+            ZIndex: =34
 
         Label3_26 As label:
             Align: =Align.Center
@@ -1486,7 +1471,7 @@ SearchAdmin As screen:
             Width: =310
             X: =739
             Y: =383
-            ZIndex: =36
+            ZIndex: =35
 
         Label3_28 As label:
             Align: =Align.Center
@@ -1504,7 +1489,7 @@ SearchAdmin As screen:
             Width: =310
             X: =739
             Y: =435
-            ZIndex: =37
+            ZIndex: =36
 
         Label3_29 As label:
             Align: =Align.Center
@@ -1521,8 +1506,111 @@ SearchAdmin As screen:
             Text: ="% Riesgo = 10%"
             Width: =310
             X: =739
-            Y: =488
+            Y: =543
+            ZIndex: =37
+
+        LbConfDes_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =39
+            Size: =20
+            Text: =RoundDown(Sum(LbRGstC_2.Text,LbRDoc_2.Text,LbRConf_2,LbRG_2)/8,0)
+            Width: =82
+            X: =1151
+            Y: =334
             ZIndex: =38
+
+        LbApo_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =39
+            Size: =20
+            Text: =RoundUp(LbRPrue_2.Text/8,0)
+            Width: =82
+            X: =1151
+            Y: =391
+            ZIndex: =39
+
+        LbEnLiBas_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =39
+            Size: =20
+            Text: =RoundUp(LbRPrue_2.Text/8,0)
+            Width: =82
+            X: =1151
+            Y: =437
+            ZIndex: =40
+
+        LbRiesg_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =39
+            Size: =20
+            Text: =RoundUp(Sum(GalEstimaciones.AllItems,Esfuerzo)/80%*10%/8,0)
+            Width: =82
+            X: =1151
+            Y: =546
+            ZIndex: =41
+
+        Label3_30 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =44
+            Size: =20
+            Text: ="Total Sin Riesgo"
+            Width: =310
+            X: =739
+            Y: =492
+            ZIndex: =75
+
+        LbTSinR_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =39
+            Size: =20
+            Text: =Sum(LbEnLiBas_1,LbApo_1,LbConfDes_1)
+            Width: =82
+            X: =1151
+            Y: =491
+            ZIndex: =76
 
         Label3_31 As label:
             Align: =Align.Center
@@ -1540,76 +1628,8 @@ SearchAdmin As screen:
             Text: ="Total"
             Width: =310
             X: =739
-            Y: =542
-            ZIndex: =39
-
-        LbConfDes_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =20
-            Text: =RoundDown(Sum(LbRGstC_2.Text,LbRDoc_2.Text,LbRConf_2,LbRG_2)/8,0)
-            Width: =82
-            X: =1151
-            Y: =334
-            ZIndex: =40
-
-        LbApo_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =20
-            Text: =RoundUp(LbRPrue_2.Text/8,0)
-            Width: =82
-            X: =1151
-            Y: =391
-            ZIndex: =41
-
-        LbEnLiBas_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =20
-            Text: =RoundUp(LbRPrue_2.Text/8,0)
-            Width: =82
-            X: =1151
-            Y: =437
-            ZIndex: =42
-
-        LbRiesg_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =20
-            Text: =RoundUp(Sum(GalEstimaciones.AllItems,Esfuerzo)/80%*10%/8,0)
-            Width: =82
-            X: =1151
-            Y: =491
-            ZIndex: =43
+            Y: =599
+            ZIndex: =77
 
         LbTtal_1 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1626,41 +1646,21 @@ SearchAdmin As screen:
             Text: =Sum(LbEnLiBas_1,LbApo_1,LbConfDes_1,LbRiesg_1)
             Width: =82
             X: =1151
-            Y: =542
-            ZIndex: =44
-
-        Label3_30 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =44
-            Size: =20
-            Text: ="Total Sin Riesgo"
-            Width: =310
-            X: =739
-            Y: =595
+            Y: =599
             ZIndex: =78
 
-        LbTSinR_1 As label:
+        Rectangle2_32 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =20
-            Text: =Sum(LbEnLiBas_1,LbApo_1,LbConfDes_1)
-            Width: =82
-            X: =1151
-            Y: =594
+            Height: =400
+            HoverFill: =RGBA(109, 49, 162, 1)
+            PressedFill: =RGBA(109, 49, 162, 1)
+            Width: =3
+            X: =1062
+            Y: =245
             ZIndex: =79
 

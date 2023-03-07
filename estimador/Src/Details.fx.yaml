@@ -64,7 +64,7 @@ Details As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =666
+        Height: =676
         Size: =13
         Text: =""
         Width: =1270
