@@ -1701,7 +1701,7 @@ HistoryAdmin As screen:
         FontWeight: =FontWeight.Semibold
         Height: =46
         Size: =20
-        Text: ="Clasificacion"
+        Text: ="Clasificación"
         Width: =166
         X: =816
         Y: =480
@@ -1841,7 +1841,7 @@ HistoryAdmin As screen:
         FontWeight: =FontWeight.Semibold
         Height: =46
         Size: =20
-        Text: ="Aplicacion"
+        Text: ="Aplicación"
         Width: =166
         X: =816
         Y: =340

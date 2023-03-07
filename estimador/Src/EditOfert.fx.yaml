@@ -382,8 +382,8 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
-            Text: ="Gestion"
+            Size: =17
+            Text: ="Gestión"
             Width: =314
             X: =744
             Y: =311
@@ -401,8 +401,7 @@ EditOfert As screen:
             Font: =Font.'Segoe UI'
             Height: =43
             Size: =17
-            Text: |
-                ="Configuracion-Desarrollo"
+            Text: ="Configuración-Desarrollo"
             Width: =294
             X: =744
             Y: =356
@@ -419,7 +418,7 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
+            Size: =17
             Text: ="Pruebas"
             Width: =314
             X: =744
@@ -437,8 +436,8 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
-            Text: ="Documetacion"
+            Size: =17
+            Text: ="Documetación"
             Width: =314
             X: =744
             Y: =455
@@ -455,8 +454,8 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
-            Text: ="Gestion del Cambio"
+            Size: =17
+            Text: ="Gestión del Cambio"
             Width: =314
             X: =744
             Y: =510
@@ -860,7 +859,7 @@ EditOfert As screen:
             FontWeight: =FontWeight.Semibold
             Height: =42
             Size: =25
-            Text: ="Dias"
+            Text: ="Días"
             VerticalAlign: =VerticalAlign.Top
             Width: =90
             X: =1210
@@ -1237,8 +1236,8 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
-            Text: ="Configuracion-Desarrollo"
+            Size: =17
+            Text: ="Configuración-Desarrollo"
             Width: =347
             X: =48
             Y: =311
@@ -1255,7 +1254,7 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
+            Size: =17
             Text: ="Apoyo Pruebas"
             Width: =347
             X: =48
@@ -1273,8 +1272,8 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
-            Text: ="Entrega Linea Base"
+            Size: =17
+            Text: ="Entrega Línea Base"
             Width: =347
             X: =48
             Y: =405
@@ -1291,7 +1290,7 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
+            Size: =17
             Text: ="% Riesgo = 10%"
             Width: =347
             X: =48
@@ -1309,7 +1308,7 @@ EditOfert As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =42
-            Size: =20
+            Size: =17
             Text: ="Total Sin Riesgo"
             Width: =347
             X: =48
@@ -1693,7 +1692,7 @@ EditOfert As screen:
             FontWeight: =FontWeight.Semibold
             Height: =42
             Size: =25
-            Text: ="Dias"
+            Text: ="Días"
             VerticalAlign: =VerticalAlign.Top
             Width: =91
             X: =584
