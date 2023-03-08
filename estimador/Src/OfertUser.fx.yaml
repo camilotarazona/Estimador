@@ -244,6 +244,7 @@ OfertUser As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =1089
         Y: =11
@@ -821,7 +822,7 @@ OfertUser As screen:
             Text: ="% Riesgo = 10%"
             Width: =310
             X: =105
-            Y: =505
+            Y: =560
             ZIndex: =37
 
         Label3_60 As label:
@@ -839,7 +840,7 @@ OfertUser As screen:
             Text: ="Total Sin Riesgo"
             Width: =310
             X: =105
-            Y: =614
+            Y: =510
             ZIndex: =38
 
         Label3_61 As label:
@@ -858,7 +859,7 @@ OfertUser As screen:
             Text: ="Total"
             Width: =310
             X: =105
-            Y: =563
+            Y: =615
             ZIndex: =39
 
         LbConfDes_2 As label:
@@ -922,7 +923,7 @@ OfertUser As screen:
             Text: =RoundUp(Sum(Gallery3.AllItems,Esfuerzo)/80%*10%/8,0)
             Width: =82
             X: =517
-            Y: =508
+            Y: =566
             ZIndex: =43
 
         LbTSinR_2 As label:
@@ -938,7 +939,7 @@ OfertUser As screen:
             Text: =Sum(LbEnLiBas_2,LbApo_2,LbConfDes_2)
             Width: =82
             X: =517
-            Y: =620
+            Y: =516
             ZIndex: =44
 
         LbTtal_2 As label:
@@ -955,6 +956,6 @@ OfertUser As screen:
             Text: =Sum(LbEnLiBas_2,LbApo_2,LbConfDes_2,LbRiesg_2)
             Width: =82
             X: =517
-            Y: =563
+            Y: =615
             ZIndex: =45
 

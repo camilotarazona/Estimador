@@ -502,7 +502,7 @@ NewUser As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            DisplayMode: =If(IsBlank(ComboBox4_1.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit)
+            DisplayMode: =If(IsBlank(ComboBox4_3.Selected.Result),DisplayMode.Disabled, DisplayMode.Edit)
             Fill: =RGBA(160, 66, 227, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             FontWeight: =FontWeight.Semibold
@@ -522,7 +522,7 @@ NewUser As screen:
                      Complejidad: Subtitle7_22.Text,
                      Esfuerzo: Value(Subtitle7_21.Text),
                      'Comentario Estimacion': TextInput3_1.Text,
-                     Aplicacion: ComboBox4_1.Selected.Result         
+                     Aplicacion: ComboBox4_3.Selected.Result         
                     }
                 );
                 Reset(ComboBox1_7);
@@ -950,7 +950,7 @@ NewUser As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: |-
-            ="Fecha estimacion:"
+            ="Fecha estimación:"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =290
         X: =793

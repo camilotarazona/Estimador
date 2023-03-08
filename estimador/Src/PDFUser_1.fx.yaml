@@ -77,7 +77,7 @@ PDFUser_1 As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =660
+        Height: =676
         Size: =13
         Text: =""
         Width: =1253
@@ -182,37 +182,6 @@ PDFUser_1 As screen:
         Y: =19
         ZIndex: =10
 
-    PdfViewer1_3 As pdfViewer:
-        Document: =Archivo_pdf
-        Height: =413
-        Width: =904
-        X: =231
-        Y: =212
-        ZIndex: =11
-
-    Icon4_17 As icon.BackArrow:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.BackArrow
-        OnSelect: |
-            =Navigate(SearchUser,ScreenTransition.CoverRight)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =false
-        Width: =50
-        X: =78
-        Y: =9
-        ZIndex: =12
-
     Icon6_9 As icon.Send:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
@@ -230,6 +199,7 @@ PDFUser_1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =45
         X: =942
         Y: =9
@@ -342,9 +312,111 @@ PDFUser_1 As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =15
-        Text: ="Guardar Estimacion"
+        Text: ="Guardar Estimación"
         Width: =150
         X: =1152
         Y: =650
         ZIndex: =14
+
+    HtmlText4_1 As htmlViewer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =573
+        HtmlText: |-
+            ="<html>
+            <body>
+            
+            <h4 style='text-align:right;margin-right: 25px;'><strong>Fecha de emisión:</strong> " & DatePicker1_1 & "</h4>
+            <h2 style='text-align:center;'> <strong>Estimación</strong></h2>
+            <h3 style='text-align:left;margin-left: 15px'><strong> Iniciativa:</strong> " & TxINI_1.Text & "</h3>
+            <h3 style='text-align:left;margin-left: 15px'><strong>Descripción general:</strong> " & TextInput2_2.Text & " </h3>
+            
+            <table style='width:100%;'>
+              <tr>
+                <th style='width:40%;text-align:right;'><strong>Actividad</strong></th>
+                <th style='width:40%;text-align:center;'><strong>Jornadas</strong></th>
+              </tr>
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>Configuración-Desarrollo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbConfDes_2.Text &"</td>
+              </tr>
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>Apoyo a pruebas</strong></td>
+                <td style='width:40%;text-align:center;'> " & LbApo_2.Text & "</td>
+              </tr>
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>Entrega línea base</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbEnLiBas_2.Text & "</td>
+              </tr>
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>Total sin riesgo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbTSinR_2 & "</td>
+              </tr>
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>% de Riesgo</strong></td>
+                <td style='width:40%;text-align:center;'>" & LbRiesg_2 & "</td>
+              </tr>
+              
+              <tr>
+                <td style='width:40%;text-align:right;'><strong>Total</strong></td>
+                <td style='width:40%;text-align:center;'><strong>" & LbTtal_2 & "</strong></td>
+              </tr>
+            </table>
+            
+            <table style='width:95%;margin-top: 30px;'>
+              <tr>
+                <th> Tipo </th>
+                <th> Descripción </th>
+                <th> Clasificación </th>
+                <th> Complejidad </th>
+                <th> Aplicación </th>
+                <th> Comentario </th>
+                <th> Jornadas</th>
+              </tr>
+              " & Concat(
+                Gallery3_1.AllItems,
+                "
+              <tr>
+                <td>" & 'TipoEstimacion (Clasificacion)' & " </td>
+                <td>" & Descripcion & " </td>
+                <td>" & 'Clasificacion (TipoEstimacion)' & " </td>
+                <td>" & Complejidad & " </td>
+                <td>" & Aplicacion & " </td>
+                <td>" & 'Comentario Estimacion' & " </td>
+                <td>" & Esfuerzo/8 & " </td>
+              </tr>
+            
+              
+              "
+            ) & "
+            </table>
+                
+            
+            </body>
+            </html>"
+        Width: =848
+        X: =286
+        Y: =149
+        ZIndex: =15
+
+    Icon4_26 As icon.BackArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(183, 162, 212, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        Icon: =Icon.BackArrow
+        OnSelect: |
+            =Navigate(OfertUser,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =90
+        Y: =689
+        ZIndex: =16
 

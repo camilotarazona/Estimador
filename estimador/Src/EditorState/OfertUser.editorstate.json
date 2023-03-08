@@ -615,6 +615,14 @@
           "InvariantPropertyName": "OnSelect",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -743,6 +751,11 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5206,7 +5219,14 @@
         },
         "VerticalAlign",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "DisplayMode",
@@ -5240,7 +5260,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_59",
-      "ParentIndex": 32,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5523,7 +5543,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_60",
-      "ParentIndex": 39,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5813,7 +5833,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_61",
-      "ParentIndex": 35,
+      "ParentIndex": 39,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8069,7 +8089,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbRiesg_2",
-      "ParentIndex": 33,
+      "ParentIndex": 36,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8345,7 +8365,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbTSinR_2",
-      "ParentIndex": 40,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8628,7 +8648,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbTtal_2",
-      "ParentIndex": 36,
+      "ParentIndex": 40,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

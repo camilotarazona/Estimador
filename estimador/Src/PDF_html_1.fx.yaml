@@ -64,7 +64,7 @@ PDF_html_1 As screen:
         Fill: =RGBA(229, 248, 254, 0.55)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =660
+        Height: =669
         Size: =13
         Text: =""
         Width: =1253
@@ -474,9 +474,9 @@ PDF_html_1 As screen:
             <body>
             
             <h4 style='text-align:right;margin-right: 25px;'><strong>Fecha de emisión:</strong> " & DatePicker1 & "</h4>
-            <h2 style='text-align:center;'> <strong>Estimacion</strong></h2>
+            <h2 style='text-align:center;'> <strong>Estimación</strong></h2>
             <h3 style='text-align:left;margin-left: 15px'><strong> Iniciativa:</strong> " & TxINI.Text & "</h3>
-            <h3 style='text-align:left;margin-left: 15px'><strong>Descripcion general:</strong> " & TextInput2_1.Text & " </h3>
+            <h3 style='text-align:left;margin-left: 15px'><strong>Descripción general:</strong> " & TextInput2_1.Text & " </h3>
             
             <table style='width:100%;'>
               <tr>
@@ -484,7 +484,7 @@ PDF_html_1 As screen:
                 <th style='width:40%;text-align:center;'><strong>Jornadas</strong></th>
               </tr>
               <tr>
-                <td style='width:40%;text-align:right;'><strong>Configuracion-Desarrollo</strong></td>
+                <td style='width:40%;text-align:right;'><strong>Configuración-Desarrollo</strong></td>
                 <td style='width:40%;text-align:center;'>" & LbConfDes.Text &"</td>
               </tr>
               <tr>
@@ -492,7 +492,7 @@ PDF_html_1 As screen:
                 <td style='width:40%;text-align:center;'> " & LbApo.Text & "</td>
               </tr>
               <tr>
-                <td style='width:40%;text-align:right;'><strong>Entrega linea base</strong></td>
+                <td style='width:40%;text-align:right;'><strong>Entrega línea base</strong></td>
                 <td style='width:40%;text-align:center;'>" & LbEnLiBas.Text & "</td>
               </tr>
               <tr>
@@ -513,10 +513,10 @@ PDF_html_1 As screen:
             <table style='width:95%;margin-top: 30px;'>
               <tr>
                 <th> Tipo </th>
-                <th> Descripcion </th>
-                <th> Clasificacion </th>
+                <th> Descripción </th>
+                <th> Clasificación </th>
                 <th> Complejidad </th>
-                <th> Aplicacion </th>
+                <th> Aplicación </th>
                 <th> Comentario </th>
                 <th> Jornadas</th>
               </tr>
@@ -592,4 +592,26 @@ PDF_html_1 As screen:
         X: =879
         Y: =8
         ZIndex: =21
+
+    Icon4_27 As icon.BackArrow:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(183, 162, 212, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        Icon: =Icon.BackArrow
+        OnSelect: |
+            =Navigate(OfertAdmin,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =50
+        X: =90
+        Y: =689
+        ZIndex: =22
 

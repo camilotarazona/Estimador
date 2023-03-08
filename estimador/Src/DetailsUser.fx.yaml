@@ -261,7 +261,7 @@ DetailsUser As screen:
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
+            ZIndex: =3
 
         Title4_10 As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -282,7 +282,7 @@ DetailsUser As screen:
             Wrap: =false
             X: =355
             Y: =16
-            ZIndex: =5
+            ZIndex: =4
 
         Title4_11 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -300,7 +300,7 @@ DetailsUser As screen:
             Width: =133
             X: =429
             Y: =56
-            ZIndex: =6
+            ZIndex: =5
 
         Title4_9 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -318,7 +318,7 @@ DetailsUser As screen:
             Width: =133
             X: =429
             Y: =16
-            ZIndex: =7
+            ZIndex: =6
 
         Subtitle4_8 As label:
             AutoHeight: =true
@@ -337,6 +337,26 @@ DetailsUser As screen:
             Width: =403
             X: =32
             Y: =160
+            ZIndex: =7
+
+        Label1_22 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(160, 66, 227, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Aplicación"
+            Width: =100
+            X: =32
+            Y: =109
             ZIndex: =8
 
         Title4_23 As label:
@@ -356,26 +376,6 @@ DetailsUser As screen:
             X: =161
             Y: =109
             ZIndex: =9
-
-        Label1_22 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(160, 66, 227, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: ="Aplicacion"
-            Width: =100
-            X: =32
-            Y: =109
-            ZIndex: =10
 
     Label13_2 As label:
         AutoHeight: =true
