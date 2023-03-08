@@ -570,7 +570,9 @@ OfertAdmin_1 As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =LbRConf.Text/80%*5%
+            Text: |-
+                =//LbRConf.Text/80%*5%
+                LbRConf.Text/80%*TextInput1.Text
             Width: =73
             X: =446
             Y: =344
@@ -602,7 +604,7 @@ OfertAdmin_1 As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =LbRConf.Text/80%*8%
+            Text: =LbRConf.Text/80%*TextInput1_2.Text
             Width: =73
             X: =446
             Y: =450
