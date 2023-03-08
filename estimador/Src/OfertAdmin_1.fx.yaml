@@ -518,7 +518,7 @@ OfertAdmin_1 As screen:
             Font: =Font.'Segoe UI'
             Height: =46
             Size: =17
-            Text: ="Documetacion"
+            Text: ="Documetación"
             Width: =310
             X: =85
             Y: =503
