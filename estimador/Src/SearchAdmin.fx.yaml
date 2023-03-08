@@ -179,6 +179,7 @@ SearchAdmin As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =50
         X: =917
         Y: =9
@@ -444,6 +445,7 @@ SearchAdmin As screen:
             ZIndex: =7
 
         Subtitle4_5 As label:
+            AutoHeight: =true
             Color: =RGBA(109, 49, 162, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(231, 224, 241, 0.49)

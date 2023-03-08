@@ -1222,13 +1222,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(142, 79, 201, 0.78)
             FocusedBorderThickness: =4
-            Height: =426
+            Height: =76
             HoverFill: =RGBA(142, 79, 201, 0.78)
             PressedFill: =RGBA(142, 79, 201, 0.78)
             Visible: =false
             Width: =562
             X: =459
-            Y: =77
+            Y: =74
             ZIndex: =25
 
         Rectangle2_99 As rectangle:
@@ -1238,7 +1238,7 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =15
+            Height: =7
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
@@ -1258,13 +1258,13 @@ HistoryAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =46
+            Height: =22
             Size: =25
             Text: ="Actividad"
             Visible: =false
             Width: =170
             X: =536
-            Y: =101
+            Y: =86
             ZIndex: =27
 
         Label3_77 As label:
@@ -1278,14 +1278,14 @@ HistoryAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =46
+            Height: =22
             Size: =25
             Text: ="Dias"
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
             Width: =96
             X: =851
-            Y: =101
+            Y: =86
             ZIndex: =28
 
         Rectangle2_103 As rectangle:
@@ -1295,13 +1295,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =168
+            Y: =117
             ZIndex: =29
 
         Rectangle2_100 As rectangle:
@@ -1311,13 +1311,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =412
+            Height: =195
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =3
             X: =789
-            Y: =87
+            Y: =79
             ZIndex: =30
 
         Rectangle2_104 As rectangle:
@@ -1327,13 +1327,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =221
+            Y: =142
             ZIndex: =31
 
         Rectangle2_106 As rectangle:
@@ -1343,13 +1343,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =277
+            Y: =169
             ZIndex: =32
 
         Rectangle2_108 As rectangle:
@@ -1359,13 +1359,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =331
+            Y: =195
             ZIndex: =33
 
         Rectangle2_110 As rectangle:
@@ -1375,13 +1375,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =387
+            Y: =221
             ZIndex: =34
 
         Rectangle2_112 As rectangle:
@@ -1391,13 +1391,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =440
+            Y: =246
             ZIndex: =35
 
         Rectangle2_114 As rectangle:
@@ -1407,13 +1407,13 @@ HistoryAdmin As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(102, 26, 163, 1)
             FocusedBorderThickness: =4
-            Height: =3
+            Height: =1
             HoverFill: =RGBA(109, 49, 162, 1)
             PressedFill: =RGBA(109, 49, 162, 1)
             Visible: =false
             Width: =562
             X: =459
-            Y: =496
+            Y: =273
             ZIndex: =36
 
         Label3_80 As label:
@@ -1426,13 +1426,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="Configuracion-Desarrollo"
             Visible: =false
             Width: =310
             X: =466
-            Y: =178
+            Y: =122
             ZIndex: =37
 
         Label3_82 As label:
@@ -1445,13 +1445,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="Apoyo Pruebas"
             Visible: =false
             Width: =310
             X: =466
-            Y: =228
+            Y: =146
             ZIndex: =38
 
         Label3_83 As label:
@@ -1464,13 +1464,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="Entrega Line Base"
             Visible: =false
             Width: =310
             X: =466
-            Y: =282
+            Y: =171
             ZIndex: =39
 
         Label3_84 As label:
@@ -1483,13 +1483,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="% Riesgo = 10%"
             Visible: =false
             Width: =310
             X: =466
-            Y: =337
+            Y: =197
             ZIndex: =40
 
         Label3_85 As label:
@@ -1502,13 +1502,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="Total Sin Riesgo"
             Visible: =false
             Width: =310
             X: =466
-            Y: =397
+            Y: =226
             ZIndex: =41
 
         Label3_86 As label:
@@ -1522,13 +1522,13 @@ HistoryAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =46
+            Height: =22
             Size: =20
             Text: ="Total"
             Visible: =false
             Width: =310
             X: =466
-            Y: =450
+            Y: =251
             ZIndex: =42
 
         LbConfDes_4 As label:
@@ -1540,12 +1540,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =RoundDown(Sum(LbRGstC_6.Text,LbRDoc_6.Text,LbRConf_6,LbRG_6)/8,0)
             Visible: =false
             Width: =82
             X: =878
-            Y: =178
+            Y: =122
             ZIndex: =43
 
         LbApo_4 As label:
@@ -1557,12 +1558,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =RoundUp(LbRPrue_6.Text/8,0)
             Visible: =false
             Width: =82
             X: =878
-            Y: =237
+            Y: =150
             ZIndex: =44
 
         LbEnLiBas_4 As label:
@@ -1574,12 +1576,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =RoundUp(LbRPrue_6.Text/8,0)
             Visible: =false
             Width: =82
             X: =878
-            Y: =284
+            Y: =172
             ZIndex: =45
 
         LbRiesg_4 As label:
@@ -1591,12 +1594,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =RoundUp(Sum(GalEstimaciones_2.AllItems,Esfuerzo)/80%*10%/8,0)
             Visible: =false
             Width: =82
             X: =878
-            Y: =340
+            Y: =199
             ZIndex: =46
 
         LbTSinR_4 As label:
@@ -1608,12 +1612,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =Sum(LbEnLiBas_4,LbApo_4,LbConfDes_4)
             Visible: =false
             Width: =82
             X: =878
-            Y: =396
+            Y: =225
             ZIndex: =47
 
         LbTtal_4 As label:
@@ -1625,12 +1630,13 @@ HistoryAdmin As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =19
             Size: =20
             Text: =Sum(LbEnLiBas_4,LbApo_4,LbConfDes_4,LbRiesg_4)
             Visible: =false
             Width: =82
             X: =878
-            Y: =450
+            Y: =251
             ZIndex: =48
 
     DropTipo_4 As dropdown:
@@ -1648,7 +1654,6 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
-        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1664,7 +1669,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =405
+        Y: =406
         ZIndex: =82
 
     LbTipo_3 As label:
@@ -1679,12 +1684,11 @@ HistoryAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =46
-        Size: =20
+        Size: =17
         Text: ="Tipo"
         Width: =166
         X: =816
-        Y: =405
+        Y: =406
         ZIndex: =84
 
     LbClas_3 As label:
@@ -1699,12 +1703,11 @@ HistoryAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =46
-        Size: =20
+        Size: =17
         Text: ="Clasificación"
         Width: =166
         X: =816
-        Y: =480
+        Y: =468
         ZIndex: =85
 
     LbCompl_3 As label:
@@ -1719,12 +1722,11 @@ HistoryAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =46
-        Size: =20
+        Size: =17
         Text: ="Complejidad"
         Width: =166
         X: =816
-        Y: =549
+        Y: =530
         ZIndex: =86
 
     DropClas_3 As dropdown:
@@ -1741,7 +1743,6 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
-        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1757,7 +1758,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =480
+        Y: =468
         ZIndex: =88
 
     DropCompl_3 As dropdown:
@@ -1774,7 +1775,6 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
-        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1790,7 +1790,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =549
+        Y: =530
         ZIndex: =89
 
     DropAplicacion As dropdown:
@@ -1808,7 +1808,6 @@ HistoryAdmin As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Font: =Font.'Segoe UI'
-        Height: =46
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
@@ -1824,7 +1823,7 @@ HistoryAdmin As screen:
         Size: =13
         Width: =196
         X: =993
-        Y: =340
+        Y: =344
         ZIndex: =90
 
     LbTipo_4 As label:
@@ -1839,12 +1838,11 @@ HistoryAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =46
-        Size: =20
+        Size: =17
         Text: ="Aplicación"
         Width: =166
         X: =816
-        Y: =340
+        Y: =344
         ZIndex: =91
 
     BtReset_2 As button:
@@ -1877,6 +1875,6 @@ HistoryAdmin As screen:
         Text: ="Reset"
         Width: =123
         X: =1068
-        Y: =616
+        Y: =590
         ZIndex: =92
 
