@@ -414,9 +414,9 @@ OfertAdmin As screen:
             <body>
             
             <h4 class= fecha>Fecha de emisión: " & DatePicker1 & "</h4>
-            <h2 class=titulo> Estimacion</h2>
+            <h2 class=titulo> Estimación</h2>
             <h3 class=INI> Iniciativa: " & TxINI.Text & "</h3>
-            <h3 class=descripcion> Descripcion general: " & TextInput2_1.Text & " </h3>
+            <h3 class=descripcion> Descripción general: " & TextInput2_1.Text & " </h3>
             
             <table class='tabla-uno'>
               <tr>
@@ -424,7 +424,7 @@ OfertAdmin As screen:
                 <th>Jornadas</th>
               </tr>
               <tr>
-                <td>Configuracion-Desarrollo</td>
+                <td>Configuración-Desarrollo</td>
                 <td>" & LbConfDes.Text &"</td>
               </tr>
               <tr>
@@ -432,16 +432,17 @@ OfertAdmin As screen:
                 <td> " & LbApo.Text & "</td>
               </tr>
               <tr>
-                <td>Entrega linea base</td>
+                <td>Entrega línea base</td>
                 <td>" & LbEnLiBas.Text & "</td>
+              </tr>
+              
+              <tr>
+                <td>Total sin riesgo</td>
+                <td>" & LbTSinR & "</td>
               </tr>
               <tr>
                 <td>% de Riesgo</td>
                 <td>" & LbRiesg & "</td>
-              </tr>
-              <tr>
-                <td>Total sin riesgo</td>
-                <td>" & LbTSinR & "</td>
               </tr>
               <tr>
                 <td>Total</td>
@@ -452,10 +453,10 @@ OfertAdmin As screen:
             <table>
               <tr>
                 <th> Tipo </th>
-                <th> Descripcion </th>
-                <th> Clasificacion </th>
+                <th> Descripción </th>
+                <th> Clasificación </th>
                 <th> Complejidad </th>
-                <th> Aplicacion </th>
+                <th> Aplicación </th>
                 <th> Comentario </th>
                 <th> Jornadas</th>
               </tr>
@@ -485,7 +486,6 @@ OfertAdmin As screen:
             
             </body>
             </html>"
-        Visible: =false
         Width: =506
         X: =860
         Y: =99
@@ -517,7 +517,7 @@ OfertAdmin As screen:
 
     Icon4_20 As icon.DocumentPDF:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
