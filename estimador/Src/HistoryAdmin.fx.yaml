@@ -525,7 +525,7 @@ HistoryAdmin As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: |-
-                ="Aplicacion:"
+                ="Aplicación:"
             Width: =100
             X: =31
             Y: =115
