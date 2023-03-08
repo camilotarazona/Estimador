@@ -566,7 +566,7 @@ OfertAdmin As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =46
-        Size: =20
+        Size: =17
         Text: ="Total Sin Riesgo"
         Width: =310
         X: =289
@@ -803,7 +803,7 @@ OfertAdmin As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =46
-            Size: =25
+            Size: =22
             Text: ="Actividad"
             Width: =170
             X: =359
@@ -822,7 +822,7 @@ OfertAdmin As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =46
-            Size: =25
+            Size: =22
             Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
             X: =654
@@ -945,8 +945,8 @@ OfertAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
-            Text: ="Configuracion-Desarrollo"
+            Size: =17
+            Text: ="Configuración-Desarrollo"
             Width: =310
             X: =289
             Y: =364
@@ -963,7 +963,7 @@ OfertAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
+            Size: =17
             Text: ="Apoyo Pruebas"
             Width: =310
             X: =289
@@ -981,8 +981,8 @@ OfertAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
-            Text: ="Entrega Linea Base"
+            Size: =17
+            Text: ="Entrega Línea Base"
             Width: =310
             X: =289
             Y: =468
@@ -999,7 +999,7 @@ OfertAdmin As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
+            Size: =17
             Text: ="% Riesgo = 10%"
             Width: =310
             X: =287
