@@ -446,7 +446,7 @@ NewUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =56
-            HintText: ="Ingresar comentario o descripcion de la tarea a realizar"
+            HintText: ="Comentario o descripción de la tarea a realizar"
             HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
@@ -461,8 +461,7 @@ NewUser As screen:
             RadiusTopRight: =0
             Size: =13
             Width: =650
-            X: =147
-            Y: =25
+            X: =150
             ZIndex: =10
 
         Dropdown3_1 As dropdown:
@@ -534,7 +533,7 @@ NewUser As screen:
             Text: ="Añadir"
             Width: =120
             X: =853
-            Y: =41
+            Y: =15
             ZIndex: =12
 
         ComboBox4_1 As combobox:
@@ -607,7 +606,7 @@ NewUser As screen:
                 ="Comentario:"
             VerticalAlign: =VerticalAlign.Bottom
             X: =12
-            Y: =27
+            Y: =1
             ZIndex: =15
 
     "Gallery4_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
@@ -783,12 +782,12 @@ NewUser As screen:
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Clasificacion"
+        InputTextPlaceholder: ="Clasificación"
         IsSearchable: =false
         Items: |-
             =//Distinct(CargaFuncionesPws,Clasificacion)
             Distinct(Filter(CargaFuncionesPws,Complejidad=ComboBox1_9.Selected.Result),Clasificacion)
-        NoSelectionText: ="Clasificacion"
+        NoSelectionText: ="Clasificación"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
@@ -884,9 +883,9 @@ NewUser As screen:
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        InputTextPlaceholder: ="Descripcion"
+        InputTextPlaceholder: ="Descripción"
         Items: =Distinct(Filter(CargaFuncionesPws,Tipo=ComboBox1_7.Selected.Result),Title)
-        NoSelectionText: ="Descripcion"
+        NoSelectionText: ="Descripción"
         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(135, 100, 184, 1)
@@ -975,7 +974,7 @@ NewUser As screen:
         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        InputTextPlaceholder: ="*Seleccionar Aplicación"
+        InputTextPlaceholder: ="Aplicación"
         Items: =Distinct(Aplicaciones,Title)
         NoSelectionText: ="*Seleccionar Aplicación"
         OnSelect: =

@@ -606,7 +606,7 @@ OfertUser As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =46
-            Size: =25
+            Size: =22
             Text: ="Actividad"
             Width: =170
             X: =175
@@ -625,7 +625,7 @@ OfertUser As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =46
-            Size: =25
+            Size: =22
             Text: ="Jornadas"
             VerticalAlign: =VerticalAlign.Top
             X: =465
@@ -763,8 +763,8 @@ OfertUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
-            Text: ="Configuracion-Desarrollo"
+            Size: =17
+            Text: ="Configuración-Desarrollo"
             Width: =310
             X: =105
             Y: =346
@@ -781,7 +781,7 @@ OfertUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
+            Size: =17
             Text: ="Apoyo Pruebas"
             Width: =310
             X: =105
@@ -799,8 +799,8 @@ OfertUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
-            Text: ="Entrega Linea Base"
+            Size: =17
+            Text: ="Entrega Línea Base"
             Width: =310
             X: =105
             Y: =450
@@ -817,7 +817,7 @@ OfertUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
+            Size: =17
             Text: ="% Riesgo = 10%"
             Width: =310
             X: =105
@@ -835,7 +835,7 @@ OfertUser As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =46
-            Size: =20
+            Size: =17
             Text: ="Total Sin Riesgo"
             Width: =310
             X: =105
