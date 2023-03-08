@@ -486,6 +486,7 @@ OfertAdmin As screen:
             
             </body>
             </html>"
+        Visible: =false
         Width: =506
         X: =860
         Y: =99
